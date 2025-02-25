@@ -1,0 +1,1620 @@
+=== Session Log ===
+=== End Session ===
+
+=== Session Log ===
+=== End Session ===
+
+=== Session Log ===
+=== End Session ===
+
+=== Session Log ===
+=== End Session ===
+
+=== Session Log ===
+Exercise 1: Your answer: hago, Correct: True
+Exercise 3: Your answer: dieron, Correct: True
+=== End Session ===
+
+=== Session Log ===
+=== End Session ===
+
+=== Session Log ===
+=== End Session ===
+
+=== Session Log ===
+=== End Session ===
+
+=== Session Log ===
+Exercise 1: Your answer: voy, Correct: True
+Exercise 2: Your answer: llega, Correct: False
+Exercise 4: Your answer: diga, Correct: True
+=== End Session ===
+
+=== Session Log ===
+=== End Session ===
+
+=== Session Log ===
+Exercise 1: Your answer: voy, Correct: True
+Exercise 2: Your answer: sepan, Correct: True
+Exercise 5: Your answer: tengan, Correct: True
+Exercise 7: Your answer: tuvieron, Correct: True
+=== End Session ===
+
+=== Session Log ===
+Exercise 6:
+  Sentence: Ellos _____ el partido de fútbol ayer.
+  Translation: They _____ the soccer match yesterday.
+  Your answer: fueron
+  Correct: False
+  Explanation: The learner's answer "fueron" is incorrect in this context. The sentence "Ellos _____ el partido de fútbol ayer" requires a verb in the past tense that means "won" to indicate the outcome of the soccer match. The correct verb is "ganaron," which is the past tense form of "ganar" (to win) for "ellos" (they). 
+
+The verb "fueron" is the past tense form of "ser" (to be) or "ir" (to go), neither of which fits the context of winning a soccer match. Therefore, the correct completion of the sentence is "Ellos ganaron el partido de fútbol ayer."
+
+Exercise 6:
+  Sentence: Ellos _____ el partido de fútbol ayer.
+  Translation: They _____ the soccer match yesterday.
+  Your answer: ganaron
+  Correct: True
+  Explanation: The learner's answer is correct. In the sentence "Ellos _____ el partido de fútbol ayer," the verb needed is in the past tense to indicate that the action occurred yesterday. The subject "Ellos" (they) requires the third person plural form of the verb "ganar" (to win) in the preterite tense, which is "ganaron." Therefore, "Ellos ganaron el partido de fútbol ayer" correctly means "They won the soccer game yesterday."
+
+Exercise 7:
+  Sentence: Ellas _____ en el parque cuando empezó a llover.
+  Translation: They _____ in the park when it started to rain.
+  Your answer: jugaban
+  Correct: True
+  Explanation: Yes, the learner's answer is correct. The sentence "Ellas jugaban en el parque cuando empezó a llover" uses the imperfect tense "jugaban" to describe an ongoing action in the past. In this context, "jugaban" indicates that the action of playing was happening continuously or habitually when another action, "empezó a llover" (started to rain), occurred. The imperfect tense is appropriate here to set the scene and describe background actions that were in progress when a specific event happened.
+
+=== End Session ===
+
+=== Session Log ===
+=== End Session ===
+
+=== Session Log ===
+Exercise 1:
+  Sentence: Los científicos _____ nuevas galaxias el año pasado.
+  Translation: The scientists _____ new galaxies last year.
+  Your answer: descubrieron
+  Correct: True
+  Explanation: La respuesta del estudiante es correcta. En este contexto, el verbo "descubrir" está conjugado en pretérito perfecto simple, que se utiliza para acciones completadas en el pasado. La frase "el año pasado" indica un tiempo específico en el pasado, por lo que "descubrieron" es la forma adecuada para referirse a lo que hicieron los científicos en ese periodo.
+
+=== End Session ===
+
+=== Session Log ===
+=== End Session ===
+
+=== Session Log ===
+=== End Session ===
+
+=== Session Log ===
+=== End Session ===
+
+=== Session Log ===
+Exercise 1:
+  Sentence: Es importante que él me _______ su opinión antes de tomar una decisión.
+  Translation: It's important that he _______ me his opinion before making a decision.
+  Your answer: dé
+  Correct: True
+  Explanation: El uso de "dé" en esta oración es correcto porque se trata del presente de subjuntivo del verbo "dar". La estructura "Es importante que..." indica una expresión de deseo, duda o necesidad, lo cual requiere el uso del subjuntivo. En este caso, se está expresando la importancia de que él proporcione su opinión antes de tomar una decisión, lo cual es una situación ideal para el uso del subjuntivo. Por lo tanto, "dé" es la forma adecuada.
+
+Exercise 2:
+  Sentence: Quiero que tú le _______ las gracias a tu abuela por el regalo.
+  Translation: I want you to _______ your grandmother thanks for the gift.
+  Your answer: des
+  Correct: True
+  Explanation: La respuesta del alumno es correcta. En la oración "Quiero que tú le des las gracias a tu abuela por el regalo", se utiliza el subjuntivo presente "des" porque la estructura "Quiero que" indica un deseo o una influencia sobre la acción de otra persona. En este caso, "des" es la forma correcta del verbo "dar" en la segunda persona del singular (tú) en el modo subjuntivo.
+
+Exercise 3:
+  Sentence: Espero que ellos nos _______ la oportunidad de explicar lo sucedido.
+  Translation: I hope they _______ us the opportunity to explain what happened.
+  Your answer: dieron
+  Correct: False
+  Explanation: La respuesta del alumno es incorrecta. En la oración "Espero que ellos nos _______ la oportunidad de explicar lo sucedido", se utiliza el modo subjuntivo porque se expresa un deseo o esperanza. En este contexto, el verbo "dar" debe conjugarse en presente de subjuntivo, que es "den". La forma "dieron" es el pretérito perfecto simple del indicativo y no es adecuada aquí porque no expresa una acción deseada o hipotética, sino una acción pasada y concreta.
+
+Exercise 3:
+  Sentence: Espero que ellos nos _______ la oportunidad de explicar lo sucedido.
+  Translation: I hope they _______ us the opportunity to explain what happened.
+  Your answer: dan
+  Correct: False
+  Explanation: La respuesta del estudiante es incorrecta. En la oración "Espero que ellos nos _______ la oportunidad de explicar lo sucedido", se utiliza el modo subjuntivo porque expresa un deseo o esperanza. El verbo "dar" en subjuntivo para la tercera persona del plural es "den". Por lo tanto, la forma correcta es "den", no "dan", ya que "dan" es el presente de indicativo, que se usa para afirmar acciones habituales o hechos.
+
+Exercise 3:
+  Sentence: Espero que ellos nos _______ la oportunidad de explicar lo sucedido.
+  Translation: I hope they _______ us the opportunity to explain what happened.
+  Your answer: den
+  Correct: True
+  Explanation: La respuesta del estudiante es correcta. En esta oración, "Espero que ellos nos den la oportunidad de explicar lo sucedido", se utiliza el subjuntivo presente "den" porque la estructura "Espero que" expresa un deseo o esperanza. En español, después de expresiones de deseo o incertidumbre como "espero que", se emplea el subjuntivo, y "den" es la forma correcta del verbo "dar" en subjuntivo para la tercera persona del plural.
+
+Exercise 4:
+  Sentence: No creo que nosotros le _______ suficiente importancia a ese problema.
+  Translation: I don't think we _______ enough importance to that problem.
+  Your answer: demos
+  Correct: True
+  Explanation: La respuesta del estudiante es correcta. En esta oración, se utiliza el subjuntivo porque la frase "No creo que" expresa duda o incertidumbre sobre la acción de dar importancia. El verbo "dar" en la primera persona del plural ("nosotros") en presente de subjuntivo es "demos". Por lo tanto, "demos" es la conjugación adecuada para completar la oración correctamente.
+
+Exercise 5:
+  Sentence: Es posible que ustedes _______ una solución al conflicto.
+  Translation: It's possible that you all _______ a solution to the conflict.
+  Your answer: den
+  Correct: True
+  Explanation: Sí, la respuesta del estudiante es correcta. En la oración "Es posible que ustedes _______ una solución al conflicto", se utiliza el modo subjuntivo porque la frase "es posible que" indica una posibilidad o incertidumbre. En este caso, el verbo "dar" debe conjugarse en subjuntivo para coincidir con el sujeto "ustedes". La forma correcta del subjuntivo presente para "ustedes" es "den". Por lo tanto, "den" es la respuesta adecuada.
+
+=== End Session ===
+
+=== Session Log ===
+=== End Session ===
+
+=== Session Log ===
+Exercise 1:
+  Sentence: Por las mañanas, yo ______ un paseo por el jardín para disfrutar del aire fresco.
+  Translation: In the mornings, I ______ a walk through the garden to enjoy the fresh air.
+  Your answer: doy
+  Correct: True
+  Explanation: La respuesta del aprendiz es correcta. En la oración "Por las mañanas, yo doy un paseo por el jardín para disfrutar del aire fresco", el verbo "dar" se conjuga en primera persona del singular del presente de indicativo como "doy". Esta conjugación es adecuada porque el sujeto de la oración es "yo", y "dar un paseo" es una expresión común que significa caminar o pasear. Por lo tanto, "doy" es la forma correcta de completar la oración.
+
+Exercise 1:
+  Sentence: En esa época, nosotros siempre __________ en la piscina del acuario mientras imaginábamos ser peces.
+  Translation: In those days, we always __________ in the aquarium pool while imagining we were fish.
+  Your answer: nadábamos
+  Correct: True
+  Explanation: La respuesta del estudiante es correcta. La palabra "nadábamos" está en el pretérito imperfecto, que se utiliza para describir acciones habituales o repetidas en el pasado. En este caso, "siempre nadábamos en la piscina del acuario" indica una acción que solía ocurrir con frecuencia durante ese período de tiempo. Además, el uso de "imaginábamos" en la misma oración también está en pretérito imperfecto, lo que refuerza la idea de acciones continuas o habituales en el pasado.
+
+Exercise 1:
+  Sentence: Mientras mi hermano _________ en el río, yo preparaba la caña de pescar.
+  Translation: While my brother _________ in the river, I was preparing the fishing rod.
+  Your answer: nadaba
+  Correct: True
+  Explanation: La respuesta del estudiante es correcta. En esta oración, se utiliza el verbo "nadar" en el tiempo imperfecto "nadaba" para describir una acción continua o habitual en el pasado. El uso del imperfecto es adecuado aquí porque indica que la acción de nadar de "mi hermano" estaba ocurriendo simultáneamente con la acción de "yo preparaba la caña de pescar". Ambas acciones son pasadas, continuas y no se especifica cuándo comenzaron o terminaron, lo cual es típico del uso del imperfecto en español.
+
+Exercise 2:
+  Sentence: El tiburón _________ rápidamente hacia el banco de peces.
+  Translation: The shark _________ quickly towards the school of fish.
+  Your answer: nadó
+  Correct: True
+  Explanation: La respuesta del alumno es correcta. En la oración "El tiburón nadó rápidamente hacia el banco de peces," el verbo "nadó" está en tiempo pasado, específicamente en pretérito perfecto simple, que se utiliza para describir acciones completadas en el pasado. En este contexto, indica que el tiburón realizó la acción de nadar de manera rápida en un momento específico que ya ha concluido. Por lo tanto, "nadó" es la forma verbal adecuada para esta oración.
+
+=== End Session ===
+
+=== Session Log ===
+Exercise 1:
+  Sentence: Mientras estábamos en el bote, de repente un tiburón _______ cerca de nosotros.
+  Translation: While we were on the boat, suddenly a shark _______ near us.
+  Your answer: aparecería
+  Correct: False
+  Explanation: La respuesta del alumno es incorrecta. En la oración, se describe un evento que ocurrió de manera repentina mientras estábamos en el bote. La palabra "de repente" indica que el evento ya sucedió y fue inesperado. Por lo tanto, se debe usar el pretérito "apareció" para indicar que el tiburón apareció en ese momento específico en el pasado. El uso de "aparecería" implicaría una acción hipotética o condicional, lo cual no es adecuado en este contexto.
+
+Exercise 1:
+  Sentence: Mientras estábamos en el bote, de repente un tiburón _______ cerca de nosotros.
+  Translation: While we were on the boat, suddenly a shark _______ near us.
+  Your answer: apareció
+  Correct: True
+  Explanation: La respuesta del estudiante es correcta. En la oración "Mientras estábamos en el bote, de repente un tiburón apareció cerca de nosotros," el uso del verbo "apareció" en pretérito es adecuado porque describe una acción que ocurrió de forma repentina e inesperada en el pasado. La palabra "de repente" también indica que se trata de un evento puntual, lo cual es consistente con el uso del pretérito.
+
+Exercise 1:
+  Sentence: Cuando el tiburón ______ cerca, todos nos asustamos un poco.
+  Translation: When the shark ______ nearby, we all got a little scared.
+  Your answer: nadó
+  Correct: True
+  Explanation: La respuesta del estudiante es correcta. En este caso, el verbo "nadar" está conjugado en el pretérito perfecto simple como "nadó," que es la forma adecuada para referirse a una acción completada en el pasado. La oración indica que el tiburón realizó la acción de nadar cerca en un momento específico del pasado, lo cual causó que todos se asustaran un poco. Por lo tanto, "nadó" es la elección correcta para describir esta acción puntual.
+
+Exercise 2:
+  Sentence: Cada verano, mi abuelo ______ en el río con nosotros.
+  Translation: Every summer, my grandfather ______ in the river with us.
+  Your answer: nadó
+  Correct: False
+  Explanation: La respuesta del estudiante "nadó" es incorrecta en este contexto. En la oración "Cada verano, mi abuelo ______ en el río con nosotros," se está describiendo una acción habitual o repetida en el pasado. Para expresar acciones habituales en el pasado en español, se utiliza el pretérito imperfecto. Por eso, la forma correcta es "nadaba," que indica que el abuelo solía nadar en el río con nosotros cada verano. El pretérito perfecto simple "nadó" se utiliza para acciones completadas en un momento específico del pasado, lo cual no es el caso aquí.
+
+Exercise 1:
+  Sentence: Mientras yo _______ en el río, vi un bagre enorme pasar.
+  Translation: While I _______ in the river, I saw a huge catfish pass by.
+  Your answer: nadaba
+  Correct: True
+  Explanation: La respuesta del estudiante es correcta. En esta oración, "nadaba" está en el imperfecto del indicativo, que se utiliza para describir acciones continuas o habituales en el pasado. La estructura "Mientras yo nadaba en el río" sugiere que la acción de nadar estaba en progreso cuando ocurrió otra acción, que en este caso es "vi un bagre enorme pasar". Usar el imperfecto aquí es adecuado porque enfatiza la duración de la acción de nadar mientras se observa el evento puntual de ver pasar al bagre.
+
+Exercise 2:
+  Sentence: El tiburón _______ más pequeño de lo que esperábamos.
+  Translation: The shark _______ smaller than we expected.
+  Your answer: pareció
+  Correct: False
+  Explanation: La respuesta del estudiante, "parecía", no es correcta en este contexto. La oración "El tiburón _______ más pequeño de lo que esperábamos" sugiere que estamos hablando de una impresión o percepción específica en un momento determinado, probablemente cuando vimos al tiburón por primera vez. En este caso, se usa el pretérito "pareció" para indicar una acción completa y puntual en el pasado. El uso de "parecía" implicaría un estado continuo o habitual, lo cual no encaja con la idea de una primera impresión o sorpresa en un momento específico.
+
+Exercise 2:
+  Sentence: El tiburón _______ más pequeño de lo que esperábamos.
+  Translation: The shark _______ smaller than we expected.
+  Your answer: pareció
+  Correct: True
+  Explanation: La respuesta del aprendiz es correcta. En esta oración, el verbo "pareció" se utiliza para expresar que el tiburón daba la impresión de ser más pequeño de lo que se esperaba. El verbo "parecer" en pasado ("pareció") es adecuado aquí porque se refiere a una percepción o apariencia en un momento específico en el pasado. La estructura "más pequeño de lo que esperábamos" indica una comparación entre lo que se pensaba y la realidad observada.
+
+Exercise 3:
+  Sentence: Mi abuelo siempre _______ que las truchas eran muy inteligentes.
+  Translation: My grandfather always _______ that the trout were very smart.
+  Your answer: decía
+  Correct: False
+  Explanation: La respuesta del aprendiz "deciría" no es correcta en este contexto. La oración se refiere a una acción habitual en el pasado, es decir, algo que el abuelo solía hacer regularmente. En español, para expresar acciones habituales en el pasado, se utiliza el pretérito imperfecto, que en este caso es "decía". El término "deciría" es el condicional, que se usa para expresar acciones hipotéticas o situaciones que dependen de ciertas condiciones, lo cual no encaja en este contexto. Por eso, la forma correcta es "decía".
+
+Exercise 3:
+  Sentence: Mi abuelo siempre _______ que las truchas eran muy inteligentes.
+  Translation: My grandfather always _______ that the trout were very smart.
+  Your answer: decía
+  Correct: True
+  Explanation: La respuesta del estudiante es correcta. En este contexto, se utiliza el verbo "decía" en pretérito imperfecto porque se está describiendo una acción habitual o repetida en el pasado. El pretérito imperfecto es adecuado para expresar acciones que ocurrieron de manera continua o repetida, como en este caso, donde el abuelo solía decir que las truchas eran muy inteligentes.
+
+Exercise 1:
+  Sentence: Si yo fuera un tiburón, __________ en el océano todo el día.
+  Translation: If I were a shark, I would __________ in the ocean all day.
+  Your answer: nadaría
+  Correct: True
+  Explanation: La respuesta del estudiante es correcta. En esta oración, se está utilizando una estructura condicional de segundo tipo, que se usa para expresar situaciones hipotéticas o irreales en el presente o futuro. La estructura es: "si" + imperfecto de subjuntivo + condicional simple. En este caso, "si yo fuera un tiburón" utiliza el imperfecto de subjuntivo "fuera", y la acción hipotética que seguiría es "nadaría", que está en condicional simple. Por lo tanto, la respuesta "nadaría" es adecuada para completar la oración.
+
+=== End Session ===
+
+=== Session Log ===
+Exercise 1:
+  Sentence: Si yo ______ más tiempo, te ayudaría a preparar las enchiladas.
+  Translation: If I ______ more time, I would help you prepare the enchiladas.
+  Your answer: tuviera
+  Correct: True
+  Explanation: ¡Claro! El uso de "tuviera" en la oración "Si yo tuviera más tiempo, te ayudaría a preparar las enchiladas" es totalmente correcto. Aquí estamos usando una estructura condicional de tipo 2, que se utiliza para situaciones hipotéticas o poco probables en el presente o futuro. En este caso, "tuviera" es el subjuntivo imperfecto del verbo "tener", que se empareja con "ayudaría", el condicional del verbo "ayudar". Así que, ¡muy bien hecho! Estás usando la gramática adecuada para expresar una situación imaginaria.
+
+Exercise 2:
+  Sentence: Él quiere que nosotros le ______ algunas ideas para los colores de las paredes.
+  Translation: He wants us to ______ him some ideas for the wall colors.
+  Your answer: demos
+  Correct: True
+  Explanation: ¡Claro! La respuesta del aprendiz es correcta. En la oración "Él quiere que nosotros le demos algunas ideas para los colores de las paredes", estamos usando el modo subjuntivo. Esto se debe a que la frase "Él quiere que" expresa un deseo o una petición, lo cual es una de las situaciones donde se utiliza el subjuntivo en español. El verbo "dar" en subjuntivo para "nosotros" es "demos". Así que, ¡bien hecho! Si tienes más dudas sobre el subjuntivo, aquí estoy para ayudarte.
+
+Exercise 3:
+  Sentence: Sería increíble si todos ______ a la reunión, ¿no crees?
+  Translation: It would be amazing if everyone ______ to the gathering, don't you think?
+  Your answer: vinieran
+  Correct: True
+  Explanation: ¡Claro! El uso de "vinieran" en la oración "Sería increíble si todos ______ a la reunión, ¿no crees?" es correcto porque estamos hablando de una situación hipotética en el pasado. En español, cuando usamos "sería" que está en condicional, lo acompañamos con el imperfecto de subjuntivo, que en este caso es "vinieran". Así que, ¡bien hecho! Usaste la forma correcta del verbo "venir". Sigue así, ¡vas muy bien!
+
+Exercise 4:
+  Sentence: Preferiría que me ______ un poco de café, por favor.
+  Translation: I would prefer if you ______ me some coffee, please.
+  Your answer: compraras
+  Correct: True
+  Explanation: ¡Claro! La respuesta del estudiante es correcta. En la oración "Preferiría que me ______ un poco de café, por favor," estamos usando el verbo "preferir" en el condicional "preferiría," lo cual nos lleva a usar el subjuntivo en la segunda parte de la oración. En este caso, el verbo "comprar" se convierte en "compraras," que es el imperfecto de subjuntivo. Así que el estudiante acertó al poner "compraras" porque sigue la estructura gramatical correcta para expresar un deseo o preferencia en el pasado. ¡Buen trabajo!
+
+Exercise 5:
+  Sentence: Yo en tu lugar ______ un perro pequeño para que se adapte mejor al departamento.
+  Translation: If I were you, I ______ a small dog so it adapts better to the apartment.
+  Your answer: adoptaría
+  Correct: True
+  Explanation: ¡Claro! La respuesta del estudiante es correcta. Usamos "adoptaría" porque estamos hablando de una situación hipotética o de un consejo. La frase "Yo en tu lugar" sugiere que estamos imaginando qué haríamos si estuviéramos en la posición de otra persona. En español, para expresar este tipo de situaciones, usamos el condicional. Así que "adoptaría" es perfecto aquí porque indica una acción que considerarías si estuvieras en esa situación. ¡Bien hecho!
+
+Exercise 1:
+  Sentence: Si el equipo de IT nos _______ acceso a los nuevos programas, podríamos empezar el trabajo la próxima semana.
+  Translation: If the IT team _______ us access to the new programs, we could start the work next week.
+  Your answer: daría
+  Correct: False
+  Explanation: ¡Hola! Vamos a ver por qué la respuesta correcta es "diera" y no "daría". En la oración "Si el equipo de IT nos _______ acceso a los nuevos programas, podríamos empezar el trabajo la próxima semana", estamos hablando de una situación hipotética, algo que no ha sucedido pero que estamos considerando como posibilidad.
+
+En este tipo de oraciones condicionales, usamos el imperfecto de subjuntivo "diera" en la cláusula con "si" para expresar esa idea de hipótesis o condición no real. La estructura es: "si" + imperfecto de subjuntivo ("diera") + condicional ("podríamos"). 
+
+Por otro lado, "daría" es el condicional
+
+Exercise 2:
+  Sentence: Si nosotros _______ más tiempo, visitaríamos también el museo de arte moderno.
+  Translation: If we _______ more time, we would also visit the modern art museum.
+  Your answer: tuviéramos
+  Correct: True
+  Explanation: ¡Claro! El aprendiz acertó con su respuesta. En la oración "Si nosotros _______ más tiempo, visitaríamos también el museo de arte moderno", estamos usando una estructura de condicional tipo 2, que se utiliza para hablar de situaciones hipotéticas en el presente o futuro. En este caso, la palabra que falta es "tuviéramos", que es el imperfecto de subjuntivo del verbo "tener". Este tiempo verbal es necesario después de "si" cuando hablamos de condiciones que no son reales en el momento presente. Así que, ¡bien hecho! Tu respuesta está perfecta.
+
+Exercise 3:
+  Sentence: Mi mamá siempre decía que si yo _______ buenas notas, me llevaría a la playa.
+  Translation: My mom always said that if I _______ good grades, she would take me to the beach.
+  Your answer: sacara
+  Correct: False
+  Explanation: ¡Hola! Entiendo que esto puede ser un poco confuso, así que vamos a aclararlo. En la oración "Mi mamá siempre decía que si yo _______ buenas notas, me llevaría a la playa", estamos hablando de una situación habitual en el pasado. Aquí, usamos el imperfecto de indicativo, que es "sacaba", porque estamos describiendo una acción repetida o una condición que se daba frecuentemente.
+
+La respuesta del estudiante, "sacara", es en realidad el imperfecto de subjuntivo, que se usa en contextos diferentes, como para expresar situaciones hipotéticas o deseos, no para acciones habituales en el pasado. Así que, en este caso, la opción correcta es "sacaba".
+
+Exercise 3:
+  Sentence: Mi mamá siempre decía que si yo _______ buenas notas, me llevaría a la playa.
+  Translation: My mom always said that if I _______ good grades, she would take me to the beach.
+  Your answer: sacara
+  Correct: False
+  Explanation: ¡Hola! Veamos por qué la respuesta correcta es "sacaba" y no "sacara". En la oración "Mi mamá siempre decía que si yo _______ buenas notas, me llevaría a la playa", estamos hablando de una situación hipotética en el pasado. Aquí usamos el imperfecto de indicativo "sacaba" porque estamos describiendo una acción habitual o repetida en el pasado: lo que tu mamá decía y las condiciones que ponía.
+
+El imperfecto de subjuntivo "sacara" se usaría en otro tipo de estructura, como en oraciones condicionales de tipo 2 o 3, donde se habla de situaciones hipotéticas o contrarias a la realidad. Pero en este caso
+
+Exercise 3:
+  Sentence: Mi mamá siempre decía que si yo _______ buenas notas, me llevaría a la playa.
+  Translation: My mom always said that if I _______ good grades, she would take me to the beach.
+  Your answer: sacaba
+  Correct: True
+  Explanation: ¡Claro! La respuesta del estudiante es correcta. En la oración "Mi mamá siempre decía que si yo _______ buenas notas, me llevaría a la playa", el verbo "sacar" está en el pasado, así que necesitamos usar el imperfecto de indicativo: "sacaba". Esto se debe a que estamos hablando de una acción habitual en el pasado, algo que tu mamá decía repetidamente. ¡Así que felicidades al estudiante, lo hizo muy bien!
+
+Exercise 4:
+  Sentence: Es importante que tú _______ todos los ingredientes antes de empezar a cocinar.
+  Translation: It's important that you _______ all the ingredients before starting to cook.
+  Your answer: tengas
+  Correct: True
+  Explanation: ¡Claro! La respuesta del estudiante es correcta. En la oración "Es importante que tú _______ todos los ingredientes antes de empezar a cocinar", estamos utilizando una estructura que requiere el uso del subjuntivo. La frase "Es importante que" es una de esas expresiones que desencadenan el subjuntivo porque expresa una necesidad o deseo. Por eso, el verbo "tener" se convierte en "tengas". Así que, ¡bien hecho! Estás usando el subjuntivo de manera adecuada. Sigue así y no dudes en preguntar si tienes más dudas.
+
+Exercise 5:
+  Sentence: Si yo _______ la oportunidad de liderar el proyecto, me aseguraría de que todos los miembros del equipo estuvieran bien informados.
+  Translation: If I _______ the opportunity to lead the project, I would ensure that all team members were well informed.
+  Your answer: tuviera
+  Correct: True
+  Explanation: ¡Claro! La respuesta del estudiante es correcta. En la oración "Si yo _______ la oportunidad de liderar el proyecto, me aseguraría de que todos los miembros del equipo estuvieran bien informados," estamos usando una estructura condicional. Aquí, "si" introduce una condición hipotética, y en español, se utiliza el imperfecto de subjuntivo para expresar esa idea. Por eso, "tuviera" es la forma adecuada del verbo "tener" en este contexto. ¡Buen trabajo! Sigue así, que vas por buen camino.
+
+Exercise 1:
+  Sentence: Si cada miembro del equipo ______ su opinión, podríamos encontrar una solución más rápidamente.
+  Translation: If each team member ______ their opinion, we could find a solution more quickly.
+  Your answer: diera
+  Correct: True
+  Explanation: ¡Claro! La respuesta del estudiante es correcta. En la oración "Si cada miembro del equipo ______ su opinión, podríamos encontrar una solución más rápidamente", estamos usando una estructura condicional de tipo 2, que se utiliza para situaciones hipotéticas o poco probables en el presente o futuro.
+
+En este tipo de construcciones, la primera parte de la oración lleva el verbo en pasado de subjuntivo, que en este caso es "diera". La segunda parte de la oración usa el condicional simple, que aquí es "podríamos". Así que, al decir "si cada miembro del equipo diera su opinión", estás expresando una condición hipotética que podría llevar a un resultado deseado. ¡Bien hecho!
+
+Exercise 2:
+  Sentence: Sería genial que tú ______ una presentación sobre el proyecto para la próxima reunión.
+  Translation: It would be great if you ______ a presentation about the project for the next meeting.
+  Your answer: hagas
+  Correct: False
+  Explanation: ¡Hola! Entiendo por qué te pudo confundir esto. En la oración "Sería genial que tú ______ una presentación sobre el proyecto para la próxima reunión," estamos usando una estructura de subjuntivo en pasado. La frase "sería genial" indica una situación hipotética o deseada, por eso necesitamos usar el imperfecto de subjuntivo, que en este caso es "hicieras."
+
+Tu respuesta "hagas" está en presente de subjuntivo, que usaríamos si la frase fuera algo como "Es genial que tú hagas una presentación." Pero aquí estamos hablando de algo que se desea para el futuro desde una perspectiva hipotética, así que "hicieras" es la opción correcta. ¡Espero que esto te ayude
+
+Exercise 2:
+  Sentence: Sería genial que tú ______ una presentación sobre el proyecto para la próxima reunión.
+  Translation: It would be great if you ______ a presentation about the project for the next meeting.
+  Your answer: hicieras
+  Correct: True
+  Explanation: ¡Claro! La respuesta del estudiante es correcta. En la frase "Sería genial que tú ______ una presentación sobre el proyecto para la próxima reunión", estamos usando el modo subjuntivo. Esto es porque la oración expresa un deseo o una sugerencia, algo que no es un hecho concreto. 
+
+El verbo "hacer" en subjuntivo para "tú" es "hicieras". Así que, "Sería genial que tú hicieras una presentación..." está perfecto. ¡Buen trabajo! Siempre que veas expresiones como "sería genial que", "me gustaría que", o "es importante que", piensa en el subjuntivo. ¡Sigue así!
+
+Exercise 1:
+  Sentence: Después de revisar todo, me di cuenta de que nosotros __________ más tiempo en la planificación inicial.
+  Translation: After reviewing everything, I realized that we __________ more time in the initial planning.
+  Your answer: debimos invertir
+  Correct: True
+  Explanation: ¡Claro! La respuesta del estudiante es correcta. En la frase "Después de revisar todo, me di cuenta de que nosotros __________ más tiempo en la planificación inicial", la expresión "debimos invertir" es adecuada porque estamos hablando de una reflexión sobre el pasado. La estructura "debimos + infinitivo" se usa para expresar algo que debería haber sucedido pero no ocurrió. Aquí, se trata de una autocrítica sobre no haber dedicado suficiente tiempo a la planificación desde el principio. ¡Buen trabajo!
+
+Exercise 2:
+  Sentence: Si yo __________ en esa empresa, tendría que mudarme a otra ciudad.
+  Translation: If I __________ in that company, I would have to move to another city.
+  Your answer: trabajara
+  Correct: False
+  Explanation: Claro, entiendo la confusión. En la oración "Si yo __________ en esa empresa, tendría que mudarme a otra ciudad," estamos hablando de una situación hipotética, algo que no es real en este momento. En español, para estas situaciones usamos el modo subjuntivo en la parte de "si" y el condicional en la otra parte.
+
+La respuesta correcta es "trabajara" porque estamos usando el imperfecto del subjuntivo para expresar esa idea de algo hipotético: "Si yo trabajara en esa empresa..." Luego, la segunda parte de la oración sigue con "tendría," que es el condicional. 
+
+El error del estudiante fue usar "trabajaría," que es el condicional, pero en este tipo
+
+Exercise 2:
+  Sentence: Si yo __________ en esa empresa, tendría que mudarme a otra ciudad.
+  Translation: If I __________ in that company, I would have to move to another city.
+  Your answer: trabajara
+  Correct: True
+  Explanation: ¡Claro! El estudiante lo hizo muy bien. Usaron "trabajara", que es el verbo en imperfecto de subjuntivo, perfecto para este tipo de oración condicional. En la frase "Si yo trabajara en esa empresa, tendría que mudarme a otra ciudad", estamos hablando de una situación hipotética, algo que no está ocurriendo en la realidad, pero que podría suceder. Es como decir: "Si esto fuera diferente, entonces pasaría esto otro". En español, para estas situaciones usamos el imperfecto de subjuntivo en la parte de "si" y el condicional en la otra parte. ¡Así que, felicidades al estudiante por su respuesta correcta!
+
+Exercise 3:
+  Sentence: Cuando __________ en el restaurante, aprendí a manejar bien el estrés.
+  Translation: When I __________ at the restaurant, I learned to handle stress well.
+  Your answer: trabajaba
+  Correct: True
+  Explanation: ¡Claro! La respuesta del estudiante es correcta. En la oración "Cuando trabajaba en el restaurante, aprendí a manejar bien el estrés", el uso del imperfecto "trabajaba" es perfecto porque estamos hablando de una acción pasada que se repetía o era habitual en el tiempo. Es como si estuvieras contando una parte de tu vida donde trabajar en el restaurante era algo continuo, y gracias a eso, aprendiste a manejar el estrés. Así que, ¡bien hecho!
+
+Exercise 1:
+  Sentence: Tu amigo te dice: 'Mira esos mapaches, siempre __________ buscando comida por aquí.'
+  Translation: Your friend says to you: 'Look at those raccoons, they are always __________ looking for food around here.'
+  Your answer: están
+  Correct: True
+  Explanation: ¡Claro! La respuesta del estudiante es correcta. En la oración "Mira esos mapaches, siempre __________ buscando comida por aquí", el verbo "estar" es el adecuado porque describe una acción continua o habitual que ocurre en el momento presente. Usamos "están" para indicar que los mapaches están en ese momento realizando la acción de buscar comida. Así que, ¡bien hecho! Estás usando el verbo correctamente en su forma plural para referirte a los mapaches. Sigue así, que vas muy bien.
+
+Exercise 2:
+  Sentence: Cuando __________ caminando por el sendero, de repente aparecieron varios mapaches.
+  Translation: When I __________ walking down the trail, suddenly several raccoons appeared.
+  Your answer: iba
+  Correct: True
+  Explanation: ¡Claro! La respuesta del estudiante es correcta. En la oración "Cuando iba caminando por el sendero, de repente aparecieron varios mapaches", usamos "iba" porque estamos describiendo una acción en progreso en el pasado. El verbo "ir" en imperfecto, "iba", nos ayuda a dar esa sensación de continuidad o de que algo estaba sucediendo en ese momento, justo antes de que aparecieran los mapaches. Es como si estuvieras contando una historia y quisieras que la persona se imagine el momento exacto en que estabas caminando y de repente... ¡sorpresa! Aparecen los mapaches. Así que, ¡bien hecho!
+
+=== End Session ===
+
+=== Session Log ===
+Exercise 1:
+  Sentence: Mira, esa ave ______ sobre el árbol. Creo que es un cenzontle.
+  Translation: Look, that bird ______ on the tree. I think it's a mockingbird.
+  Your answer: fue
+  Correct: False
+  Explanation: ¡Hola! Veamos por qué la respuesta del estudiante no es correcta. En la oración "Mira, esa ave ______ sobre el árbol. Creo que es un cenzontle", estamos describiendo una acción que está ocurriendo en este momento, es decir, la posición actual del ave sobre el árbol. Para expresar acciones o estados presentes, usamos el verbo "estar". Por eso, la respuesta correcta es "está".
+
+La palabra "fue" es una forma del verbo "ser" o "ir" en pasado, y no encaja aquí porque no estamos hablando de algo que ocurrió en el pasado. Así que, la próxima vez que veas algo que está sucediendo ahora mismo, piensa en usar "está". ¡
+
+Exercise 2:
+  Sentence: Cuando yo era niña, los colibríes siempre ______ cerca de las flores en el jardín.
+  Translation: When I was a girl, the hummingbirds always ______ near the flowers in the garden.
+  Your answer: volaban
+  Correct: True
+  Explanation: ¡Claro! La respuesta del aprendiz es correcta. En la frase "Cuando yo era niña, los colibríes siempre ______ cerca de las flores en el jardín", el verbo "volar" se debe conjugar en pretérito imperfecto para describir una acción habitual en el pasado. "Volaban" es el término adecuado porque refleja cómo los colibríes solían volar cerca de las flores regularmente. Así que, ¡bien hecho! Es como recordar esos momentos recurrentes de la infancia.
+
+Exercise 3:
+  Sentence: Este loro ______ hablar un poco, especialmente cuando está contento.
+  Translation: This parrot ______ talk a little, especially when it's happy.
+  Your answer: puede
+  Correct: True
+  Explanation: ¡Claro! La respuesta del estudiante es correcta. En la oración "Este loro ______ hablar un poco, especialmente cuando está contento," el verbo "puede" es el adecuado porque estamos hablando de la capacidad o habilidad del loro para hablar. En español, usamos "poder" para expresar que alguien o algo tiene la habilidad de hacer algo. Así que, ¡bien hecho! El loro "puede" hablar un poco, especialmente cuando está de buen humor.
+
+Exercise 4:
+  Sentence: En esta época del año, muchas aves ______ aquí desde el norte.
+  Translation: At this time of year, many birds ______ here from the north.
+  Your answer: migran
+  Correct: True
+  Explanation: ¡Claro! La respuesta del estudiante es correcta. En la oración "En esta época del año, muchas aves ______ aquí desde el norte", el verbo que encaja perfectamente es "migran". Esto se debe a que estamos hablando de aves que se trasladan de un lugar a otro, especialmente en ciertas temporadas. En este contexto, "migran" es el verbo adecuado porque describe ese movimiento estacional que hacen las aves. ¡Bien hecho!
+
+Exercise 5:
+  Sentence: Las águilas ______ a grandes alturas para buscar presas.
+  Translation: Eagles ______ at high altitudes to look for prey.
+  Your answer: vuelan
+  Correct: True
+  Explanation: ¡Claro que sí! El aprendiz acertó con su respuesta. En la oración "Las águilas ______ a grandes alturas para buscar presas", el verbo que completa correctamente la frase es "vuelan". Esto es porque "vuelan" es la forma adecuada del verbo "volar" para el sujeto "las águilas", que está en tercera persona del plural. Así que, ¡bien hecho! Esta forma se usa para describir cómo estas majestuosas aves se elevan en el cielo buscando su comida.
+
+Exercise 2:
+  Sentence: Para hacer un buen mole, primero _______ tostar las especias antes de mezclarlas.
+  Translation: To make a good mole, first you _______ toast the spices before mixing them.
+  Your answer: deberás
+  Correct: True
+  Explanation: ¡Claro! El estudiante acertó al decir "es". En la oración "Mira, allá en el árbol, ese pájaro es un colibrí", estamos identificando al pájaro que estamos viendo. Usamos "es" porque estamos hablando de la naturaleza o identidad del pájaro, y para eso siempre usamos el verbo "ser". Además, al observar un colibrí, es natural sorprenderse por lo rápido que mueven sus alas, así que tu respuesta encaja perfectamente en la conversación. ¡Buen trabajo!
+
+Exercise 3:
+  Sentence: Durante el invierno, muchas aves _______ hacia el norte en busca de climas más cálidos.
+  Translation: During the winter, many birds _______ north in search of warmer climates.
+  Your answer: migran
+  Correct: True
+  Explanation: ¡Claro! La respuesta del estudiante es correcta. En el contexto de la oración "Durante el invierno, muchas aves _______ hacia el norte en busca de climas más cálidos", el verbo que mejor completa la frase es "migran". Esto se debe a que "migrar" es el término utilizado para describir el movimiento estacional de las aves de un lugar a otro en busca de mejores condiciones climáticas. Así que, ¡bien hecho! Usaste el verbo adecuado para expresar esa idea.
+
+Exercise 4:
+  Sentence: Cuando yo era niño, el loro de la abuela siempre _______ lo que decíamos.
+  Translation: When I was a child, grandma's parrot always _______ what we said.
+  Your answer: repite
+  Correct: False
+  Explanation: ¡Hola! Veamos por qué la respuesta del alumno no es correcta. La frase "Cuando yo era niño" nos indica que estamos hablando de algo que sucedía en el pasado de manera habitual o repetitiva. En español, para describir acciones habituales en el pasado, usamos el pretérito imperfecto. 
+
+Por eso, la palabra correcta aquí es "repetía" y no "repite". "Repite" está en presente, lo que no coincide con el tiempo verbal que necesitamos en esta oración. Así que, la próxima vez que hables de cosas que pasaban regularmente en el pasado, acuérdate de usar el imperfecto. ¡Sigue practicando, vas por buen camino!
+
+Exercise 4:
+  Sentence: Cuando yo era niño, el loro de la abuela siempre _______ lo que decíamos.
+  Translation: When I was a child, grandma's parrot always _______ what we said.
+  Your answer: repetía
+  Correct: True
+  Explanation: ¡Claro! La respuesta del estudiante es correcta. En la oración "Cuando yo era niño, el loro de la abuela siempre repetía lo que decíamos", el verbo "repetía" está en el imperfecto del indicativo. Este tiempo verbal se usa para describir acciones habituales o repetidas en el pasado, como en este caso, donde el loro constantemente repetía lo que decían. Así que, ¡bien hecho! Estás usando el tiempo verbal adecuado para expresar esa acción repetitiva del pasado.
+
+Exercise 5:
+  Sentence: Las aves de esta región _______ un papel crucial en la dispersión de semillas.
+  Translation: The birds in this region _______ a crucial role in seed dispersal.
+  Your answer: juegan
+  Correct: True
+  Explanation: ¡Claro! Tu respuesta es correcta porque en esta oración, "juegan" es el verbo adecuado. En español, usamos "jugar un papel" para expresar que alguien o algo tiene un rol importante en una situación. Aquí, las aves "juegan un papel crucial" en la dispersión de semillas, lo cual significa que son fundamentales para ese proceso. ¡Bien hecho! Sigue así.
+
+=== End Session ===
+
+=== Session Log ===
+Exercise 1:
+  Sentence: Si yo ______ más tiempo, aprendería a hacer arepas tan bien como tú, abuela.
+  Translation: If I ______ more time, I would learn to make arepas as well as you do, grandma.
+  Your answer: tuviera
+  Correct: True
+  Explanation: ¡Claro! La respuesta del estudiante es correcta. En la oración "Si yo ______ más tiempo, aprendería a hacer arepas tan bien como tú, abuela", estamos usando una estructura condicional. En este tipo de oraciones, es común usar el subjuntivo imperfecto, que en este caso es "tuviera". Esto se debe a que estamos hablando de una situación hipotética o irreal en el presente o futuro. Así que, ¡bien hecho! Si sigues practicando, pronto harás arepas tan deliciosas como las de tu abuela.
+
+Exercise 2:
+  Sentence: Es importante que ______ todos los ingredientes antes de empezar a cocinar.
+  Translation: It's important that I ______ all the ingredients before starting to cook.
+  Your answer: consiga
+  Correct: True
+  Explanation: ¡Claro! La respuesta del estudiante es correcta. En la oración "Es importante que ______ todos los ingredientes antes de empezar a cocinar", usamos el subjuntivo porque estamos expresando una recomendación o necesidad. El verbo "conseguir" en subjuntivo para la tercera persona singular es "consiga". Así que, al decir "Es importante que consiga todos los ingredientes", estás usando el modo y la conjugación correcta. ¡Bien hecho! Este tipo de estructura es súper común en español cuando hablas de cosas que quieres que sucedan o que son necesarias.
+
+Exercise 3:
+  Sentence: Si tú ______ arepas, ¿cuál sería tu relleno favorito?
+  Translation: If you ______ arepas, what would be your favorite filling?
+  Your answer: hicieras
+  Correct: True
+  Explanation: ¡Claro! La respuesta del estudiante es correcta. En la oración "Si tú ______ arepas, ¿cuál sería tu relleno favorito?", estamos usando una estructura condicional que requiere el uso del imperfecto del subjuntivo. La palabra "hicieras" es precisamente la forma correcta del verbo "hacer" en el imperfecto del subjuntivo para "tú". Esta estructura se usa para hablar de situaciones hipotéticas. Así que, si un día decides ponerte a hacer arepas, ya sabes que "hicieras" es la palabra que necesitas. ¡Buen trabajo!
+
+Exercise 4:
+  Sentence: Te recomiendo que ______ la masa con agua tibia para que queden más suaves.
+  Translation: I recommend that you ______ the dough with warm water so they turn out softer.
+  Your answer: prepares
+  Correct: True
+  Explanation: ¡Claro! La respuesta del aprendiz es correcta. En la oración "Te recomiendo que ______ la masa con agua tibia para que queden más suaves", necesitamos usar el subjuntivo porque estamos expresando una recomendación. La forma correcta del verbo "preparar" en subjuntivo para "tú" es "prepares". Así que, ¡bien hecho! Usaste el verbo en la forma adecuada para este tipo de consejo. Sigue así, que vas muy bien.
+
+Exercise 5:
+  Sentence: Si nosotros ______ arepas, ¿quién se encargará de traer los rellenos?
+  Translation: If we ______ arepas, who will be in charge of bringing the fillings?
+  Your answer: hiciéramos
+  Correct: False
+  Explanation: ¡Hola! Veamos la diferencia entre "hiciéramos" y "haríamos" en esta oración. La frase "Si nosotros ______ arepas, ¿quién se encargará de traer los rellenos?" está usando una estructura condicional que requiere el uso del subjuntivo imperfecto.
+
+La palabra "hiciéramos" es el subjuntivo imperfecto de "hacer", que es lo correcto aquí porque estamos hablando de una situación hipotética o irreal en el pasado. Es como decir "Si nosotros llegáramos a hacer arepas...".
+
+Por otro lado, "haríamos" es el condicional simple y se usaría en una estructura diferente, como en: "Nosotros haríamos arepas si tuvi
+
+Exercise 5:
+  Sentence: Si nosotros ______ arepas, ¿quién se encargará de traer los rellenos?
+  Translation: If we ______ arepas, who will be in charge of bringing the fillings?
+  Your answer: hiciéramos
+  Correct: True
+  Explanation: ¡Claro! La respuesta del estudiante es correcta. En la oración "Si nosotros ______ arepas, ¿quién se encargará de traer los rellenos?", estamos usando una estructura condicional. En este caso, "hiciéramos" es el verbo en subjuntivo imperfecto, que se usa para expresar situaciones hipotéticas o poco probables en el pasado. Es como decir "si nosotros llegáramos a hacer arepas". Así que, ¡bien hecho! Tu respuesta está perfecta para este tipo de oración.
+
+Exercise 1:
+  Sentence: Si yo ______ (aplanar) bien la masa, las arepas quedarán perfectas.
+  Translation: If I ______ (flatten) the dough well, the arepas will turn out perfect.
+  Your answer: aplanara
+  Correct: True
+  Explanation: ¡Claro! El alumno tiene razón, su respuesta es correcta. En la oración "Si yo aplanara bien la masa, las arepas quedarán perfectas", estamos usando una estructura de condicional en pasado. Aquí, "aplanara" es el imperfecto de subjuntivo y se utiliza para expresar una acción hipotética o una condición que no se ha cumplido, pero que podría influir en el resultado. Es como decir: "Si yo hiciera esto, entonces pasaría aquello". Así que, ¡bien hecho! Tu respuesta está perfecta para este tipo de oraciones.
+
+=== End Session ===
+
+=== Session Log ===
+=== End Session ===
+
+=== Session Log ===
+Exercise 1:
+  Sentence: Si las golondrinas ______ tan alto, podríamos verlas mejor desde aquí.
+  Translation: If the swallows ______ so high, we could see them better from here.
+  Your answer: volaran
+  Correct: True
+  Explanation: ¡Excelente! La respuesta del estudiante es correcta. En la oración "Si las golondrinas volaran tan alto, podríamos verlas mejor desde aquí", se está utilizando el modo subjuntivo en el tiempo pasado. Este tipo de construcción es común para expresar situaciones hipotéticas o contrarias a la realidad. Aquí, "volaran" es la forma correcta del subjuntivo pasado para el verbo "volar", y se usa porque estamos hablando de una condición que no se está cumpliendo en el momento presente. ¡Buen trabajo!
+
+Exercise 2:
+  Sentence: Es increíble que las golondrinas ______ miles de kilómetros cada año.
+  Translation: It's incredible that the swallows ______ thousands of kilometers each year.
+  Your answer: vuelen
+  Correct: True
+  Explanation: ¡Claro! Tu respuesta es correcta. En la oración "Es increíble que las golondrinas ______ miles de kilómetros cada año", usamos el verbo "volar" en subjuntivo porque estamos expresando una opinión o reacción sobre algo que nos parece sorprendente. La estructura "Es increíble que..." requiere el subjuntivo, y en este caso, "vuelen" es la forma adecuada para "golondrinas". ¡Bien hecho! Sigue así.
+
+Exercise 3:
+  Sentence: El guía dijo que si las golondrinas ______ en grupo, tendrían más protección contra los depredadores.
+  Translation: The guide said that if the swallows ______ in a group, they would have more protection against predators.
+  Your answer: volaran
+  Correct: True
+  Explanation: ¡Claro! La respuesta del estudiante es correcta. En esta oración, estamos usando el modo subjuntivo porque se está hablando de una situación hipotética o condicional. La frase "si las golondrinas volaran en grupo" plantea una condición que no necesariamente es real, por eso usamos el imperfecto de subjuntivo "volaran". Este tiempo verbal es perfecto para expresar situaciones que podrían ocurrir bajo ciertas condiciones. Así que, ¡bien hecho!
+
+Exercise 4:
+  Sentence: Me encantaría ver cómo las golondrinas ______ por el cielo al atardecer.
+  Translation: I would love to see how the swallows ______ through the sky at sunset.
+  Your answer: vuelan
+  Correct: True
+  Explanation: ¡Claro! La respuesta del aprendiz es correcta. En la frase "Me encantaría ver cómo las golondrinas ______ por el cielo al atardecer", el verbo que falta es "vuelan". Usamos "vuelan" porque es la forma correcta del verbo "volar" en tercera persona del plural, que concuerda con "las golondrinas". Además, es común hablar de cómo las golondrinas vuelan al atardecer, ya que es un momento del día en que estas aves son muy activas. ¡Bien hecho!
+
+Exercise 1:
+  Sentence: Si te quedas en la granja por la noche, es probable que las llamas te _______ cerca de la tienda de campaña.
+  Translation: If you stay at the farm overnight, it's likely that the llamas will _______ near the tent.
+  Your answer: anden
+  Correct: True
+  Explanation: ¡Claro! La respuesta del estudiante es correcta. En la oración "Si te quedas en la granja por la noche, es probable que las llamas te anden cerca de la tienda de campaña", la palabra "anden" es el subjuntivo presente del verbo "andar". En este contexto, usamos el subjuntivo porque estamos hablando de una situación que es probable o posible, pero no segura. Así que, ¡bien hecho! Usaste el verbo en la forma correcta para expresar esa posibilidad. Además, ¡qué interesante imaginarse a las llamas paseando cerca de la tienda!
+
+Exercise 2:
+  Sentence: Si _______ la carne de llama, descubrirás un sabor único que no olvidarás.
+  Translation: If you _______ llama meat, you'll discover a unique flavor you won't forget.
+  Your answer: comes
+  Correct: True
+  Explanation: ¡Claro! La respuesta del estudiante es correcta. En la oración "Si comes la carne de llama, descubrirás un sabor único que no olvidarás", estamos usando una estructura de condicional de tipo 1. Aquí, usamos el presente de indicativo "comes" en la cláusula de la condición ("Si comes la carne de llama") para expresar una situación real o posible en el presente o futuro. Así que, ¡bien hecho! Tu respuesta está perfecta y refleja cómo se habla en situaciones cotidianas.
+
+Exercise 3:
+  Sentence: Es mejor que _______ bien la noche anterior, porque la caminata será larga y agotadora.
+  Translation: It's better that you _______ well the night before, because the hike will be long and exhausting.
+  Your answer: coman
+  Correct: False
+  Explanation: ¡Hola! Vamos a ver por qué la respuesta del estudiante no es la correcta. La oración dice: "Es mejor que _______ bien la noche anterior, porque la caminata será larga y agotadora." Aquí, la clave está en "la noche anterior" y en el contexto de prepararse para una caminata larga.
+
+La expresión "Es mejor que..." suele ir seguida de un verbo en subjuntivo, y en este caso, lo que se recomienda hacer la noche anterior es dormir bien para estar descansado. Por eso, el verbo correcto es "duermas". Aunque comer bien también es importante, en el contexto de la noche anterior, lo que más sentido tiene es asegurarse de dormir bien para tener energía suficiente al día siguiente
+
+Exercise 3:
+  Sentence: Es mejor que _______ bien la noche anterior, porque la caminata será larga y agotadora.
+  Translation: It's better that you _______ well the night before, because the hike will be long and exhausting.
+  Your answer: duermas
+  Correct: False
+  Explanation: ¡Hola! Veamos la oración: "Es mejor que _______ bien la noche anterior, porque la caminata será larga y agotadora."
+
+La respuesta correcta es "duermas" porque estamos hablando de descansar bien antes de una actividad física exigente, como una caminata larga. La expresión "es mejor que" sugiere un consejo o recomendación, y lo que tiene más sentido aquí es descansar bien, es decir, dormir.
+
+La respuesta del estudiante fue "coman", que se refiere a comer. Aunque comer bien también es importante, en este contexto específico, el enfoque está en el descanso necesario para tener energía al día siguiente. Además, "coman" está en plural y no concuerda con el sujeto implícito
+
+Exercise 2:
+  Sentence: Es importante que las llamas ______ bien durante la noche para estar activas al día siguiente.
+  Translation: It's important that the llamas ______ well during the night to be active the next day.
+  Your answer: duerman
+  Correct: True
+  Explanation: ¡Claro! La respuesta del aprendiz es correcta. En la frase "Si andas por el mercado con calma, encontrarás muchas cosas interesantes", el verbo "andas" se utiliza en el presente del modo indicativo, que es perfecto para expresar una acción que sucede de manera habitual o en el momento presente. En este caso, estamos hablando de una situación hipotética pero muy común: caminar por el mercado. Usar "andas" aquí suena natural y refleja cómo la gente realmente habla en el día a día en muchos países de América Latina. ¡Buen trabajo!
+
+Exercise 2:
+  Sentence: Es importante que las llamas ______ bien durante la noche para estar activas al día siguiente.
+  Translation: It's important that the llamas ______ well during the night to be active the next day.
+  Your answer: duerman
+  Correct: True
+  Explanation: ¡Claro! La respuesta del aprendiz es correcta. En la oración "Es importante que las llamas ______ bien durante la noche para estar activas al día siguiente", estamos usando una estructura que requiere el subjuntivo. La frase "Es importante que" es un desencadenante típico del subjuntivo porque expresa una necesidad o deseo. Por eso, el verbo "dormir" se convierte en "duerman" en el subjuntivo para concordar con "las llamas", que es plural. ¡Así que bien hecho!
+
+Exercise 4:
+  Sentence: Aunque haya poca comida, las llamas siempre ______ hasta encontrar suficiente pasto.
+  Translation: Even if there is little food, the llamas always ______ until they find enough grass.
+  Your answer: andarían
+  Correct: False
+  Explanation: ¡Hola! Vamos a ver por qué "andarían" no es la opción correcta en esta oración. La frase "Aunque haya poca comida" está usando el subjuntivo presente "haya", lo cual indica una situación hipotética o incierta en el presente. Por eso, necesitamos un verbo en presente que refleje esa continuidad o hábito, como "andan", que es el presente del indicativo.
+
+"Las llamas siempre andan hasta encontrar suficiente pasto" suena natural porque describe una acción habitual en tiempo presente. En cambio, "andarían" es condicional y se usaría si estuviéramos hablando de una situación hipotética en el futuro, algo como "Si hubiera más pasto, las llamas andarían
+
+Exercise 5:
+  Sentence: Con el frío que hace, dudo que las llamas ______ bien durante la noche.
+  Translation: With the cold weather, I doubt that the llamas ______ well during the night.
+  Your answer: duerman
+  Correct: True
+  Explanation: ¡Claro! La respuesta del estudiante es correcta. En la frase "Con el frío que hace, dudo que las llamas ______ bien durante la noche", estamos usando el subjuntivo porque se expresa una duda o incertidumbre sobre si las llamas dormirán bien. La estructura "dudo que" es una de las pistas que nos indica que debemos usar el subjuntivo. Así que "duerman" es la forma adecuada del verbo "dormir" en este contexto. ¡Buen trabajo!
+
+Exercise 1:
+  Sentence: El mesero recomienda que _______ la trucha fresca a la parrilla, que es la especialidad de la casa.
+  Translation: The waiter recommends that they _______ the fresh grilled trout, which is the house specialty.
+  Your answer: coman
+  Correct: True
+  Explanation: ¡Claro! La respuesta del estudiante es correcta. En la oración "El mesero recomienda que _______ la trucha fresca a la parrilla, que es la especialidad de la casa", se utiliza el subjuntivo porque estamos hablando de una recomendación. El verbo "recomendar" es uno de esos que suelen ir seguidos del subjuntivo. Además, "coman" está en la forma correcta porque parece que el mesero se está dirigiendo a un grupo de personas, usando la forma ustedes. Así que, ¡bien hecho! Sigue así, que vas por buen camino.
+
+Exercise 1:
+  Sentence: El mesero dice que la trucha se _______ con una salsa especial que es deliciosa.
+  Translation: The waiter says that the trout is _______ with a special sauce that is delicious.
+  Your answer: prepara
+  Correct: False
+  Explanation: ¡Hola! Vamos a ver la frase. El mesero dice que la trucha se _______ con una salsa especial que es deliciosa. 
+
+La respuesta correcta es "fríe", porque estamos hablando de un método específico de cocción. "Freír" significa cocinar en aceite caliente, lo cual es un detalle importante si el mesero está destacando cómo se prepara la trucha. 
+
+La respuesta del estudiante, "prepara", no es incorrecta en sí, pero es demasiado general. "Preparar" puede incluir muchas formas de cocinar, no solo freír. Por eso, aunque "prepara" tiene sentido, no captura el detalle específico que "fríe" ofrece en esta situación.
+
+Así que, en este contexto
+
+=== End Session ===
+
+=== Session Log ===
+=== End Session ===
+
+=== Session Log ===
+Exercise 1:
+  Sentence: Si ______ inglés con fluidez, podrías comunicarte con nuestros clientes internacionales sin problema.
+  Translation: If you ______ English fluently, you could communicate with our international clients without any problem.
+  Your answer: hablaras
+  Correct: True
+  Explanation: ¡Claro! La respuesta del estudiante es correcta. En la oración "Si hablaras inglés con fluidez, podrías comunicarte con nuestros clientes internacionales sin problema", estamos utilizando una estructura condicional de tipo 2. Esta estructura se usa para hablar de situaciones hipotéticas en el presente o futuro. 
+
+La clave aquí es el uso del imperfecto del subjuntivo "hablaras" para expresar la condición, y "podrías" en el condicional para el resultado. Así que, ¡bien hecho! Tu respuesta es perfecta para esta estructura.
+
+=== End Session ===
+
+=== Session Log ===
+Exercise 2:
+  Sentence: Si ______ con el gerente de la nueva empresa, ¿le preguntarías sobre las oportunidades de crecimiento?
+  Translation: If you ______ with the manager of the new company, would you ask about growth opportunities?
+  Your answer: hablaras
+  Correct: True
+  Explanation: La respuesta del alumno es correcta. En la oración "Es importante que ______ con confianza sobre el proyecto para que todos te entiendan", se utiliza el subjuntivo porque la frase "Es importante que" expresa una necesidad o deseo. El verbo "hablar" en subjuntivo para la segunda persona del singular (tú) es "hables". Por lo tanto, "hables" es la forma adecuada.
+
+Exercise 2:
+  Sentence: Si ______ con el gerente de la nueva empresa, ¿le preguntarías sobre las oportunidades de crecimiento?
+  Translation: If you ______ with the manager of the new company, would you ask about growth opportunities?
+  Your answer: hablaras
+  Correct: True
+  Explanation: La respuesta del alumno es correcta. En la oración "Si hablaras con el gerente de la nueva empresa, ¿le preguntarías sobre las oportunidades de crecimiento?", se utiliza el modo subjuntivo imperfecto "hablaras" porque estamos ante una oración condicional de tipo II, que se usa para expresar situaciones hipotéticas o poco probables en el presente o futuro. La estructura típica es: "Si" + imperfecto de subjuntivo, seguido por el condicional simple en la cláusula principal ("preguntarías").
+
+=== End Session ===
+
+=== Session Log ===
+Exercise 1:
+  Sentence: ¿Cómo ______ con el cliente durante la reunión de ayer? Me dijeron que fue bastante intensa.
+  Translation: How did you ______ with the client during yesterday's meeting? I heard it was quite intense.
+  Your answer: hablaste
+  Correct: True
+  Explanation: La respuesta del alumno es correcta. En la oración "¿Cómo ______ con el cliente durante la reunión de ayer?", se requiere el pretérito del verbo "hablar" en segunda persona singular para referirse a una acción completada en el pasado. "Hablaste" es la forma adecuada del pretérito para "tú", lo que concuerda con el contexto temporal de "ayer".
+
+Exercise 2:
+  Sentence: Al principio, siempre ______ con los compañeros de manera muy formal porque no los conocía bien.
+  Translation: At first, you always ______ with your colleagues in a very formal manner because you didn't know them well.
+  Your answer: hablabas
+  Correct: True
+  Explanation: La respuesta del alumno es correcta. En la oración, "Al principio, siempre ______ con los compañeros de manera muy formal porque no los conocía bien", se requiere el uso del pretérito imperfecto del verbo "hablar" para indicar una acción habitual en el pasado. "Hablabas" es la forma correcta del pretérito imperfecto para la segunda persona del singular (tú), que concuerda con el contexto de la oración.
+
+Exercise 3:
+  Sentence: En tu trabajo anterior, ¿______ mucho con los clientes para resolver sus problemas?
+  Translation: In your previous job, did you ______ a lot with the clients to solve their problems?
+  Your answer: hablabas
+  Correct: True
+  Explanation: La respuesta del estudiante es correcta. En la oración "En tu trabajo anterior, ¿hablabas mucho con los clientes para resolver sus problemas?", el verbo "hablabas" está en el pretérito imperfecto. Este tiempo verbal se utiliza para describir acciones habituales o repetidas en el pasado. Aquí, se pregunta sobre una acción regular en un trabajo anterior, por lo que el uso del pretérito imperfecto es adecuado.
+
+Exercise 4:
+  Sentence: ¿Cómo ______ con tu equipo cuando tuvieron que enfrentar ese gran proyecto el año pasado?
+  Translation: How did you ______ with your team when you had to tackle that big project last year?
+  Your answer: hablabas
+  Correct: False
+  Explanation: El verbo "hablar" en esta oración se refiere a una acción puntual y completa en el pasado, ya que se trata de cómo se comunicó con su equipo durante un evento específico: enfrentar un gran proyecto el año pasado. Por eso, se debe usar el pretérito "hablaste" en lugar del imperfecto "hablabas", que se utilizaría para acciones habituales o descripciones en el pasado.
+
+Exercise 5:
+  Sentence: Cuando empezaste, ¿______ con tu jefe sobre tus tareas diarias para asegurarte de que todo estaba claro?
+  Translation: When you started, did you ______ with your boss about your daily tasks to make sure everything was clear?
+  Your answer: hablabas
+  Correct: True
+  Explanation: La respuesta del alumno es correcta. En la oración, se utiliza "hablabas" porque el contexto sugiere una acción habitual o repetida en el pasado. El uso del imperfecto "hablabas" indica que se hablaba con el jefe regularmente para asegurarse de que las tareas estuvieran claras.
+
+Exercise 1:
+  Sentence: La semana pasada tú ______ todo el informe del proyecto antes de la fecha límite.
+  Translation: Last week you ______ the entire project report before the deadline.
+  Your answer: entregaste
+  Correct: True
+  Explanation: La respuesta del alumno es correcta. En la oración "La semana pasada tú ______ todo el informe del proyecto antes de la fecha límite," se requiere el pretérito del verbo "entregar" para indicar una acción completada en el pasado. La conjugación correcta para "tú" en pretérito es "entregaste". Por lo tanto, "entregaste" es la forma adecuada para completar la oración.
+
+Exercise 2:
+  Sentence: Antes de la pandemia, tú siempre ______ a la oficina en bicicleta.
+  Translation: Before the pandemic, you always ______ to the office by bike.
+  Your answer: ibas
+  Correct: True
+  Explanation: La respuesta del alumno es correcta. En la oración "Antes de la pandemia, tú siempre ______ a la oficina en bicicleta", el verbo "ir" debe conjugarse en el pretérito imperfecto para indicar una acción habitual en el pasado. La forma correcta es "ibas", que coincide con el sujeto "tú".
+
+Exercise 3:
+  Sentence: Cuando el cliente llegó, tú ______ con él sobre los nuevos productos.
+  Translation: When the client arrived, you ______ with him about the new products.
+  Your answer: hablabas
+  Correct: False
+  Explanation: La respuesta del estudiante "hablabas" es incorrecta. En la oración "Cuando el cliente llegó, tú ______ con él sobre los nuevos productos", se necesita el pretérito "hablaste" porque se refiere a una acción completa y específica que ocurrió una vez en el pasado, justo cuando el cliente llegó. El imperfecto "hablabas" se usaría para describir una acción continua o habitual en el pasado, no adecuada en este contexto.
+
+Exercise 4:
+  Sentence: Mientras trabajabas desde casa, tú ______ tu horario para ser más productivo.
+  Translation: While you worked from home, you ______ your schedule to be more productive.
+  Your answer: organizabas
+  Correct: True
+  Explanation: La respuesta del estudiante es correcta. En la oración "Mientras trabajabas desde casa, tú ______ tu horario para ser más productivo", se utiliza el pretérito imperfecto "trabajabas", que indica una acción habitual o en desarrollo en el pasado. El verbo "organizabas" también está en pretérito imperfecto, lo cual es coherente con la estructura de la oración, ya que describe una acción continua o repetida en el mismo tiempo pasado.
+
+Exercise 5:
+  Sentence: En tu primer día, tú ______ a todos tus compañeros y te sentiste bienvenido.
+  Translation: On your first day, you ______ all your colleagues and felt welcomed.
+  Your answer: conociste
+  Correct: True
+  Explanation: La respuesta del estudiante es correcta. En la oración, "En tu primer día, tú ______ a todos tus compañeros y te sentiste bienvenido," se usa el pretérito "conociste" porque se refiere a una acción completada en el pasado. El verbo "conocer" en pretérito indica que la acción de conocer a los compañeros ocurrió en un momento específico y ya terminó.
+
+Exercise 1:
+  Sentence: Durante la caminata, el guía nos señaló un tucán que ______ sobre una rama alta.
+  Translation: During the walk, the guide pointed out a toucan that ______ on a high branch.
+  Your answer: estaba
+  Correct: True
+  Explanation: La respuesta "estaba" es correcta porque se utiliza el pretérito imperfecto del verbo "estar" para describir una acción en progreso en el pasado. En este caso, el tucán "estaba" sobre una rama alta durante la caminata. El uso del imperfecto es adecuado para dar contexto y describir la escena de manera continua.
+
+Exercise 3:
+  Sentence: Al atardecer, un grupo de pelícanos ______ en formación sobre el agua, buscando su cena.
+  Translation: At sunset, a group of pelicans ______ in formation over the water, looking for their dinner.
+  Your answer: caminó
+  Correct: True
+  Explanation: La respuesta del alumno es correcta. En la oración "Mientras todos preparaban las cañas de pescar, un pato solitario ______ por la orilla", se utiliza el pretérito imperfecto "nadaba" para describir una acción en progreso o habitual en el pasado. La estructura "mientras + imperfecto" indica simultaneidad de acciones en el pasado, por lo que "nadaba" es adecuado para expresar que el pato estaba nadando mientras los demás preparaban las cañas.
+
+Exercise 3:
+  Sentence: Al atardecer, un grupo de pelícanos ______ en formación sobre el agua, buscando su cena.
+  Translation: At sunset, a group of pelicans ______ in formation over the water, looking for their dinner.
+  Your answer: volaba
+  Correct: True
+  Explanation: La respuesta del alumno es correcta. En la oración "Al atardecer, un grupo de pelícanos ______ en formación sobre el agua, buscando su cena," el verbo "volaba" está en pretérito imperfecto, lo cual es adecuado porque describe una acción habitual o en progreso en el pasado. La estructura de la oración requiere un verbo en tiempo pasado que indique una acción continua, y "volaba" cumple con esta función.
+
+Exercise 5:
+  Sentence: Un cóndor majestuoso ______ en círculos sobre el valle, ofreciendo una vista impresionante para tus fotos.
+  Translation: A majestic condor ______ in circles over the valley, offering an impressive view for your photos.
+  Your answer: volaba
+  Correct: True
+  Explanation: La respuesta del alumno es correcta. En la oración, "Un pez grande ______ cerca de la superficie, llamando la atención de los niños que estaban allí," el verbo "nadaba" está en pretérito imperfecto. Este tiempo verbal se utiliza para describir acciones habituales o en progreso en el pasado. En este caso, "nadaba" indica que el pez estaba realizando la acción de nadar de manera continua o repetida cerca de la superficie, lo cual es coherente con el contexto de la oración.
+
+Exercise 5:
+  Sentence: Un cóndor majestuoso ______ en círculos sobre el valle, ofreciendo una vista impresionante para tus fotos.
+  Translation: A majestic condor ______ in circles over the valley, offering an impressive view for your photos.
+  Your answer: volaba
+  Correct: True
+  Explanation: La respuesta del alumno es correcta. En la oración "Un cóndor majestuoso volaba en círculos sobre el valle, ofreciendo una vista impresionante para tus fotos," el verbo "volaba" está en pretérito imperfecto. Este tiempo verbal se usa para describir acciones habituales o en progreso en el pasado. En este contexto, "volaba" indica que el cóndor estaba realizando la acción de volar de manera continua o repetida en el pasado.
+
+Exercise 1:
+  Sentence: El guía nos dijo que el tucán _______ en este árbol cada mañana para buscar su desayuno.
+  Translation: The guide told us that the toucan _______ on this tree every morning to look for its breakfast.
+  Your answer: se posaba
+  Correct: True
+  Explanation: La respuesta del alumno es correcta. En la oración "El guía nos dijo que el tucán _______ en este árbol cada mañana para buscar su desayuno", se utiliza el verbo "posarse" en el pretérito imperfecto "se posaba". Este tiempo verbal es adecuado porque describe una acción habitual o repetida en el pasado, en este caso, el hecho de que el tucán se posaba en el árbol cada mañana.
+
+Exercise 2:
+  Sentence: El guía mencionó que el pez dorado _______ con frecuencia cerca de la superficie cuando el agua está tranquila.
+  Translation: The guide mentioned that the golden fish _______ frequently near the surface when the water is calm.
+  Your answer: nada
+  Correct: False
+  Explanation: La respuesta del estudiante es incorrecta. En la oración, "El guía mencionó que el pez dorado _______ con frecuencia cerca de la superficie cuando el agua está tranquila", se necesita el pretérito imperfecto "nadaba" porque la acción de nadar se describe como habitual en el pasado. El uso de "nada" implicaría que la acción ocurre en el presente, lo cual no concuerda con el contexto que indica una referencia al pasado.
+
+Exercise 3:
+  Sentence: El cuidador explicó que el loro verde _______ en el mismo lugar todos los días al atardecer.
+  Translation: The caretaker explained that the green parrot _______ in the same place every day at sunset.
+  Your answer: se quedaba
+  Correct: True
+  Explanation: La respuesta del estudiante es correcta. En esta oración, se requiere el uso del imperfecto "se quedaba" para describir una acción habitual en el pasado, es decir, el loro verde tenía la costumbre de quedarse en el mismo lugar todos los días al atardecer. El uso del imperfecto es adecuado para expresar acciones repetidas o habituales en el pasado.
+
+Exercise 4:
+  Sentence: El biólogo señaló que la anguila eléctrica _______ más activa por la noche cuando hay menos luz.
+  Translation: The biologist pointed out that the electric eel _______ more active at night when there is less light.
+  Your answer: era
+  Correct: True
+  Explanation: La respuesta del alumno es correcta. En la oración, se utiliza el verbo "señalar" en el pasado ("señaló"), lo que indica que el discurso está en estilo indirecto en pasado. Por eso, el verbo "ser" también debe estar en pasado, en este caso en pretérito imperfecto ("era"), para mantener la concordancia temporal adecuada.
+
+Exercise 1:
+  Sentence: Desde aquí, el guía nos dijo que siempre _______ un tucán en las ramas más altas de los árboles.
+  Translation: From here, the guide told us that there always _______ a toucan in the highest branches of the trees.
+  Your answer: había
+  Correct: True
+  Explanation: La respuesta del alumno es correcta. En la oración "Desde aquí, el guía nos dijo que siempre _______ un tucán en las ramas más altas de los árboles", se usa el pretérito imperfecto "había" para describir una acción habitual o repetida en el pasado. El uso del imperfecto es adecuado aquí porque se refiere a una situación que solía ocurrir regularmente en el pasado.
+
+Exercise 2:
+  Sentence: Ayer, mientras navegábamos, un guacamayo _______ sobre nuestras cabezas, mostrando sus colores vibrantes.
+  Translation: Yesterday, while we were sailing, a macaw _______ over our heads, showing its vibrant colors.
+  Your answer: voló
+  Correct: True
+  Explanation: La respuesta del alumno es correcta. En la oración "Ayer, mientras navegábamos, un guacamayo _______ sobre nuestras cabezas, mostrando sus colores vibrantes," se requiere el uso del pretérito perfecto simple para indicar una acción puntual y completa en el pasado. "Voló" es la forma correcta del verbo "volar" en pretérito perfecto simple para la tercera persona del singular, coincidiendo con el sujeto "un guacamayo".
+
+Exercise 3:
+  Sentence: El año pasado, una pareja de águilas _______ un nido en ese acantilado.
+  Translation: Last year, a pair of eagles _______ a nest on that cliff.
+  Your answer: construyó
+  Correct: True
+  Explanation: La respuesta del alumno es correcta. En la oración "El año pasado, una pareja de águilas _______ un nido en ese acantilado", el sujeto es "una pareja de águilas", que es singular. Por lo tanto, el verbo debe conjugarse en tercera persona singular del pretérito, que es "construyó".
+
+Exercise 4:
+  Sentence: Cuando éramos niños, siempre _______ garzas en los lagos cerca de nuestra casa.
+  Translation: When we were kids, we always _______ herons in the lakes near our house.
+  Your answer: veíamos
+  Correct: True
+  Explanation: La respuesta del alumno es correcta. En la oración "Cuando éramos niños, siempre _______ garzas en los lagos cerca de nuestra casa", se utiliza el verbo "ver" en el imperfecto del indicativo, que es "veíamos". Este tiempo verbal se usa para describir acciones habituales o repetidas en el pasado. La palabra "siempre" refuerza la idea de repetición, por lo que "veíamos" es la forma adecuada.
+
+Exercise 5:
+  Sentence: El verano pasado, una golondrina _______ en el alero de mi casa, y fue fascinante observar su comportamiento.
+  Translation: Last summer, a swallow _______ in the eaves of my house, and it was fascinating to watch its behavior.
+  Your answer: anidó
+  Correct: True
+  Explanation: La respuesta del alumno es correcta. En la oración, "anidó" es el verbo en pasado perfecto simple que concuerda con el sujeto "una golondrina". La estructura es adecuada porque describe una acción completada en el pasado, que es el tiempo verbal correcto para "el verano pasado".
+
+Exercise 1:
+  Sentence: El colibrí _______ tan rápido que apenas puedo seguirlo con la vista.
+  Translation: The hummingbird _______ so fast that I can barely keep up with it.
+  Your answer: volaba
+  Correct: True
+  Explanation: El verbo "volaba" está en imperfecto de indicativo, lo cual es adecuado en este contexto porque describe una acción continua o habitual en el pasado. La oración "El colibrí volaba tan rápido que apenas puedo seguirlo con la vista" sugiere que la acción de volar rápido era una característica constante del colibrí, por lo que el uso del imperfecto es correcto.
+
+Exercise 2:
+  Sentence: El cóndor _______ majestuoso sobre las montañas mientras todos lo admirábamos.
+  Translation: The condor _______ majestically over the mountains while we all admired it.
+  Your answer: volaba
+  Correct: True
+  Explanation: La respuesta del estudiante es correcta. En la oración "El cóndor _______ majestuoso sobre las montañas mientras todos lo admirábamos," el uso del verbo "volaba" es adecuado porque está en pretérito imperfecto, que se utiliza para describir acciones en progreso en el pasado. La acción de volar ocurre simultáneamente con la acción de admirar, ambas en un contexto de continuidad en el pasado.
+
+Exercise 4:
+  Sentence: Los flamencos _______ con sus picos en el agua buscando comida.
+  Translation: The flamingos _______ with their beaks in the water looking for food.
+  Your answer: estaban
+  Correct: True
+  Explanation: La respuesta del alumno es correcta porque "estaba" es la forma del verbo "estar" en pretérito imperfecto, que se utiliza para describir acciones pasadas que no tienen un inicio o fin definidos. En este contexto, "El tucán estaba en la rama" sugiere que el tucán se encontraba en la rama durante un período de tiempo indeterminado mientras nos observaba.
+
+Exercise 5:
+  Sentence: El guacamayo _______ su hermoso plumaje mientras los niños lo miraban fascinados.
+  Translation: The macaw _______ its beautiful feathers while the children watched fascinated.
+  Your answer: mostrará
+  Correct: True
+  Explanation: La respuesta del alumno es correcta. En la oración "Los flamencos _______ con sus picos en el agua buscando comida", el verbo "estar" en imperfecto "estaban" se usa para describir una acción continua o habitual en el pasado. Aquí, se describe cómo los flamencos estaban realizando una acción repetitiva o habitual de buscar comida en el agua. Por lo tanto, "estaban" es la forma adecuada del verbo.
+
+Exercise 5:
+  Sentence: El guacamayo _______ su hermoso plumaje mientras los niños lo miraban fascinados.
+  Translation: The macaw _______ its beautiful feathers while the children watched fascinated.
+  Your answer: mostraba
+  Correct: True
+  Explanation: La respuesta del alumno es correcta. En la oración "El guacamayo mostraba su hermoso plumaje mientras los niños lo miraban fascinados," el verbo "mostraba" está en pretérito imperfecto. Este tiempo verbal se utiliza para describir acciones habituales o en desarrollo en el pasado. Aquí, "mostraba" indica una acción continua o repetida del guacamayo, mientras los niños lo observaban.
+
+Exercise 1:
+  Sentence: El guía les dice que el tucán ______ en los árboles más altos del parque, donde busca frutas para comer.
+  Translation: The guide tells them that the toucan ______ in the tallest trees of the park, where it looks for fruits to eat.
+  Your answer: vive
+  Correct: True
+  Explanation: La respuesta del estudiante es correcta. En la oración, "vive" es el verbo que indica una acción habitual o característica del tucán. El uso del presente de indicativo, "vive", es adecuado porque describe una acción que ocurre regularmente: el tucán habita en los árboles altos del parque.
+
+Exercise 2:
+  Sentence: El guía explica que el colibrí ______ su energía al consumir néctar de las flores varias veces al día.
+  Translation: The guide explains that the hummingbird ______ its energy by consuming nectar from flowers several times a day.
+  Your answer: corre
+  Correct: False
+  Explanation: La respuesta del estudiante es incorrecta. En la oración, se busca un verbo que indique cómo el colibrí adquiere su energía al consumir néctar. El verbo "obtener" es el adecuado porque significa "adquirir" o "conseguir". En cambio, "correr" se refiere a moverse rápidamente, lo cual no tiene sentido en este contexto. Por lo tanto, "obtiene" es la opción correcta.
+
+Exercise 3:
+  Sentence: Uno de los estudiantes comenta que la golondrina ______ largas distancias para llegar a su destino durante la migración.
+  Translation: One of the students comments that the swallow ______ long distances to reach its destination during migration.
+  Your answer: jugaba
+  Correct: True
+  Explanation: La respuesta del aprendiz es correcta. En la oración, el verbo "obtiene" está en presente del indicativo y concuerda con el sujeto "el colibrí". La estructura de la oración indica que se describe una acción habitual, que es justamente lo que expresa el presente del indicativo en español. Así que "obtiene" es el verbo adecuado para completar la oración.
+
+Exercise 3:
+  Sentence: Uno de los estudiantes comenta que la golondrina ______ largas distancias para llegar a su destino durante la migración.
+  Translation: One of the students comments that the swallow ______ long distances to reach its destination during migration.
+  Your answer: recorre
+  Correct: True
+  Explanation: La respuesta del aprendiz es correcta. En esta oración, "recorre" es el verbo adecuado porque concuerda en número y persona con "la golondrina", que es singular y tercera persona. Además, "recorrer" significa viajar o atravesar un espacio, lo cual es coherente con la acción de cubrir largas distancias durante la migración.
+
+Exercise 5:
+  Sentence: La bióloga nota que el águila ______ desde lo alto para vigilar su territorio y buscar presas.
+  Translation: The biologist notices that the eagle ______ from above to watch over its territory and look for prey.
+  Your answer: observa
+  Correct: True
+  Explanation: La respuesta del estudiante es correcta. En la oración, "usa" es el verbo en presente del indicativo que concuerda con el sujeto "el guacamayo". El verbo "usar" se utiliza para indicar que el guacamayo emplea sus plumas de colores brillantes con el propósito de atraer a su pareja. La estructura gramatical es adecuada para expresar esta acción.
+
+=== End Session ===
+
+=== Session Log ===
+Exercise 2:
+  Sentence: Mientras _______ al hombre alimentar a las palomas, noté que algunas se acercaban sin miedo.
+  Translation: While I _______ the man feeding the pigeons, I noticed that some of them approached without fear.
+  Your answer: observé
+  Correct: True
+  Explanation: La respuesta del alumno es correcta. En la oración "El guía me _______ que el tucán es conocido por su pico colorido y su habilidad para comunicarse con otros de su especie," el verbo "dijo" es el adecuado porque se utiliza para expresar que alguien comunicó algo en el pasado. "Dijo" es la forma en pasado del verbo "decir" en tercera persona del singular, que concuerda con "el guía".
+
+Exercise 2:
+  Sentence: Mientras _______ al hombre alimentar a las palomas, noté que algunas se acercaban sin miedo.
+  Translation: While I _______ the man feeding the pigeons, I noticed that some of them approached without fear.
+  Your answer: observaba
+  Correct: True
+  Explanation: La respuesta del alumno es correcta. En la oración "Mientras observaba al hombre alimentar a las palomas, noté que algunas se acercaban sin miedo," el verbo "observaba" está en pretérito imperfecto. Este tiempo verbal se utiliza para describir acciones en progreso en el pasado o acciones habituales. Aquí, "mientras" indica una acción continua o en desarrollo, lo que hace que el uso del pretérito imperfecto sea adecuado.
+
+Exercise 3:
+  Sentence: Le _______ a mi amigo sobre el impresionante vuelo del águila que vi en la Patagonia.
+  Translation: I _______ my friend about the impressive flight of the eagle I saw in Patagonia.
+  Your answer: cuento
+  Correct: False
+  Explanation: La respuesta del alumno "cuento" es incorrecta porque no concuerda con el tiempo verbal adecuado en la oración. La estructura de la oración requiere el pretérito perfecto simple para indicar una acción completada en el pasado: "Le conté a mi amigo sobre el impresionante vuelo del águila que vi en la Patagonia." El verbo "conté" está en pretérito perfecto simple, mientras que "cuento" está en presente, lo cual no es adecuado en este contexto.
+
+Exercise 3:
+  Sentence: Le _______ a mi amigo sobre el impresionante vuelo del águila que vi en la Patagonia.
+  Translation: I _______ my friend about the impressive flight of the eagle I saw in Patagonia.
+  Your answer: conté
+  Correct: True
+  Explanation: La respuesta del aprendiz es correcta. En el contexto de la oración, el verbo "conté" es la forma adecuada del verbo "contar" en pretérito perfecto simple para la primera persona del singular. Indica que la acción de contar ya ocurrió en el pasado. La estructura "Le conté a mi amigo" es correcta para expresar que la persona le narró algo a su amigo.
+
+Exercise 4:
+  Sentence: El expositor me _______ que los guacamayos pueden vivir hasta 50 años en cautiverio.
+  Translation: The exhibitor _______ to me that macaws can live up to 50 years in captivity.
+  Your answer: explicaba
+  Correct: False
+  Explanation: La respuesta del estudiante es incorrecta. En la oración "El expositor me _______ que los guacamayos pueden vivir hasta 50 años en cautiverio", el verbo debe estar en pretérito perfecto simple, "explicó", porque se refiere a una acción completa y específica en el pasado. La forma "explicaba" es imperfecto, que se usaría para acciones habituales o descripciones en el pasado, lo cual no es el caso aquí.
+
+Exercise 5:
+  Sentence: Siempre me _______ ver cómo los colibríes se mueven tan rápido entre las flores.
+  Translation: I have always _______ watching how the hummingbirds move so quickly among the flowers.
+  Your answer: gustaba
+  Correct: True
+  Explanation: El verbo "explicar" está correctamente conjugado en pretérito perfecto simple como "explicó" para referirse a una acción completada en el pasado. En la oración, "El expositor me explicó que los guacamayos pueden vivir hasta 50 años en cautiverio," el uso de "explicó" es adecuado porque describe una acción que ya ocurrió. La estructura es correcta: sujeto ("El expositor"), pronombre de objeto indirecto ("me") y verbo en pretérito perfecto simple ("explicó").
+
+Exercise 5:
+  Sentence: Siempre me _______ ver cómo los colibríes se mueven tan rápido entre las flores.
+  Translation: I have always _______ watching how the hummingbirds move so quickly among the flowers.
+  Your answer: gusta
+  Correct: False
+  Explanation: La respuesta del aprendiz "gusta" es incorrecta porque el verbo en esta oración debe estar en el tiempo perfecto compuesto. La expresión "siempre me ha gustado" indica una acción que comenzó en el pasado y sigue siendo relevante en el presente. "Ha gustado" es la forma correcta para expresar que el gusto por ver a los colibríes ha sido constante hasta ahora.
+
+Exercise 5:
+  Sentence: Siempre me _______ ver cómo los colibríes se mueven tan rápido entre las flores.
+  Translation: I have always _______ watching how the hummingbirds move so quickly among the flowers.
+  Your answer: ha gustado
+  Correct: True
+  Explanation: La respuesta del estudiante es correcta. En la oración "Siempre me ha gustado ver cómo los colibríes se mueven tan rápido entre las flores", el uso del pretérito perfecto compuesto "ha gustado" es adecuado para expresar una acción o sentimiento que comenzó en el pasado y que continúa en el presente. Aquí, "siempre" indica una acción habitual y el verbo "gustar" se conjuga en tercera persona singular, coincidiendo con el sujeto implícito "ver".
+
+Exercise 1:
+  Sentence: Al ver el tucán tan cerca, yo _______ emocionado y saqué mi cámara para tomarle una foto.
+  Translation: Upon seeing the toucan so close, I _______ excited and took out my camera to take a picture of it.
+  Your answer: me sentí
+  Correct: True
+  Explanation: La respuesta del estudiante es correcta. En la oración "Al ver el tucán tan cerca, yo _______ emocionado y saqué mi cámara para tomarle una foto", el uso de "me sentí" es adecuado porque el verbo "sentir" en su forma reflexiva "sentirse" se utiliza para expresar emociones o estados de ánimo. La conjugación "me sentí" está en primera persona del singular en pretérito perfecto simple, que es el tiempo verbal correcto para indicar una acción completada en el pasado.
+
+Exercise 2:
+  Sentence: Mientras los guacamayos volaban, yo _______ maravillado por su belleza y colores vibrantes.
+  Translation: While the macaws were flying, I _______ amazed by their beauty and vibrant colors.
+  Your answer: estuve
+  Correct: False
+  Explanation: La respuesta del alumno "estuve" es incorrecta. En este contexto, se usa el imperfecto "estaba" porque describe una acción en progreso o un estado continuo en el pasado, mientras los guacamayos volaban. El pretérito "estuve" se usaría para acciones completadas o específicas en el pasado, lo cual no aplica aquí.
+
+Exercise 2:
+  Sentence: Mientras los guacamayos volaban, yo _______ maravillado por su belleza y colores vibrantes.
+  Translation: While the macaws were flying, I _______ amazed by their beauty and vibrant colors.
+  Your answer: estaba
+  Correct: True
+  Explanation: La respuesta del alumno es correcta. En la oración, "mientras" introduce una acción en progreso en el pasado, por lo que se utiliza el pretérito imperfecto "estaba" para expresar una acción simultánea con "volaban". Ambos verbos en imperfecto indican acciones continuas y descriptivas en el pasado.
+
+Exercise 3:
+  Sentence: Cada vez que veo un cisne, _______ que la naturaleza es verdaderamente impresionante.
+  Translation: Every time I see a swan, I _______ that nature is truly impressive.
+  Your answer: pienso
+  Correct: True
+  Explanation: La respuesta del aprendiz es correcta. En la estructura de la oración, después de "cada vez que veo un cisne," se necesita un verbo conjugado en presente para expresar una acción habitual o una reflexión inmediata. "Pienso" es el verbo adecuado, ya que está en primera persona del singular y concuerda con el sujeto implícito "yo".
+
+Exercise 4:
+  Sentence: Cuando el águila voló sobre nosotros, yo _______ que era una experiencia única.
+  Translation: When the eagle flew over us, I _______ that it was a unique experience.
+  Your answer: supe
+  Correct: True
+  Explanation: La respuesta del estudiante es correcta. En esta oración, "supe" está en pretérito, que se usa para indicar que el hablante se dio cuenta de algo en un momento específico del pasado. La acción de "saber" aquí se refiere a un descubrimiento o realización puntual, que es lo que el pretérito expresa correctamente en este contexto.
+
+Exercise 5:
+  Sentence: Siempre que un colibrí se acerca, yo _______ muy afortunado de poder verlo tan de cerca.
+  Translation: Whenever a hummingbird comes close, I _______ very fortunate to see it so up close.
+  Your answer: me siento
+  Correct: True
+  Explanation: La respuesta del alumno es correcta. En la oración "Siempre que un colibrí se acerca, yo _______ muy afortunado de poder verlo tan de cerca", se requiere un verbo reflexivo que indique cómo se percibe el sujeto. "Me siento" es la forma correcta del verbo reflexivo "sentirse" en primera persona del singular (yo), que concuerda con el sujeto implícito "yo" y expresa la sensación interna de afortunado.
+
+Exercise 1:
+  Sentence: ¿Cuál de estos pescados ______ tú para una parrillada? El atún siempre es una buena opción.
+  Translation: Which of these fish do you ______ for a barbecue? Tuna is always a good option.
+  Your answer: prefieres
+  Correct: True
+  Explanation: La respuesta del estudiante es correcta. En la oración "¿Cuál de estos pescados ______ tú para una parrillada?", el verbo "preferir" se conjuga en la segunda persona del singular del presente de indicativo, que es "prefieres". Esto concuerda con el sujeto implícito "tú" en la pregunta.
+
+Exercise 2:
+  Sentence: Cuando era niño, siempre ______ trucha con mi abuelo en el lago los fines de semana.
+  Translation: When I was a child, I always ______ trout with my grandfather at the lake on weekends.
+  Your answer: pescaba
+  Correct: True
+  Explanation: La respuesta del alumno es correcta. En la oración "Cuando era niño, siempre ______ trucha con mi abuelo en el lago los fines de semana", se utiliza el imperfecto "pescaba" porque estamos hablando de una acción habitual en el pasado. El imperfecto es apropiado para describir acciones repetidas o continuas en un contexto pasado, como es el caso aquí.
+
+Exercise 3:
+  Sentence: Hoy tenemos un ceviche de mero que te ______ mucho.
+  Translation: Today we have a grouper ceviche that you ______ a lot.
+  Your answer: gustará
+  Correct: True
+  Explanation: La respuesta del aprendiz es correcta. En la oración "Hoy tenemos un ceviche de mero que te ______ mucho", se utiliza el futuro del verbo "gustar" para indicar una acción que ocurrirá en el futuro. La estructura es "gustará" porque el sujeto implícito es "ceviche de mero", que es singular. Por lo tanto, "gustará" concuerda correctamente en número con el sujeto.
+
+Exercise 4:
+  Sentence: Ayer ______ una receta increíble de mojarra frita que quiero probar.
+  Translation: Yesterday I ______ an amazing fried mojarra recipe that I want to try.
+  Your answer: encontré
+  Correct: True
+  Explanation: La respuesta del estudiante, "encontré", es correcta. En la oración "Ayer ______ una receta increíble de mojarra frita que quiero probar", se requiere el uso del pretérito perfecto simple para indicar una acción completada en el pasado. "Encontré" es la forma conjugada en primera persona singular (yo) del verbo "encontrar" en pretérito perfecto simple, lo cual concuerda correctamente con el sujeto implícito "yo" y el contexto temporal de "ayer".
+
+Exercise 5:
+  Sentence: En esta clase, siempre ______ tilapia al horno con hierbas frescas.
+  Translation: In this class, I always ______ baked tilapia with fresh herbs.
+  Your answer: preparo
+  Correct: True
+  Explanation: La respuesta del alumno es correcta. El verbo "preparo" está en primera persona del singular del presente de indicativo, lo cual concuerda con el sujeto implícito "yo" en la oración. La estructura "siempre preparo" indica una acción habitual que realiza el hablante.
+
+Exercise 5:
+  Sentence: En esta clase, siempre ______ tilapia al horno con hierbas frescas.
+  Translation: In this class, I always ______ baked tilapia with fresh herbs.
+  Your answer: preparo
+  Correct: True
+  Explanation: La respuesta del aprendiz es correcta. En la oración "En esta clase, siempre preparo tilapia al horno con hierbas frescas", el verbo "preparo" está conjugado en primera persona del singular del presente de indicativo, lo cual concuerda con el sujeto implícito "yo". La estructura de la oración es adecuada para expresar una acción habitual.
+
+Exercise 1:
+  Sentence: ¿Cuánto ___ el kilo de salmón? Quiero llevarme un poco para la cena.
+  Translation: How much ___ the kilo of salmon? I want to take some for dinner.
+  Your answer: cuesta
+  Correct: True
+  Explanation: La respuesta del estudiante es correcta. En la pregunta "¿Cuánto ___ el kilo de salmón?", se requiere un verbo que indique el precio. El verbo "costar" es el adecuado para expresar cuánto se paga por algo. En tercera persona singular, que corresponde al "kilo de salmón", se conjuga como "cuesta". Por lo tanto, "cuesta" es la forma correcta.
+
+Exercise 2:
+  Sentence: Primero, yo ___ la trucha con limón y sal antes de cocinarla.
+  Translation: First, I ___ the trout with lemon and salt before cooking it.
+  Your answer: marino
+  Correct: True
+  Explanation: La respuesta del estudiante es correcta. En la oración "Primero, yo ___ la trucha con limón y sal antes de cocinarla," el verbo "marinar" es adecuado porque se refiere al proceso de sazonar o adobar un alimento antes de cocinarlo. La conjugación "marino" está en primera persona del singular del presente de indicativo, que concuerda con el sujeto "yo".
+
+Exercise 3:
+  Sentence: ¿Me ___ qué ingredientes lleva el plato de mero?
+  Translation: Can you ___ me what ingredients the grouper dish has?
+  Your answer: dices
+  Correct: False
+  Explanation: La respuesta del alumno "dirás" es incorrecta porque utiliza el futuro simple, que no es adecuado en este contexto. La oración "¿Me ___ qué ingredientes lleva el plato de mero?" requiere el uso del presente de indicativo "dices", ya que se está pidiendo información en el momento actual. El verbo "decir" en presente se usa aquí para solicitar una acción inmediata y directa.
+
+Exercise 4:
+  Sentence: Hoy ___ muchas mojarra, creo que tendremos un gran almuerzo.
+  Translation: Today I ___ many mojarra, I think we'll have a great lunch.
+  Your answer: pescaba
+  Correct: True
+  Explanation: El verbo "decir" está conjugado correctamente en la segunda persona del singular en presente de indicativo, "dices", para coincidir con el sujeto implícito "tú". La estructura "¿Me dices qué ingredientes lleva el plato de mero?" es correcta porque sigue la construcción de una pregunta informal en español, donde se solicita información.
+
+Exercise 4:
+  Sentence: Hoy ___ muchas mojarra, creo que tendremos un gran almuerzo.
+  Translation: Today I ___ many mojarra, I think we'll have a great lunch.
+  Your answer: pesqué
+  Correct: False
+  Explanation: La respuesta del estudiante "pescaba" es incorrecta en este contexto. La oración requiere el pretérito "pesqué" porque se refiere a una acción completa y específica que ocurrió hoy. El pretérito se usa para acciones terminadas, mientras que el imperfecto "pescaba" se usaría para acciones habituales o en progreso en el pasado, sin especificar el final. Aquí, "hoy pesqué" indica que la acción de pescar ya se completó.
+
+Exercise 4:
+  Sentence: Hoy ___ muchas mojarra, creo que tendremos un gran almuerzo.
+  Translation: Today I ___ many mojarra, I think we'll have a great lunch.
+  Your answer: pesqué
+  Correct: True
+  Explanation: La respuesta del estudiante es correcta. En la oración "Hoy ___ muchas mojarra, creo que tendremos un gran almuerzo", el verbo "pesqué" es la forma correcta del pretérito perfecto simple del verbo "pescar" en primera persona del singular (yo). Esto indica que la acción de pescar ocurrió en el pasado, específicamente hoy. La estructura gramatical concuerda con el tiempo verbal necesario para expresar una acción completada.
+
+Exercise 5:
+  Sentence: Disculpa, ¿___ dónde está la sección de pescados? Necesito comprar tilapia.
+  Translation: Excuse me, do you ___ where the fish section is? I need to buy tilapia.
+  Your answer: sabes
+  Correct: True
+  Explanation: La respuesta del aprendiz es correcta. En la pregunta "¿___ dónde está la sección de pescados?", se usa "sabes" porque se está pidiendo información que la otra persona podría conocer. "Saber" en este contexto se refiere a tener conocimiento sobre la ubicación de algo. Además, "sabes" concuerda con "tú", la forma implícita del sujeto en una pregunta informal.
+
+Exercise 1:
+  Sentence: Mientras _______________ el pescado, el vendedor me recomienda llevar el atún porque está muy fresco hoy.
+  Translation: While I __________ the fish, the seller recommends I take the tuna because it's very fresh today.
+  Your answer: observaba
+  Correct: False
+  Explanation: La respuesta del estudiante "observaba" es incorrecta porque el contexto de la oración sugiere una acción simultánea y momentánea en el presente, no en el pasado. La estructura correcta es "Mientras observo el pescado", ya que el vendedor está recomendando en el presente. En este caso, se usa el presente de indicativo "observo" para indicar que ambas acciones ocurren al mismo tiempo en el presente.
+
+Exercise 1:
+  Sentence: Mientras _______________ el pescado, el vendedor me recomienda llevar el atún porque está muy fresco hoy.
+  Translation: While I __________ the fish, the seller recommends I take the tuna because it's very fresh today.
+  Your answer: observo
+  Correct: True
+  Explanation: Sí, la respuesta del estudiante es correcta. En la oración "Mientras _______________ el pescado, el vendedor me recomienda llevar el atún porque está muy fresco hoy," se utiliza el verbo "observar" en presente indicativo, "observo", para describir una acción simultánea en el presente. La estructura "mientras + verbo en presente" indica que ambas acciones ocurren al mismo tiempo. Por lo tanto, "observo" es gramaticalmente correcto en este contexto.
+
+Exercise 2:
+  Sentence: Si _______________ en un restaurante, siempre pido salmón porque me encanta su sabor.
+  Translation: If I __________ in a restaurant, I always order salmon because I love its flavor.
+  Your answer: estoy
+  Correct: True
+  Explanation: La respuesta del aprendiz es correcta. En la oración "Si _______________ en un restaurante, siempre pido salmón porque me encanta su sabor," se utiliza el verbo "estar" en la forma "estoy" para indicar una condición temporal o una ubicación específica. En este caso, "estoy" se refiere a la acción de estar físicamente en un restaurante, lo cual es una situación temporal. Por eso, "estoy" es la opción adecuada.
+
+Exercise 4:
+  Sentence: El chef pregunta si _______________ alguna vez la mojarra frita, porque es un plato muy popular aquí.
+  Translation: The chef asks if you __________ ever tried fried mojarra, because it's a very popular dish here.
+  Your answer: probaste
+  Correct: True
+  Explanation: La respuesta del alumno es correcta. En la oración "Cuando _______________ con mi abuelo, siempre pescábamos truchas en el río", se utiliza el verbo "ir" en imperfecto, "iba", para indicar una acción habitual en el pasado. El uso del imperfecto es adecuado aquí porque describe una acción repetida o habitual que se realizaba en compañía de su abuelo.
+
+Exercise 1:
+  Sentence: Mientras _______ a las hormigas, me di cuenta de lo organizadas que son.
+  Translation: While _______ the ants, I realized how organized they are.
+  Your answer: observaba
+  Correct: True
+  Explanation: La respuesta del alumno es correcta. En la oración "Mientras observaba a las hormigas, me di cuenta de lo organizadas que son", se utiliza el verbo "observar" en el tiempo imperfecto "observaba". Esto es adecuado porque el imperfecto describe acciones en progreso o habituales en el pasado, como en este caso, donde la acción de observar se desarrolla al mismo tiempo que el descubrimiento de la organización de las hormigas.
+
+Exercise 2:
+  Sentence: Si _______ más tiempo, me quedaría aquí todo el día viendo las mariposas contigo.
+  Translation: If I _______ more time, I would stay here all day watching the butterflies with you.
+  Your answer: tuviera
+  Correct: True
+  Explanation: La respuesta del estudiante es correcta. En esta oración, se utiliza el modo subjuntivo porque se trata de una situación hipotética. La estructura "Si tuviera más tiempo" implica una condición irreal o poco probable en el presente. Por eso, se usa el imperfecto de subjuntivo "tuviera" para concordar con el condicional "me quedaría".
+
+Exercise 3:
+  Sentence: Mañana _______ una excursión para ver libélulas y otros insectos.
+  Translation: Tomorrow I _______ an excursion to see dragonflies and other insects.
+  Your answer: haré
+  Correct: True
+  Explanation: La respuesta del alumno es correcta. En la oración "Mañana haré una excursión para ver libélulas y otros insectos", el verbo "haré" está en primera persona del singular del futuro simple del verbo "hacer". Esto indica una acción que se realizará en el futuro. La estructura es adecuada para expresar una actividad planeada para mañana.
+
+Exercise 4:
+  Sentence: Cuando _______ con mi abuelo, solíamos sentarnos aquí y observar a las abejas.
+  Translation: When I _______ with my grandfather, we used to sit here and watch the bees.
+  Your answer: era
+  Correct: True
+  Explanation: La respuesta del aprendiz es correcta. En la oración "Cuando era con mi abuelo, solíamos sentarnos aquí y observar a las abejas," se utiliza "era" porque está describiendo una acción o estado habitual en el pasado. El verbo "ser" en imperfecto, "era," se usa para hablar de situaciones continuas o repetidas en el pasado.
+
+Exercise 5:
+  Sentence: ¿_______ tú el sonido de los grillos cuando estás en casa?
+  Translation: Do you _______ the sound of the crickets when you're at home?
+  Your answer: escuchas
+  Correct: True
+  Explanation: La respuesta del alumno es correcta. En la pregunta "¿_______ tú el sonido de los grillos cuando estás en casa?", se requiere el uso del verbo "escuchar" conjugado en la segunda persona del singular del presente de indicativo, que es "escuchas". Esto concuerda con el sujeto "tú", formando correctamente la estructura gramatical de la oración.
+
+Exercise 1:
+  Sentence: Mientras miraba el jardín, me di cuenta de que una abeja __________ alrededor de las flores buscando néctar.
+  Translation: While looking at the garden, I realized that a bee __________ around the flowers looking for nectar.
+  Your answer: volaba
+  Correct: True
+  Explanation: La respuesta del estudiante es correcta. En la oración, "Mientras miraba el jardín, me di cuenta de que una abeja __________ alrededor de las flores buscando néctar", se requiere un verbo en imperfecto para describir una acción en progreso en el pasado. "Volaba" es la forma correcta del verbo "volar" en imperfecto, indicando que la abeja estaba en el proceso continuo de volar alrededor de las flores.
+
+Exercise 2:
+  Sentence: Si __________ más sobre los grillos, podrías explicarle a tu hermana por qué cantan por las noches.
+  Translation: If you __________ more about crickets, you could explain to your sister why they sing at night.
+  Your answer: supieras
+  Correct: True
+  Explanation: La respuesta del estudiante, "supieras", es correcta porque la estructura de la oración es una condicional de tipo 2, que se usa para situaciones hipotéticas. En este tipo de oraciones, se emplea el imperfecto de subjuntivo ("supieras") después de "si" para expresar una condición que no es real en el presente.
+
+Exercise 3:
+  Sentence: Mañana __________ una presentación sobre las libélulas y su importancia en el ecosistema.
+  Translation: Tomorrow I __________ a presentation about dragonflies and their importance in the ecosystem.
+  Your answer: haré
+  Correct: True
+  Explanation: La respuesta del alumno es correcta. En la oración "Mañana __________ una presentación sobre las libélulas y su importancia en el ecosistema", el verbo "haré" es la forma conjugada en futuro del verbo "hacer" para la primera persona del singular (yo). Indica una acción que se realizará en el futuro, en este caso, "mañana".
+
+Exercise 4:
+  Sentence: ¿Tú __________ a investigar sobre los escarabajos para ayudar a tu amigo a identificarlo?
+  Translation: Could you __________ to research about beetles to help your friend identify it?
+  Your answer: podrías
+  Correct: True
+  Explanation: La respuesta del alumno es correcta. En la oración "¿Tú __________ a investigar sobre los escarabajos para ayudar a tu amigo a identificarlo?", se utiliza el verbo "poder" en su forma condicional "podrías". Esta forma se emplea para expresar una posibilidad o una acción hipotética en el futuro, que es coherente con el contexto de la oración, ya que se pregunta si la persona estaría dispuesta a investigar para ayudar a su amigo.
+
+Exercise 5:
+  Sentence: Es normal que las moscas __________ atraídas por los olores fuertes de la comida.
+  Translation: It's normal for flies __________ attracted by the strong smells of food.
+  Your answer: son
+  Correct: False
+  Explanation: La respuesta del estudiante es incorrecta. En esta oración, estamos usando una estructura de subjuntivo, que se requiere después de la expresión "es normal que". Por eso, el verbo "ser" debe conjugarse en subjuntivo presente, que es "sean". La forma "son" es indicativo presente, y no es adecuada en este contexto.
+
+=== End Session ===
+
+=== Session Log ===
+Exercise 1:
+  Sentence: Ayer, mientras _______ el tucán en el árbol, noté que su pico era más colorido de lo que pensaba.
+  Translation: Yesterday, while _______ the toucan in the tree, I noticed its beak was more colorful than I thought.
+  Your answer: observaba
+  Correct: True
+  Explanation: La respuesta del alumno es correcta. En esta oración, "mientras" introduce una acción en desarrollo en el pasado, lo cual requiere el uso del pretérito imperfecto. "Observaba" es la forma correcta del verbo "observar" en pretérito imperfecto, que indica una acción continua o habitual en el pasado.
+
+Exercise 2:
+  Sentence: Cuando _______ los flamencos, me di cuenta de que su color rosa era aún más brillante en persona.
+  Translation: When I _______ the flamingos, I realized their pink color was even brighter in person.
+  Your answer: vi
+  Correct: True
+  Explanation: La respuesta del estudiante es correcta. En esta oración, "vi" es la forma correcta del verbo "ver" en pretérito perfecto simple, que se utiliza para acciones completadas en el pasado. Aquí, "cuando vi los flamencos" indica que la acción de ver ocurrió en un momento específico del pasado.
+
+Exercise 3:
+  Sentence: El guía nos _______ que el guacamayo azul y amarillo es una de las especies más llamativas del lugar.
+  Translation: The guide _______ us that the blue and yellow macaw is one of the most striking species in the area.
+  Your answer: dijo
+  Correct: True
+  Explanation: La respuesta del estudiante es correcta. En este caso, "dijo" es la forma correcta del verbo "decir" en pretérito perfecto simple, que se utiliza para expresar acciones completadas en el pasado. Aquí, el guía ya comunicó la información sobre el guacamayo, por lo que el uso de "dijo" es adecuado para el contexto.
+
+Exercise 4:
+  Sentence: Antes de que _______ el águila, escuché el sonido de sus alas al volar.
+  Translation: Before I _______ the eagle, I heard the sound of its wings as it flew.
+  Your answer: vi
+  Correct: False
+  Explanation: La respuesta del aprendiz "vi" es incorrecta porque la estructura "antes de que" requiere el uso del subjuntivo. En este caso, el verbo "ver" debe conjugarse en pretérito imperfecto de subjuntivo, que es "viera". La estructura correcta es "antes de que viera el águila".
+
+Exercise 5:
+  Sentence: Siempre _______ a las palomas picoteando migas de pan en la plaza cuando era niño.
+  Translation: I always _______ the pigeons pecking at bread crumbs in the square when I was a child.
+  Your answer: veía
+  Correct: True
+  Explanation: La respuesta del alumno es correcta. "Veía" es la forma correcta del verbo "ver" en el imperfecto del indicativo, que se utiliza para describir acciones habituales o repetidas en el pasado. En este caso, "siempre veía" indica que la acción de ver a las palomas era una rutina cuando el hablante era niño.
+
+Exercise 1:
+  Sentence: El vendedor me recomendó que _______ el salmón antes de comprarlo, para asegurarme de que está fresco.
+  Translation: The vendor recommended that I _______ the salmon before buying it, to make sure it's fresh.
+  Your answer: huela
+  Correct: True
+  Explanation: La respuesta del estudiante es correcta. En esta oración, se utiliza el subjuntivo presente "huela" porque la frase "me recomendó que" requiere el uso del subjuntivo. Esto se debe a que expresa una recomendación o sugerencia, lo cual es una acción que no es segura o confirmada.
+
+Exercise 2:
+  Sentence: Si yo _______ probar algo nuevo, definitivamente elegiría la tilapia al ajillo.
+  Translation: If I _______ to try something new, I would definitely choose the garlic tilapia.
+  Your answer: querré
+  Correct: False
+  Explanation: La respuesta del estudiante es incorrecta. La oración requiere el uso del subjuntivo imperfecto "quisiera" porque se está expresando un deseo hipotético o una situación no real en el presente. "Querré" es el futuro del indicativo, que se usaría para expresar una acción que ocurrirá con certeza en el futuro, no un deseo o posibilidad hipotética.
+
+Exercise 2:
+  Sentence: Si yo _______ probar algo nuevo, definitivamente elegiría la tilapia al ajillo.
+  Translation: If I _______ to try something new, I would definitely choose the garlic tilapia.
+  Your answer: quisiera
+  Correct: True
+  Explanation: La respuesta del alumno es correcta. En esta oración, se utiliza el imperfecto de subjuntivo "quisiera" para expresar un deseo o una situación hipotética. La estructura "Si yo + imperfecto de subjuntivo" es común para plantear condiciones hipotéticas o deseos en el presente o futuro.
+
+Exercise 3:
+  Sentence: Es importante que _______ el pescado con limón antes de hornearlo para mejorar su sabor.
+  Translation: It's important that you _______ the fish with lemon before baking it to enhance its flavor.
+  Your answer: marines
+  Correct: True
+  Explanation: La respuesta del estudiante es correcta. En esta oración, "Es importante que" introduce una cláusula subordinada que requiere el uso del subjuntivo, ya que expresa una recomendación o necesidad. El verbo "marinar" en subjuntivo para la segunda persona singular (tú) es "marines". Por lo tanto, "marines" es la forma adecuada para completar la oración correctamente.
+
+Exercise 4:
+  Sentence: Mi amigo siempre dice que si _______ preparar ceviche, elija el pargo porque tiene mejor textura.
+  Translation: My friend always says that if I _______ to make ceviche, I should choose snapper because it has a better texture.
+  Your answer: fuera
+  Correct: True
+  Explanation: La respuesta del estudiante es correcta. En esta oración, usamos el subjuntivo imperfecto "fuera" porque estamos expresando una condición hipotética en el pasado. La estructura "si + subjuntivo imperfecto" se utiliza para situaciones que no son reales o son improbables. En este caso, se plantea una situación hipotética sobre preparar ceviche.
+
+Exercise 5:
+  Sentence: El chef sugirió que _______ el dorado con una salsa de mango para darle un toque especial.
+  Translation: The chef suggested that we _______ the grilled dorado with a mango sauce to give it a special touch.
+  Your answer: acompañemos
+  Correct: False
+  Explanation: La respuesta del estudiante es incorrecta. En este caso, estamos ante una oración subordinada que requiere el uso del pretérito imperfecto de subjuntivo, ya que el verbo principal "sugirió" está en pasado. Por lo tanto, la forma correcta es "acompañáramos" y no "acompañemos", que es presente de subjuntivo.
+
+=== End Session ===
+
+=== Session Log ===
+=== End Session ===
+
+=== Session Log ===
+Exercise 1:
+  Sentence: El gorrión _____ en el agua mientras los otros pájaros lo miraban con curiosidad.
+  Translation: The sparrow _____ on the water while the other birds watched it curiously.
+  Your answer: flotaba
+  Correct: True
+  Explanation: La respuesta del alumno es correcta. El verbo "flotar" en el pasado imperfecto "flotaba" se utiliza para describir una acción continua o habitual en el pasado. En este caso, indica que el gorrión estaba en el agua de manera sostenida mientras los otros pájaros lo observaban. La estructura es coherente con el contexto de la oración.
+
+Exercise 2:
+  Sentence: Los mirlos _____ rápidamente para evitar el ataque de un halcón.
+  Translation: The blackbirds _____ quickly to avoid an attack from a hawk.
+  Your answer: se zambulleron
+  Correct: True
+  Explanation: La respuesta del aprendiz es correcta. En esta oración, "se zambulleron" es el verbo "zambullirse" conjugado en pretérito perfecto simple para la tercera persona del plural. Indica una acción completa en el pasado realizada por "los mirlos". Además, "se" es un pronombre reflexivo que se utiliza aquí para enfatizar la acción realizada por los sujetos sobre sí mismos.
+
+Exercise 3:
+  Sentence: El jilguero _____ entre las rocas para descansar un momento.
+  Translation: The finch _____ among the rocks to rest for a moment.
+  Your answer: se escondía
+  Correct: True
+  Explanation: La respuesta del estudiante es correcta. En esta oración, "se escondía" es el verbo conjugado en pretérito imperfecto, que se utiliza para describir acciones habituales o en desarrollo en el pasado. Aquí, "el jilguero se escondía" indica que el pájaro se ocultaba entre las rocas de manera continua o repetida para descansar.
+
+Exercise 4:
+  Sentence: La golondrina _____ sobre la superficie del agua, creando un espectáculo hermoso.
+  Translation: The swallow _____ over the surface of the water, creating a beautiful spectacle.
+  Your answer: se deslizaba
+  Correct: True
+  Explanation: La respuesta del alumno es correcta. El verbo "deslizarse" en el contexto de la oración se conjuga en pretérito imperfecto como "se deslizaba" para describir una acción continua o habitual en el pasado. Aquí se usa para pintar una imagen de movimiento suave y repetido de la golondrina sobre el agua.
+
+Exercise 5:
+  Sentence: El ruiseñor _____ con gracia antes de volver a la orilla.
+  Translation: The nightingale _____ gracefully before returning to the shore.
+  Your answer: flotó
+  Correct: False
+  Explanation: La respuesta del estudiante es incorrecta porque el verbo "flotar" implica que el sujeto se mantiene en la superficie sin esfuerzo, mientras que "nadar" indica un movimiento activo en el agua. En el contexto de la oración, se espera que el ruiseñor realice una acción activa para llegar a la orilla, por lo que "nadó" es el verbo adecuado.
+
+Exercise 2:
+  Sentence: El ruiseñor _____ entre las ramas para esconderse de los curiosos.
+  Translation: The nightingale _____ among the branches to hide from the curious.
+  Your answer: se escondería
+  Correct: True
+  Explanation: La respuesta del alumno es correcta. "Se escondería" es la forma condicional del verbo "esconderse". En este contexto, se usa el condicional para expresar una acción hipotética o posible en el pasado, indicando que el ruiseñor podría haber tomado esa acción para evitar ser visto por los curiosos.
+
+Exercise 3:
+  Sentence: Los jilgueros _____ sobre la superficie del agua antes de volar de nuevo al aire.
+  Translation: The finches _____ over the surface of the water before flying back into the air.
+  Your answer: se deslizarían
+  Correct: True
+  Explanation: El uso de "se deslizarían" es correcto porque el verbo está en condicional, lo cual indica una acción que podría ocurrir bajo ciertas condiciones. En este contexto, sugiere una acción potencial o hipotética de los jilgueros sobre el agua antes de volar. La conjugación refleja adecuadamente la estructura de la oración, que describe una acción no realizada pero posible.
+
+Exercise 4:
+  Sentence: El mirlo _____ su cola rítmicamente mientras canta desde el árbol más alto.
+  Translation: The blackbird _____ its tail rhythmically while singing from the tallest tree.
+  Your answer: movería
+  Correct: True
+  Explanation: La respuesta del estudiante es incorrecta. La oración requiere el uso del presente del indicativo para describir una acción habitual que ocurre mientras el mirlo canta. El verbo correcto es "mueve". Por lo tanto, la oración correcta sería: "El mirlo mueve su cola rítmicamente mientras canta desde el árbol más alto." La forma "movería" es el condicional, que se utiliza para expresar acciones hipotéticas o situaciones que dependen de una condición.
+
+Exercise 5:
+  Sentence: Las golondrinas _____ rápidamente para evitar a un depredador que se aproxima.
+  Translation: The swallows _____ quickly to avoid an approaching predator.
+  Your answer: escaparían
+  Correct: True
+  Explanation: La respuesta del estudiante es correcta. En la oración, "Las golondrinas escaparían rápidamente para evitar a un depredador que se aproxima", se usa el condicional "escaparían" para expresar una acción hipotética o potencial que las golondrinas realizarían en respuesta a la amenaza del depredador. El uso del condicional es adecuado aquí porque indica una acción que depende de una condición o circunstancia específica.
+
+Exercise 1:
+  Sentence: Los peces de colores ______ rápidamente cuando los turistas se acercan demasiado.
+  Translation: The colorful fish ______ quickly when the tourists get too close.
+  Your answer: escapen de un depredador
+  Correct: True
+  Explanation: La respuesta del alumno es incorrecta. La oración requiere un verbo que exprese una acción que los peces realizan cuando los turistas se acercan demasiado. "Escapen de un depredador" no es adecuado porque no se refiere directamente a la acción de moverse rápidamente. La forma correcta sería "nadan rápidamente", ya que "nadar" es el verbo que describe el movimiento de los peces.
+
+Exercise 2:
+  Sentence: El lenguado, antes de ser cortado en trozos pequeños, siempre ______ en agua salada durante unos minutos.
+  Translation: The flounder, before being cut into small pieces, always ______ in saltwater for a few minutes.
+  Your answer: se sumerja
+  Correct: True
+  Explanation: La respuesta del alumno es correcta. En esta oración, "se sumerja" es la forma adecuada del verbo "sumergir" en el modo subjuntivo presente. Se utiliza el subjuntivo porque la acción de sumergir el lenguado en agua salada es una acción anticipada que aún no ha ocurrido. Además, el uso del pronombre reflexivo "se" es necesario para indicar que el lenguado está siendo sumergido por alguien o algo.
+
+Exercise 4:
+  Sentence: Es importante que el halibut ______ bien en el agua para mantenerse a salvo de los depredadores.
+  Translation: It is important that the halibut ______ well in the water to stay safe from predators.
+  Your answer: se zambulla
+  Correct: False
+  Explanation: La oración requiere el uso del subjuntivo para expresar una acción que ayuda al halibut a mantenerse a salvo. "Flote" es correcto porque indica que el halibut debe mantenerse en la superficie para evitar depredadores. "Se zambulla" implica sumergirse, lo cual no se alinea con la idea de "mantenerse a salvo" en este contexto.
+
+Exercise 5:
+  Sentence: Los huachinangos suelen ______ con rapidez cuando sienten la presencia de un barco.
+  Translation: The snappers usually ______ quickly when they sense the presence of a boat.
+  Your answer: nadar
+  Correct: True
+  Explanation: La respuesta del estudiante es correcta. En la oración "Es importante que el halibut ______ bien en el agua para mantenerse a salvo de los depredadores," se utiliza el subjuntivo presente. La estructura "Es importante que" requiere el uso del subjuntivo, y el verbo "flotar" en subjuntivo presente es "flote".
+
+Exercise 5:
+  Sentence: Los huachinangos suelen ______ con rapidez cuando sienten la presencia de un barco.
+  Translation: The snappers usually ______ quickly when they sense the presence of a boat.
+  Your answer: nadar
+  Correct: False
+  Explanation: La respuesta del alumno es incorrecta porque el verbo "nadar" no captura la acción específica que se describe en el contexto. "Zambullirse" se refiere a sumergirse rápidamente en el agua, lo cual es una reacción común de los huachinangos al detectar la presencia de un barco. La estructura de la oración sugiere una acción rápida y reflexiva, que "zambullirse" expresa mejor que "nadar".
+
+Exercise 1:
+  Sentence: Mira, ese tucán siempre _______ al amanecer desde la copa de los árboles.
+  Translation: Look, that toucan always _______ at dawn from the treetops.
+  Your answer: canta
+  Correct: True
+  Explanation: La respuesta del alumno es correcta. En esta oración, el verbo "cantar" se usa en presente del indicativo para describir una acción habitual que el tucán realiza al amanecer. La estructura "siempre + verbo en presente" indica una acción que se repite regularmente, y "canta" concuerda gramaticalmente con "ese tucán".
+
+Exercise 2:
+  Sentence: Cada mañana, las gallinas _______ cuando sale el sol.
+  Translation: Every morning, the hens _______ when the sun rises.
+  Your answer: cacarean
+  Correct: True
+  Explanation: La respuesta del estudiante es correcta. En la oración "Cada mañana, las gallinas _______ cuando sale el sol", el verbo "cacarear" está conjugado en tercera persona del plural del presente de indicativo, que corresponde a "cacarean". Esto concuerda con el sujeto plural "las gallinas".
+
+Exercise 4:
+  Sentence: Los canarios en ese árbol _______ melodiosamente toda la tarde.
+  Translation: The canaries in that tree _______ melodiously all afternoon.
+  Your answer: silban
+  Correct: True
+  Explanation: La respuesta del estudiante es correcta. En este contexto, "ulula" es la forma correcta del verbo "ulular" en tercera persona del singular del presente de indicativo. El verbo "ulular" se utiliza para describir el sonido característico que hace un búho. La oración completa es gramaticalmente correcta.
+
+=== End Session ===
+
+=== Session Log ===
+Exercise 1:
+  Sentence: Los loros siempre _______ con entusiasmo cuando están en grupo.
+  Translation: The parrots always _______ enthusiastically when they are in a group.
+  Your answer: cantan
+  Correct: False
+  Explanation: La respuesta del estudiante es incorrecta porque "cantan" se utiliza más comúnmente para aves como los canarios o los ruiseñores que producen melodías. En el caso de los loros, el verbo más adecuado es "trinan", que se refiere al sonido característico que emiten, especialmente cuando están en grupo.
+
+Exercise 2:
+  Sentence: Es común que los búhos _______ cuando la luna está llena.
+  Translation: It's common for the owls to _______ when the moon is full.
+  Your answer: ululen
+  Correct: True
+  Explanation: El uso del subjuntivo "ululen" es correcto en esta oración. La estructura "Es común que" requiere el uso del subjuntivo porque expresa una generalidad o una posibilidad, no un hecho concreto. Por lo tanto, el verbo "ulular" se conjuga en subjuntivo presente como "ululen".
+
+Exercise 3:
+  Sentence: Cada mañana, la gallina _______ después de poner un huevo.
+  Translation: Every morning, the hen _______ after laying an egg.
+  Your answer: cacarea
+  Correct: True
+  Explanation: La respuesta del alumno es correcta. En esta oración, el verbo "cacarear" se conjuga en tercera persona del singular del presente de indicativo como "cacarea" para concordar con el sujeto "la gallina". La estructura es adecuada: sujeto + verbo en presente + complemento circunstancial.
+
+Exercise 4:
+  Sentence: Cuando el hombre _______ su melodía, los gorriones se reúnen a su alrededor.
+  Translation: When the man _______ his tune, the sparrows gather around him.
+  Your answer: silba
+  Correct: True
+  Explanation: La respuesta del alumno es correcta. En esta oración, "silba" es el verbo que concuerda en tiempo y persona con "el hombre", que es tercera persona del singular en presente. Además, el contexto de la oración sugiere una acción que ocurre habitualmente, lo cual se expresa adecuadamente usando el presente de indicativo.
+
+Exercise 5:
+  Sentence: Es importante que el tucán _______ para marcar su territorio.
+  Translation: It's important for the toucan to _______ to mark its territory.
+  Your answer: cante
+  Correct: False
+  Explanation: La respuesta del alumno es incorrecta porque el verbo "trinar" no es comúnmente asociado con los tucanes. En la oración, se utiliza el subjuntivo presente "cante" del verbo "cantar", ya que los tucanes son conocidos por sus vocalizaciones para marcar territorio. El uso del subjuntivo es necesario aquí porque la oración expresa una acción que es importante que ocurra.
+
+Exercise 5:
+  Sentence: Es importante que el tucán _______ para marcar su territorio.
+  Translation: It's important for the toucan to _______ to mark its territory.
+  Your answer: cante
+  Correct: True
+  Explanation: La respuesta del estudiante es correcta. En esta oración, se utiliza el modo subjuntivo porque se expresa una necesidad o importancia. La estructura "Es importante que" requiere el uso del subjuntivo. El verbo "cantar" en subjuntivo para la tercera persona del singular es "cante".
+
+Exercise 1:
+  Sentence: El guía señala un tucán y comenta que a menudo _____ por las mañanas, especialmente durante la temporada de apareamiento.
+  Translation: The guide points to a toucan and comments that it often _____ in the mornings, especially during mating season.
+  Your answer: silba
+  Correct: False
+  Explanation: La respuesta del aprendiz es incorrecta porque el verbo "silba" no es la opción más adecuada en este contexto. En este caso, el verbo "canta" es correcto porque se refiere al sonido característico que hacen los tucanes, especialmente durante la temporada de apareamiento. "Silbar" se usa más para describir el sonido que hacen los humanos al soplar aire por los labios.
+
+Exercise 2:
+  Sentence: El granjero menciona que las gallinas _____ cuando están poniendo huevos o cuando se sienten amenazadas.
+  Translation: The farmer mentions that the hens _____ when they are laying eggs or when they feel threatened.
+  Your answer: silban
+  Correct: True
+  Explanation: La respuesta del alumno es correcta. El verbo "canta" está en la tercera persona del singular del presente de indicativo, que concuerda correctamente con el sujeto tácito "tucán". Además, el verbo "cantar" es adecuado en el contexto, ya que los tucanes emiten sonidos característicos, especialmente durante la temporada de apareamiento.
+
+Exercise 3:
+  Sentence: Tu amigo te dice que esos sonidos probablemente _____ de las lechuzas, que son muy activas durante la noche.
+  Translation: Your friend tells you that those sounds probably _____ from the owls, which are very active at night.
+  Your answer: cantan
+  Correct: True
+  Explanation: La respuesta del alumno es correcta. En la oración, "cacarean" es la forma adecuada del verbo "cacarear" conjugado en tercera persona del plural del presente de indicativo. Esto concuerda con "las gallinas", que es un sujeto plural.
+
+Exercise 3:
+  Sentence: Tu amigo te dice que esos sonidos probablemente _____ de las lechuzas, que son muy activas durante la noche.
+  Translation: Your friend tells you that those sounds probably _____ from the owls, which are very active at night.
+  Your answer: trinan
+  Correct: False
+  Explanation: La respuesta del estudiante es incorrecta. El verbo "ulular" se refiere al sonido característico que hacen las lechuzas y otros búhos, que es un tipo de aullido o canto nocturno. Por otro lado, "trinar" se usa para describir el canto de aves como los pájaros, que es más melodioso y se escucha generalmente durante el día. En el contexto de la frase, el sonido de las lechuzas es "ululan".
+
+Exercise 4:
+  Sentence: El guía te muestra un grupo de canarios que _____ alegremente al amanecer, creando un ambiente mágico.
+  Translation: The guide shows you a group of canaries that _____ happily at dawn, creating a magical atmosphere.
+  Your answer: silban
+  Correct: True
+  Explanation: La respuesta del estudiante es correcta. En este contexto, se necesita el verbo "ulular" en tercera persona del plural del presente de indicativo, que es "ululan". Esto concuerda con "esos sonidos", que es un sujeto plural.
+
+Exercise 4:
+  Sentence: El guía te muestra un grupo de canarios que _____ alegremente al amanecer, creando un ambiente mágico.
+  Translation: The guide shows you a group of canaries that _____ happily at dawn, creating a magical atmosphere.
+  Your answer: cantan
+  Correct: False
+  Explanation: La respuesta del alumno es incorrecta porque "cantan" se refiere al acto general de cantar, que puede aplicar a cualquier tipo de ave, pero "trinan" es más específico para el sonido particular que hacen los pájaros pequeños como los canarios. En este contexto, "trinan" es la palabra más precisa para describir el sonido alegre y característico de los canarios al amanecer.
+
+Exercise 5:
+  Sentence: El vendedor comenta que los loros _____ imitando el sonido de la gente que pasa.
+  Translation: The vendor comments that the parrots _____ imitating the sound of the people passing by.
+  Your answer: silban
+  Correct: True
+  Explanation: La respuesta del alumno es correcta. En esta oración, el verbo "silban" está en tercera persona del plural del presente de indicativo, que concuerda correctamente con el sujeto "los loros". Además, "silban" es el verbo adecuado para describir la acción de imitar sonidos, lo cual es característico de los loros.
+
+=== End Session ===
+
+=== Session Log ===
+=== End Session ===
+
+=== Session Log ===
+=== End Session ===
+
+
+=== Informe de Sesión ===
+=== Session Log ===
+Exercise 1:
+  Sentence: Es importante que él __________ a tiempo para la reunión.
+  Translation: It's important that he __________ on time for the meeting.
+  Your answer: llegue
+  Correct: True
+  Explanation: La respuesta del estudiante es correcta. En esta oración se utiliza el subjuntivo presente "llegue" porque la expresión "es importante que" indica una recomendación o necesidad, lo cual requiere el uso del subjuntivo en español.
+
+Exercise 1:
+  Sentence: Es crucial que el equipo ______ el informe antes del viernes.
+  Translation: It's crucial that the team ______ the report before Friday.
+  Your answer: entregue
+  Correct: True
+  Explanation: La respuesta del estudiante es correcta. En esta oración, estamos usando el modo subjuntivo porque hay una expresión de necesidad o importancia ("Es crucial que"). En el subjuntivo presente, el verbo "entregar" para el sujeto "el equipo" se conjuga como "entregue". Esto sigue la regla de conjugación para verbos regulares terminados en "-ar" en el presente de subjuntivo: -e, -es, -e, -emos, -en.
+
+=== End Session ===
+
+=== Session Log ===
+=== End Session ===
+
+=== Session Log ===
+Exercise 1:
+  Sentence: El tucán ______ en la rama mientras los niños lo miraban con asombro.
+  Translation: The toucan ______ on the branch while the children watched it in awe.
+  Your answer: se posó
+  Correct: True
+  Explanation: Sí, la respuesta del alumno es correcta. En esta oración, "se posó" es el verbo reflexivo en pretérito perfecto simple que indica la acción de que el tucán se coloca sobre la rama. El uso del pretérito es adecuado aquí porque se refiere a una acción completada en el pasado.
+
+Exercise 2:
+  Sentence: Es importante que la guacamaya ______ en un ambiente seguro para sobrevivir.
+  Translation: It is important that the macaw ______ in a safe environment to survive.
+  Your answer: viva
+  Correct: True
+  Explanation: Sí, la respuesta del estudiante es correcta. En esta oración se utiliza el subjuntivo presente "viva" porque la frase "Es importante que..." expresa una necesidad o deseo, lo cual requiere el uso del subjuntivo en español.
+
+Exercise 3:
+  Sentence: Los pájaros ______ con tanta armonía que parecía un concierto natural.
+  Translation: The birds ______ with such harmony that it seemed like a natural concert.
+  Your answer: cantan
+  Correct: False
+  Explanation: El verbo en la oración debe estar en pretérito perfecto simple ("cantaron") porque se refiere a una acción completa y terminada en el pasado. "Cantan" estaría en presente, lo cual no corresponde al contexto de la oración.
+
+=== End Session ===
+
+=== Session Log ===
+Exercise 1:
+  Sentence: Es importante que nosotros __________ (considerar) todos los factores antes de presentar el informe final.
+  Translation: It's important that we __________ all the factors before presenting the final report.
+  Your answer: consideremos
+  Correct: True
+  Explanation: Sí, la respuesta del alumno es correcta. En esta oración, se utiliza el modo subjuntivo porque la frase "es importante que" expresa una necesidad o recomendación. El verbo "considerar" se conjuga en la primera persona del plural del presente de subjuntivo como "consideremos".
+
+Exercise 2:
+  Sentence: Espero que yo __________ (poder) terminar el artículo antes de la conferencia en Brasil.
+  Translation: I hope that I __________ finish the article before the conference in Brazil.
+  Your answer: pueda
+  Correct: True
+  Explanation: La respuesta del estudiante es correcta. En esta oración usamos el subjuntivo presente porque la frase "Espero que" expresa un deseo o incertidumbre sobre el futuro. El verbo "poder" se conjuga en subjuntivo presente como "pueda" para la primera persona del singular (yo).
+
+Exercise 3:
+  Sentence: Es crucial que nosotros __________ (llegar) a un acuerdo sobre los términos del proyecto.
+  Translation: It's crucial that we __________ to an agreement on the terms of the project.
+  Your answer: lleguemos
+  Correct: True
+  Explanation: Sí, la respuesta del alumno es correcta. En esta oración, estamos usando el subjuntivo presente porque la frase "Es crucial que" expresa una necesidad o importancia. En el subjuntivo presente, el verbo "llegar" para la primera persona del plural (nosotros) se conjuga como "lleguemos".
+
+Exercise 1:
+  Sentence: Espero que nosotros __________ (llegar) a una conclusión clara después de analizar los resultados.
+  Translation: I hope that we __________ to a clear conclusion after analyzing the results.
+  Your answer: lleguemos
+  Correct: True
+  Explanation: Sí, la respuesta del estudiante es correcta. En esta oración se utiliza el subjuntivo presente "lleguemos" porque está precedido por la expresión "Espero que", la cual indica deseo o expectativa. En español, después de ciertas expresiones que denotan deseo, duda o incertidumbre, se emplea el subjuntivo.
+
+Exercise 2:
+  Sentence: Es crucial que yo __________ (compartir) esta información con colegas de otros países.
+  Translation: It is crucial that I __________ this information with colleagues from other countries.
+  Your answer: comparta
+  Correct: True
+  Explanation: Sí, la respuesta del estudiante es correcta. En este caso, "comparta" es la forma adecuada del verbo "compartir" en el presente de subjuntivo. Esto se debe a que la frase principal "Es crucial que" expresa una necesidad o importancia, lo cual requiere el uso del subjuntivo.
+
+=== End Session ===
+

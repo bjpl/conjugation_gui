@@ -1,0 +1,20 @@
+{
+  "dark_mode": false,
+  "show_translation": false,
+  "api_model": "gpt-4o",
+  "max_tokens": 600,
+  "temperature": 0.5,
+  "max_stored_responses": 100,
+  "exercise_count": 5,
+  "answer_strictness": "normal",
+  "window_geometry": {
+    "width": 1100,
+    "height": 700,
+    "x": 100,
+    "y": 100
+  },
+  "splitter_sizes": [
+    450,
+    650
+  ]
+}
