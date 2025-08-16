@@ -561,10 +561,19 @@ class SpanishConjugationGUI(QMainWindow):
         count_box = QGroupBox("Number of Exercises")
         count_layout = QHBoxLayout(count_box)
         self.exercise_count_spin = QSpinBox()
-        self.exercise_count_spin.setRange(1, 10)
+        self.exercise_count_spin.setRange(1, 50)  # More flexibility
         self.exercise_count_spin.setValue(app_config.get("exercise_count", 5))
         count_layout.addWidget(self.exercise_count_spin)
         po_layout.addWidget(count_box)
+        
+        # Add speed control for Speed Mode
+        speed_box = QGroupBox("Speed Mode Timer (seconds)")
+        speed_layout = QHBoxLayout(speed_box)
+        self.speed_timer_spin = QSpinBox()
+        self.speed_timer_spin.setRange(1, 10)
+        self.speed_timer_spin.setValue(3)  # Default 3 seconds
+        speed_layout.addWidget(self.speed_timer_spin)
+        po_layout.addWidget(speed_box)
 
         right_layout.addWidget(self.practice_options_box)
 
@@ -707,6 +716,16 @@ class SpanishConjugationGUI(QMainWindow):
         cheat_sheet_action.setToolTip("Quick conjugation reference")
         cheat_sheet_action.triggered.connect(self.showCheatSheet)
         toolbar.addAction(cheat_sheet_action)
+        
+        custom_action = QAction("🎨 Custom Practice", self)
+        custom_action.setToolTip("Create your own practice session")
+        custom_action.triggered.connect(self.startCustomPractice)
+        toolbar.addAction(custom_action)
+        
+        export_action = QAction("💾 Export Progress", self)
+        export_action.setToolTip("Save your progress and settings")
+        export_action.triggered.connect(self.exportProgress)
+        toolbar.addAction(export_action)
 
     def toggleOfflineMode(self) -> None:
         """Toggle between offline and online exercise generation."""
@@ -821,10 +840,23 @@ class SpanishConjugationGUI(QMainWindow):
     def startSpeedMode(self) -> None:
         """Start speed practice mode for conversational fluency."""
         self.speed_mode = True
-        self.updateStatus("⚡ Speed Mode: 3 seconds per verb! Build conversational fluency.")
         
-        # Generate speed round
-        exercises = self.speed_practice.generate_speed_round(30)  # 30 second rounds
+        # Get user preferences
+        time_limit = self.speed_timer_spin.value()
+        exercise_count = self.exercise_count_spin.value()
+        selected_verbs = self.specific_verbs_input.text().strip()
+        
+        self.updateStatus(f"⚡ Speed Mode: {time_limit} seconds per verb! Build conversational fluency.")
+        
+        # Generate speed round with user settings
+        if selected_verbs:
+            # Use user's specific verbs
+            verbs = [v.strip() for v in selected_verbs.split(',')]
+            self.speed_practice.essential_verbs = verbs
+        
+        # Calculate duration based on user settings
+        duration = exercise_count * time_limit
+        exercises = self.speed_practice.generate_speed_round(duration)
         
         # Convert to exercise format
         for ex in exercises:
@@ -848,6 +880,112 @@ class SpanishConjugationGUI(QMainWindow):
             "• This trains automatic recall\n"
             "• In real conversation, slow = awkward\n\n"
             "Ready? Go!")
+    
+    def startCustomPractice(self) -> None:
+        """Let user create completely custom practice session."""
+        from PyQt5.QtWidgets import QDialog, QVBoxLayout, QTextEdit, QPushButton, QDialogButtonBox
+        
+        dialog = QDialog(self)
+        dialog.setWindowTitle("🎨 Custom Practice Creator")
+        dialog.setGeometry(200, 200, 600, 400)
+        
+        layout = QVBoxLayout()
+        
+        # Instructions
+        instructions = QLabel(
+            "Create your own practice sentences!\n"
+            "Format: sentence with _____ (verb, tense, person)\n"
+            "Example: Mañana _____ al médico (ir, future, yo)"
+        )
+        layout.addWidget(instructions)
+        
+        # Text area for custom exercises
+        self.custom_text = QTextEdit()
+        self.custom_text.setPlainText(
+            "# Custom Practice Sentences\n"
+            "Ayer _____ una película (ver, preterite, yo)\n"
+            "¿_____ conmigo? (venir, present, tú)\n"
+            "Ellos _____ muy cansados (estar, imperfect, ellos)\n"
+        )
+        layout.addWidget(self.custom_text)
+        
+        # Process button
+        process_btn = QPushButton("Create Practice Session")
+        process_btn.clicked.connect(lambda: self.processCustomExercises(dialog))
+        layout.addWidget(process_btn)
+        
+        dialog.setLayout(layout)
+        dialog.exec_()
+    
+    def processCustomExercises(self, dialog):
+        """Process user's custom exercises."""
+        import re
+        
+        text = self.custom_text.toPlainText()
+        lines = [line.strip() for line in text.split('\n') if line.strip() and not line.startswith('#')]
+        
+        exercises = []
+        person_map = {
+            'yo': 0, 'tú': 1, 'él': 2, 'ella': 2, 'usted': 2,
+            'nosotros': 3, 'vosotros': 4, 'ellos': 5, 'ellas': 5, 'ustedes': 5
+        }
+        
+        tense_map = {
+            'present': 'present', 'presente': 'present',
+            'preterite': 'preterite', 'pretérito': 'preterite',
+            'imperfect': 'imperfect', 'imperfecto': 'imperfect',
+            'future': 'future', 'futuro': 'future',
+            'conditional': 'conditional', 'condicional': 'conditional',
+            'subjunctive': 'present_subjunctive', 'subjuntivo': 'present_subjunctive'
+        }
+        
+        for line in lines:
+            # Parse format: sentence _____ (verb, tense, person)
+            match = re.search(r'(.*?)_+\s*\((.*?)\)', line)
+            if match:
+                sentence_part = match.group(1)
+                params = match.group(2).split(',')
+                
+                if len(params) >= 3:
+                    verb = params[0].strip()
+                    tense = tense_map.get(params[1].strip().lower(), 'present')
+                    person_str = params[2].strip().lower()
+                    person = person_map.get(person_str, 0)
+                    
+                    answer = self.conjugator.conjugate(verb, tense, person)
+                    if answer:
+                        # Generate choices
+                        choices = [answer]
+                        for p in range(6):
+                            if p != person:
+                                form = self.conjugator.conjugate(verb, tense, p)
+                                if form and form not in choices:
+                                    choices.append(form)
+                                    if len(choices) >= 4:
+                                        break
+                        
+                        exercises.append({
+                            'sentence': line.replace(match.group(0), sentence_part + "_____"),
+                            'answer': answer,
+                            'choices': choices[:4],
+                            'verb': verb,
+                            'tense': tense,
+                            'person': person,
+                            'translation': f"Custom: {verb} ({tense}, {person_str})",
+                            'context': 'User-created exercise'
+                        })
+        
+        if exercises:
+            self.exercises = exercises
+            self.total_exercises = len(exercises)
+            self.current_exercise = 0
+            self.progress_bar.setMaximum(self.total_exercises)
+            self.updateExercise()
+            self.updateStatus(f"Created {len(exercises)} custom exercises!")
+            dialog.accept()
+        else:
+            QMessageBox.warning(dialog, "No Valid Exercises", 
+                               "Could not parse any valid exercises. Check format.")
     
     def showCheatSheet(self) -> None:
         """Show quick conjugation reference for current verb or common verbs."""
@@ -907,6 +1045,46 @@ class SpanishConjugationGUI(QMainWindow):
         
         dialog.setLayout(layout)
         dialog.exec_()
+    
+    def exportProgress(self) -> None:
+        """Export user progress and custom exercises to JSON."""
+        from PyQt5.QtWidgets import QFileDialog
+        import json
+        from datetime import datetime
+        
+        # Gather all data
+        export_data = {
+            'timestamp': datetime.now().isoformat(),
+            'statistics': self.progress_tracker.get_statistics(),
+            'weak_areas': self.progress_tracker.get_weak_areas(10),
+            'speed_practice': {
+                'response_times': self.speed_practice.response_times,
+                'weak_spots': self.speed_practice.get_weak_spots()
+            },
+            'current_exercises': self.exercises,
+            'settings': {
+                'offline_mode': self.offline_mode,
+                'dark_mode': self.dark_mode,
+                'show_translation': self.show_translation
+            }
+        }
+        
+        # Save to file
+        filename, _ = QFileDialog.getSaveFileName(
+            self, "Export Progress", 
+            f"spanish_progress_{datetime.now().strftime('%Y%m%d')}.json",
+            "JSON Files (*.json)"
+        )
+        
+        if filename:
+            try:
+                with open(filename, 'w', encoding='utf-8') as f:
+                    json.dump(export_data, f, indent=2, ensure_ascii=False)
+                self.updateStatus(f"Progress exported to {filename}")
+                QMessageBox.information(self, "Export Successful", 
+                                      f"Your progress has been saved to:\n{filename}")
+            except Exception as e:
+                QMessageBox.warning(self, "Export Failed", f"Could not export: {str(e)}")
     
     def showStatistics(self) -> None:
         """Show learning statistics dialog."""
