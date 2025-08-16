@@ -1232,3 +1232,48 @@
 2025-02-25 14:44:31,700 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
 2025-02-25 14:44:31,713 - INFO - GPT response received.
 2025-02-25 14:44:34,854 - INFO - Session log written successfully.
+2025-03-16 10:49:50,463 - WARNING - Keyring package not available. API key will be stored in environment variable only.
+2025-03-16 10:50:47,852 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-16 10:50:47,859 - INFO - GPT response received.
+2025-03-16 10:50:47,859 - INFO - Raw GPT response for new exercise:
+[
+    {
+        "context": "En la oficina, los empleados siempre están ocupados. A menudo necesitan revisar documentos importantes.",
+        "sentence": "Ellos _______ los documentos antes de la reunión.",
+        "answer": "ven",
+        "choices": ["ven", "vieron", "verán", "viendo"],
+        "translation": "They _______ the documents before the meeting."
+    },
+    {
+        "context": "Durante la conferencia, los asistentes prestaron mucha atención a las presentaciones.",
+        "sentence": "Ellos _______ todas las diapositivas con interés.",
+        "answer": "vieron",
+        "choices": ["ven", "vieron", "verán", "viendo"],
+        "translation": "They _______ all the slides with interest."
+    },
+    {
+        "context": "En la fábrica, los supervisores revisan el trabajo de los empleados cada día.",
+        "sentence": "Ellos _______ el progreso de cada proyecto diariamente.",
+        "answer": "ven",
+        "choices": ["ven", "vieron", "verán", "viendo"],
+        "translation": "They _______ the progress of each project daily."
+    },
+    {
+        "context": "Después de la entrega del proyecto, los clientes evaluaron el resultado final.",
+        "sentence": "Ellos _______ el producto terminado con satisfacción.",
+        "answer": "vieron",
+        "choices": ["ven", "vieron", "verán", "viendo"],
+        "translation": "They _______ the finished product with satisfaction."
+    },
+    {
+        "context": "En el call center, los agentes deben estar atentos a las pantallas para atender las llamadas.",
+        "sentence": "Ellos _______ los monitores constantemente.",
+        "answer": "ven",
+        "choices": ["ven", "vieron", "verán", "viendo"],
+        "translation": "They _______ the monitors constantly."
+    }
+]
+2025-03-16 10:50:47,876 - INFO - New exercises generated: Ellos _______ los documentos antes de la reunión., Ellos _______ todas las diapositivas con interés., Ellos _______ el progreso de cada proyecto diariamente., Ellos _______ el producto terminado con satisfacción., Ellos _______ los monitores constantemente.
+2025-03-16 10:51:17,686 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-16 10:51:17,687 - INFO - GPT response received.
+2025-03-16 10:52:05,009 - INFO - Session log written successfully.

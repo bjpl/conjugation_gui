@@ -1618,3 +1618,13 @@ Exercise 2:
 
 === End Session ===
 
+=== Session Log ===
+Exercise 1:
+  Sentence: Ellos _______ los documentos antes de la reunión.
+  Translation: They _______ the documents before the meeting.
+  Your answer: verán
+  Correct: False
+  Explanation: La respuesta del estudiante no es correcta porque "verán" está en futuro simple, lo cual no concuerda con la acción que ocurre antes de la reunión. La oración requiere el presente simple "ven", ya que se refiere a una acción habitual o que ocurre en el presente antes de la reunión.
+
+=== End Session ===
+

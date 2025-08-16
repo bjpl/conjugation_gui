@@ -51,29 +51,8 @@ from PyQt5.QtWidgets import (
 import openai
 from openai import OpenAI
 
-# -------------------------------------------------------------------
-# IMPORTANT FIX FOR OLDER OPENAI VERSIONS:
-# Catch import error for openai.error submodule and provide a fallback.
-# -------------------------------------------------------------------
-try:
-    from openai.error import (
-        OpenAIError, RateLimitError, AuthenticationError, APIError
-    )
-except ImportError:
-    # Fallback for older openai packages that don't have openai.error submodule
-    from openai import OpenAIError
-
-    class RateLimitError(OpenAIError):
-        """Fallback for older openai installations missing openai.error."""
-        pass
-
-    class AuthenticationError(OpenAIError):
-        """Fallback for older openai installations missing openai.error."""
-        pass
-
-    class APIError(OpenAIError):
-        """Fallback for older openai installations missing openai.error."""
-        pass
+# For newer OpenAI versions (1.x), errors are handled differently
+# We'll use generic exception handling to be compatible
 
 
 # -------------------------------------------------------
@@ -135,7 +114,7 @@ DEFAULT_EXERCISE_BATCH_SIZE = 5
 
 
 # -------------------------------------------------------
-# (13) CONFIGURATION MANAGEMENT (Stub Class)
+# CONFIGURATION MANAGEMENT
 # -------------------------------------------------------
 class AppConfig:
     """
@@ -205,8 +184,7 @@ app_config = AppConfig()
 
 
 # -------------------------------------------------------
-# (7) MEMORY MANAGEMENT IMPLEMENTATION
-# (14) PROGRESS TRACKING ENHANCEMENT (Stub Class)
+# PROGRESS TRACKING
 # -------------------------------------------------------
 class ProgressStats:
     """
@@ -240,54 +218,10 @@ class ProgressStats:
         return (self.total_correct / self.total_attempted) * 100.0
 
 
-# -------------------------------------------------------
-# (15) API CREDENTIAL MANAGEMENT (Stub Class)
-# -------------------------------------------------------
-class CredentialsManager:
-    """
-    Securely manage API credentials.
-    Demonstrates a pattern for storing credentials either in environment
-    variables or a system keyring.
-    """
-    def __init__(self, service_name: str = "spanish_conjugation_app") -> None:
-        self.service_name = service_name
-        self.username = "openai_api"
-        try:
-            import keyring
-            self.keyring_available = True
-        except ImportError:
-            self.keyring_available = False
-            logging.warning(
-                "Keyring package not available. API key will be stored "
-                "in environment variable only."
-            )
-
-    def get_api_key(self) -> str:
-        """Retrieve the OpenAI API key from keyring or environment."""
-        if self.keyring_available:
-            import keyring
-            key = keyring.get_password(self.service_name, self.username)
-            if key:
-                return key
-        return os.getenv("OPENAI_API_KEY", "YOUR_OPENAI_API_KEY_HERE")
-
-    def save_api_key(self, api_key: str) -> bool:
-        """Save the API key in keyring (if available) and environment."""
-        os.environ["OPENAI_API_KEY"] = api_key
-        if self.keyring_available:
-            try:
-                import keyring
-                keyring.set_password(self.service_name, self.username, api_key)
-                return True
-            except Exception as e:
-                logging.error("Error saving to keyring: %s", e)
-                return False
-        return True
-
-
-# Instantiate and use the credential manager (replace usage as needed).
-creds_manager = CredentialsManager()
-api_key = creds_manager.get_api_key()
+# Simple API key retrieval from environment
+api_key = os.getenv("OPENAI_API_KEY", "")
+if not api_key:
+    logging.error("OPENAI_API_KEY not found in environment variables. Please create a .env file.")
 
 # Set your OpenAI API key
 openai.api_key = api_key
@@ -353,21 +287,20 @@ class GPTWorkerRunnable(QRunnable):
             )
             output = response.choices[0].message.content.strip()
             logging.info("GPT response received.")
-        except RateLimitError as e:
-            output = "Rate limit exceeded. Please try again in a few minutes."
-            logging.error("OpenAI rate limit exceeded: %s", e)
-        except AuthenticationError as e:
-            output = "API authentication error. Please check your API key."
-            logging.error("OpenAI authentication error: %s", e)
-        except APIError as e:
-            output = "API service error. Please try again later."
-            logging.error("OpenAI API error: %s", e)
-        except OpenAIError as e:
-            output = f"OpenAI error: {str(e)}"
-            logging.error("General OpenAI error: %s", e)
         except Exception as e:
-            output = f"Error: {str(e)}"
-            logging.error("Error in GPTWorkerRunnable: %s", e)
+            error_msg = str(e)
+            if "rate_limit" in error_msg.lower():
+                output = "Rate limit exceeded. Please try again in a few minutes."
+                logging.error("OpenAI rate limit exceeded: %s", e)
+            elif "authentication" in error_msg.lower() or "api_key" in error_msg.lower():
+                output = "API authentication error. Please check your API key in the .env file."
+                logging.error("OpenAI authentication error: %s", e)
+            elif "api" in error_msg.lower():
+                output = "API service error. Please try again later."
+                logging.error("OpenAI API error: %s", e)
+            else:
+                output = f"Error: {error_msg}"
+                logging.error("Error in GPTWorkerRunnable: %s", e)
 
         self.signals.result.emit(output)
 
