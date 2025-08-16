@@ -2,7 +2,11 @@
   "permissions": {
     "allow": [
       "Bash(python:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(dir:*)",
+      "Bash(copy .env.example SpanishConjugation_Distribution)",
+      "Bash(cp:*)"
     ],
     "deny": [],
     "ask": []
