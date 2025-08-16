@@ -29,6 +29,7 @@ import os
 import json
 import logging
 import random
+import time
 from typing import (
     List, Dict, Union, Optional, Any, Tuple, Callable
 )
@@ -39,8 +40,10 @@ load_dotenv()
 # Local modules
 from exercise_generator import ExerciseGenerator
 from progress_tracker import ProgressTracker
-from conjugation_engine import PERSON_LABELS, TENSE_NAMES
+from conjugation_engine import PERSON_LABELS, TENSE_NAMES, SpanishConjugator
 from task_scenarios import TaskScenario
+from speed_practice import SpeedPractice
+from learning_path import LearningPath
 
 # PyQt5 imports
 from PyQt5.QtCore import (
@@ -440,10 +443,15 @@ class SpanishConjugationGUI(QMainWindow):
         self.progress_tracker = ProgressTracker()
         self.exercise_generator = ExerciseGenerator()
         self.task_scenarios = TaskScenario()
+        self.speed_practice = SpeedPractice()
+        self.learning_path = LearningPath()
+        self.conjugator = SpanishConjugator()
         self.session_id = self.progress_tracker.start_session()
         self.threadpool = QThreadPool()
         self.offline_mode = False  # Start in online mode by default
         self.task_mode = False  # Toggle between grammar drills and tasks
+        self.speed_mode = False  # Speed practice mode
+        self.start_time = None  # For timing responses
 
         # Load initial states from config
         self.dark_mode: bool = app_config.get("dark_mode", False)
@@ -689,6 +697,16 @@ class SpanishConjugationGUI(QMainWindow):
         story_mode_action.setToolTip("Practice with connected stories")
         story_mode_action.triggered.connect(self.startStoryMode)
         toolbar.addAction(story_mode_action)
+        
+        speed_action = QAction("⚡ Speed Mode", self)
+        speed_action.setToolTip("Build conversational fluency with timed practice")
+        speed_action.triggered.connect(self.startSpeedMode)
+        toolbar.addAction(speed_action)
+        
+        cheat_sheet_action = QAction("📋 Verb Reference", self)
+        cheat_sheet_action.setToolTip("Quick conjugation reference")
+        cheat_sheet_action.triggered.connect(self.showCheatSheet)
+        toolbar.addAction(cheat_sheet_action)
 
     def toggleOfflineMode(self) -> None:
         """Toggle between offline and online exercise generation."""
@@ -799,6 +817,96 @@ class SpanishConjugationGUI(QMainWindow):
                         break
         
         return choices[:4]
+    
+    def startSpeedMode(self) -> None:
+        """Start speed practice mode for conversational fluency."""
+        self.speed_mode = True
+        self.updateStatus("⚡ Speed Mode: 3 seconds per verb! Build conversational fluency.")
+        
+        # Generate speed round
+        exercises = self.speed_practice.generate_speed_round(30)  # 30 second rounds
+        
+        # Convert to exercise format
+        for ex in exercises:
+            ex['sentence'] = f"{ex['trigger']}\n\n{ex['scenario']}"
+            ex['translation'] = f"Time limit: {ex['time_limit']} seconds"
+        
+        self.exercises = exercises
+        self.total_exercises = len(exercises)
+        self.current_exercise = 0
+        self.progress_bar.setMaximum(self.total_exercises)
+        
+        # Start timer for first exercise
+        self.start_time = time.time()
+        self.updateExercise()
+        
+        # Show speed tips
+        QMessageBox.information(self, "Speed Mode Tips",
+            "⚡ SPEED MODE - Build Conversational Fluency\n\n"
+            "• You have 3 seconds per verb\n"
+            "• Focus on SPEED, not perfection\n"
+            "• This trains automatic recall\n"
+            "• In real conversation, slow = awkward\n\n"
+            "Ready? Go!")
+    
+    def showCheatSheet(self) -> None:
+        """Show quick conjugation reference for current verb or common verbs."""
+        # Create a simple reference table
+        from PyQt5.QtWidgets import QDialog, QVBoxLayout, QTableWidget, QTableWidgetItem, QDialogButtonBox
+        
+        dialog = QDialog(self)
+        dialog.setWindowTitle("Quick Verb Reference")
+        dialog.setGeometry(200, 200, 600, 400)
+        
+        layout = QVBoxLayout()
+        table = QTableWidget()
+        
+        # Show current verb if in exercise, otherwise show ser/estar/tener
+        if self.exercises and 0 <= self.current_exercise < len(self.exercises):
+            verb = self.exercises[self.current_exercise].get('verb', 'ser')
+        else:
+            verb = 'ser'  # Default to most important verb
+        
+        # Get all conjugations
+        table.setRowCount(6)
+        table.setColumnCount(4)
+        table.setHorizontalHeaderLabels(['Person', 'Present', 'Preterite', 'Imperfect'])
+        
+        persons = ['yo', 'tú', 'él/ella', 'nosotros', 'vosotros', 'ellos']
+        for i, person in enumerate(persons):
+            table.setItem(i, 0, QTableWidgetItem(person))
+            
+            # Present
+            form = self.conjugator.conjugate(verb, 'present', i)
+            table.setItem(i, 1, QTableWidgetItem(form or '-'))
+            
+            # Preterite
+            form = self.conjugator.conjugate(verb, 'preterite', i)
+            table.setItem(i, 2, QTableWidgetItem(form or '-'))
+            
+            # Imperfect
+            form = self.conjugator.conjugate(verb, 'imperfect', i)
+            table.setItem(i, 3, QTableWidgetItem(form or '-'))
+        
+        table.resizeColumnsToContents()
+        layout.addWidget(QLabel(f"Conjugation for: {verb}"))
+        layout.addWidget(table)
+        
+        # Add quick tips
+        tips = QLabel(
+            "💡 Quick Tips:\n"
+            "• Regular -AR: o, as, a, amos, áis, an\n"
+            "• Regular -ER: o, es, e, emos, éis, en\n"
+            "• Regular -IR: o, es, e, imos, ís, en"
+        )
+        layout.addWidget(tips)
+        
+        buttons = QDialogButtonBox(QDialogButtonBox.Ok)
+        buttons.accepted.connect(dialog.accept)
+        layout.addWidget(buttons)
+        
+        dialog.setLayout(layout)
+        dialog.exec_()
     
     def showStatistics(self) -> None:
         """Show learning statistics dialog."""
@@ -1010,8 +1118,29 @@ class SpanishConjugationGUI(QMainWindow):
                 is_correct
             )
 
+        # Check if this is speed mode
+        if self.speed_mode and self.start_time:
+            response_time = time.time() - self.start_time
+            speed_result = self.speed_practice.evaluate_speed_response(
+                exercise['verb'], 
+                exercise.get('person', 0),
+                user_answer,
+                response_time
+            )
+            
+            feedback = speed_result['feedback']
+            feedback += f"\n\nTime: {response_time:.1f}s - {speed_result['speed_rating']}"
+            if speed_result['improvement']:
+                feedback += f"\n{speed_result['improvement']:.1f}s faster than average!"
+            
+            self.feedback_text.setText(feedback)
+            self.updateStatus(speed_result['speed_rating'])
+            
+            # Reset timer for next exercise
+            self.start_time = time.time()
+            
         # Check if this is a task-based exercise
-        if 'task_data' in exercise:
+        elif 'task_data' in exercise:
             # Evaluate communicative success
             task_result = self.task_scenarios.evaluate_response(user_answer, exercise['task_data'])
             
