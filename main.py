@@ -40,6 +40,7 @@ load_dotenv()
 from exercise_generator import ExerciseGenerator
 from progress_tracker import ProgressTracker
 from conjugation_engine import PERSON_LABELS, TENSE_NAMES
+from task_scenarios import TaskScenario
 
 # PyQt5 imports
 from PyQt5.QtCore import (
@@ -438,9 +439,11 @@ class SpanishConjugationGUI(QMainWindow):
         self.stats = ProgressStats()
         self.progress_tracker = ProgressTracker()
         self.exercise_generator = ExerciseGenerator()
+        self.task_scenarios = TaskScenario()
         self.session_id = self.progress_tracker.start_session()
         self.threadpool = QThreadPool()
         self.offline_mode = False  # Start in online mode by default
+        self.task_mode = False  # Toggle between grammar drills and tasks
 
         # Load initial states from config
         self.dark_mode: bool = app_config.get("dark_mode", False)
@@ -676,6 +679,16 @@ class SpanishConjugationGUI(QMainWindow):
         stats_action.setToolTip("See your learning progress")
         stats_action.triggered.connect(self.showStatistics)
         toolbar.addAction(stats_action)
+        
+        task_mode_action = QAction("Task Mode", self)
+        task_mode_action.setToolTip("Practice with real-world scenarios")
+        task_mode_action.triggered.connect(self.startTaskMode)
+        toolbar.addAction(task_mode_action)
+        
+        story_mode_action = QAction("Story Mode", self)
+        story_mode_action.setToolTip("Practice with connected stories")
+        story_mode_action.triggered.connect(self.startStoryMode)
+        toolbar.addAction(story_mode_action)
 
     def toggleOfflineMode(self) -> None:
         """Toggle between offline and online exercise generation."""
@@ -706,6 +719,86 @@ class SpanishConjugationGUI(QMainWindow):
         self.progress_bar.setMaximum(self.total_exercises)
         self.updateExercise()
         self.updateStatus("Review mode: Practicing your weak areas")
+    
+    def startTaskMode(self) -> None:
+        """Start task-based learning mode with scenarios."""
+        self.task_mode = True
+        self.updateStatus("Task Mode: Practice with real-world scenarios")
+        
+        # Get available scenarios
+        scenarios = self.task_scenarios.get_scenario_list()
+        scenario_type = random.choice(scenarios)
+        
+        # Get task sequence
+        tasks = self.task_scenarios.get_task_sequence(scenario_type, 5)
+        
+        # Convert to exercise format
+        exercises = []
+        for task in tasks:
+            exercise = {
+                'sentence': f"{task['scenario_title']}\n{task['scenario_context']}\n\n{task['goal']}:\n{task['template']}",
+                'answer': self.task_scenarios.conjugator.conjugate(task['verb'], task['tense'], task['person']),
+                'verb': task['verb'],
+                'tense': task['tense'],
+                'person': task['person'],
+                'choices': self._generate_task_choices(task),
+                'translation': task['prompt'],
+                'context': task['scenario_context'],
+                'goal': task['goal'],
+                'task_data': task
+            }
+            exercises.append(exercise)
+        
+        self.exercises = exercises
+        self.total_exercises = len(exercises)
+        self.current_exercise = 0
+        self.progress_bar.setMaximum(self.total_exercises)
+        self.updateExercise()
+    
+    def startStoryMode(self) -> None:
+        """Start story mode with connected discourse."""
+        self.updateStatus("Story Mode: Practice with connected narratives")
+        
+        # Get selected tenses
+        selected_tenses = self.getSelectedTenses()
+        tense_map = {
+            'Present': 'present',
+            'Preterite': 'preterite',
+            'Imperfect': 'imperfect'
+        }
+        
+        # Choose appropriate tense for story
+        story_tense = 'preterite'  # Default
+        for gui_tense in selected_tenses:
+            if gui_tense in tense_map:
+                story_tense = tense_map[gui_tense]
+                break
+        
+        # Generate story sequence
+        exercises = self.exercise_generator.generate_story_sequence(story_tense, 5)
+        
+        self.exercises = exercises
+        self.total_exercises = len(exercises)
+        self.current_exercise = 0
+        self.progress_bar.setMaximum(self.total_exercises)
+        self.updateExercise()
+        self.updateStatus(f"Story: {exercises[0].get('story_title', 'Connected Story')}")
+    
+    def _generate_task_choices(self, task: Dict[str, Any]) -> List[str]:
+        """Generate choices for task-based exercise."""
+        correct = self.task_scenarios.conjugator.conjugate(task['verb'], task['tense'], task['person'])
+        choices = [correct]
+        
+        # Add related forms
+        for person in range(6):
+            if person != task['person']:
+                form = self.task_scenarios.conjugator.conjugate(task['verb'], task['tense'], person)
+                if form and form not in choices:
+                    choices.append(form)
+                    if len(choices) >= 4:
+                        break
+        
+        return choices[:4]
     
     def showStatistics(self) -> None:
         """Show learning statistics dialog."""
@@ -917,7 +1010,21 @@ class SpanishConjugationGUI(QMainWindow):
                 is_correct
             )
 
-        if self.offline_mode:
+        # Check if this is a task-based exercise
+        if 'task_data' in exercise:
+            # Evaluate communicative success
+            task_result = self.task_scenarios.evaluate_response(user_answer, exercise['task_data'])
+            
+            # Enhanced feedback for task mode
+            feedback = task_result['feedback']
+            if task_result['communicatively_successful']:
+                feedback += f"\n\n✅ Task goal achieved: {exercise['goal']}"
+            else:
+                feedback += f"\n\n📝 Correct form: {task_result['correct_form']}"
+            
+            self.feedback_text.setText(feedback)
+            self.updateStatus("Task evaluated - focus on communication!")
+        elif self.offline_mode:
             # Provide simple feedback in offline mode
             self.feedback_text.setText(base_feedback)
             self.updateStatus("Answer submitted.")

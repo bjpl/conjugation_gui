@@ -1,6 +1,7 @@
 """
 Local Exercise Generator
 Creates Spanish conjugation exercises without API calls
+Enhanced with discourse coherence and communicative context
 """
 
 import random
@@ -243,6 +244,96 @@ class ExerciseGenerator:
             person = random.choice(persons) if persons else None
             
             exercise = self.generate_exercise(verb, tense, person, difficulty)
+            exercises.append(exercise)
+        
+        return exercises
+    
+    def generate_story_sequence(self, tense: str = 'preterite', length: int = 5) -> List[Dict[str, Any]]:
+        """
+        Generate a connected story with multiple blanks.
+        This provides discourse coherence - verbs relate to each other.
+        """
+        stories = {
+            'preterite': [
+                {
+                    'title': 'Un día en la playa',
+                    'sentences': [
+                        ('Ayer mi familia y yo ______ a la playa.', 'ir', 3),
+                        ('______ muy temprano por la mañana.', 'salir', 3),
+                        ('Mi hermana ______ sandwiches para todos.', 'preparar', 2),
+                        ('Los niños ______ en el mar todo el día.', 'nadar', 5),
+                        ('Por la tarde, ______ helados y descansamos.', 'comer', 3)
+                    ]
+                },
+                {
+                    'title': 'Mi primer día de trabajo',
+                    'sentences': [
+                        ('______ muy nervioso esa mañana.', 'estar', 0),
+                        ('______ a la oficina media hora antes.', 'llegar', 0),
+                        ('Mi jefe me ______ a todo el equipo.', 'presentar', 2),
+                        ('Todos ______ muy amables conmigo.', 'ser', 5),
+                        ('Al final del día, me ______ muy contento.', 'sentir', 0)
+                    ]
+                }
+            ],
+            'present': [
+                {
+                    'title': 'Mi rutina diaria',
+                    'sentences': [
+                        ('Todos los días ______ a las 7 de la mañana.', 'levantarse', 0),
+                        ('Primero ______ un café bien fuerte.', 'tomar', 0),
+                        ('Después ______ el periódico en línea.', 'leer', 0),
+                        ('Mi esposa ______ el desayuno mientras yo me ducho.', 'preparar', 2),
+                        ('Los dos ______ de casa a las 8:30.', 'salir', 3)
+                    ]
+                }
+            ],
+            'imperfect': [
+                {
+                    'title': 'Cuando era niño',
+                    'sentences': [
+                        ('Cuando era niño, ______ en un pueblo pequeño.', 'vivir', 0),
+                        ('Mi abuela siempre ______ historias fascinantes.', 'contar', 2),
+                        ('Mis hermanos y yo ______ en el jardín.', 'jugar', 3),
+                        ('Los domingos ______ a visitar a los primos.', 'ir', 3),
+                        ('______ una vida muy tranquila y feliz.', 'ser', 2)
+                    ]
+                }
+            ]
+        }
+        
+        # Select a story for the given tense
+        if tense not in stories:
+            tense = 'present'
+        
+        story_data = random.choice(stories[tense])
+        exercises = []
+        
+        for i, (sentence, verb, person) in enumerate(story_data['sentences'][:length]):
+            correct_answer = self.conjugator.conjugate(verb, tense, person)
+            
+            # Generate distractors from same story context
+            choices = [correct_answer]
+            for _, other_verb, other_person in story_data['sentences']:
+                if other_verb != verb or other_person != person:
+                    other_form = self.conjugator.conjugate(other_verb, tense, other_person)
+                    if other_form and other_form not in choices:
+                        choices.append(other_form)
+                        if len(choices) >= 4:
+                            break
+            
+            exercise = {
+                'sentence': sentence,
+                'answer': correct_answer,
+                'choices': choices[:4],
+                'verb': verb,
+                'tense': TENSE_NAMES.get(tense, tense),
+                'person': PERSON_LABELS[person],
+                'story_title': story_data['title'],
+                'story_position': i + 1,
+                'story_total': min(length, len(story_data['sentences'])),
+                'context': f"Part {i+1} of story: {story_data['title']}"
+            }
             exercises.append(exercise)
         
         return exercises

@@ -21,7 +21,7 @@ class ProgressTracker:
         """Create necessary database tables."""
         cursor = self.conn.cursor()
         
-        # User attempts table
+        # Enhanced attempts table with communicative success
         cursor.execute('''
             CREATE TABLE IF NOT EXISTS attempts (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -31,6 +31,9 @@ class ProgressTracker:
                 user_answer TEXT NOT NULL,
                 correct_answer TEXT NOT NULL,
                 is_correct BOOLEAN NOT NULL,
+                is_communicative BOOLEAN DEFAULT 0,
+                task_type TEXT DEFAULT 'grammar',
+                scenario TEXT,
                 timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
             )
         ''')
