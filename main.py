@@ -36,6 +36,11 @@ from typing import (
 from dotenv import load_dotenv
 load_dotenv()
 
+# Local modules
+from exercise_generator import ExerciseGenerator
+from progress_tracker import ProgressTracker
+from conjugation_engine import PERSON_LABELS, TENSE_NAMES
+
 # PyQt5 imports
 from PyQt5.QtCore import (
     Qt, QRunnable, QObject, pyqtSignal, QThreadPool
@@ -401,16 +406,19 @@ class SpanishConjugationGUI(QMainWindow):
 
     This application allows users to practice Spanish verb conjugations with
     customizable options for verb tenses, grammatical persons, and themes.
-    It generates exercises using the OpenAI API and provides feedback on user answers.
+    It can generate exercises locally or using the OpenAI API.
 
     Attributes:
         responses (List[dict]): Records of user responses for session summary
         exercises (List[dict]): Current batch of exercises
         current_exercise (int): Index of the current exercise being displayed
         stats (ProgressStats): Tracks number of attempts and correct answers
+        progress_tracker (ProgressTracker): SQLite-based progress tracking
+        exercise_generator (ExerciseGenerator): Local exercise generation
         threadpool (QThreadPool): Thread pool for asynchronous operations
         dark_mode (bool): Whether dark mode is enabled
         show_translation (bool): Whether English translations are displayed
+        offline_mode (bool): Whether to use local generation instead of GPT
     """
     def __init__(self) -> None:
         super().__init__()
@@ -428,7 +436,11 @@ class SpanishConjugationGUI(QMainWindow):
         self.current_exercise: int = 0
 
         self.stats = ProgressStats()
+        self.progress_tracker = ProgressTracker()
+        self.exercise_generator = ExerciseGenerator()
+        self.session_id = self.progress_tracker.start_session()
         self.threadpool = QThreadPool()
+        self.offline_mode = False  # Start in online mode by default
 
         # Load initial states from config
         self.dark_mode: bool = app_config.get("dark_mode", False)
@@ -649,7 +661,71 @@ class SpanishConjugationGUI(QMainWindow):
         translation_action.setToolTip("Show/hide English translation")
         translation_action.triggered.connect(self.toggleTranslation)
         toolbar.addAction(translation_action)
+        
+        offline_action = QAction("Toggle Offline Mode", self)
+        offline_action.setToolTip("Switch between local and GPT generation")
+        offline_action.triggered.connect(self.toggleOfflineMode)
+        toolbar.addAction(offline_action)
+        
+        review_action = QAction("Review Mistakes", self)
+        review_action.setToolTip("Practice verbs you struggle with")
+        review_action.triggered.connect(self.startReviewMode)
+        toolbar.addAction(review_action)
+        
+        stats_action = QAction("View Statistics", self)
+        stats_action.setToolTip("See your learning progress")
+        stats_action.triggered.connect(self.showStatistics)
+        toolbar.addAction(stats_action)
 
+    def toggleOfflineMode(self) -> None:
+        """Toggle between offline and online exercise generation."""
+        self.offline_mode = not self.offline_mode
+        mode = "offline (local)" if self.offline_mode else "online (GPT)"
+        self.updateStatus(f"Switched to {mode} mode")
+        
+    def startReviewMode(self) -> None:
+        """Start review mode with problematic verbs."""
+        review_items = self.progress_tracker.get_verbs_for_review(10)
+        if not review_items:
+            self.updateStatus("No items need review yet. Keep practicing!")
+            return
+            
+        # Generate exercises for review items
+        exercises = []
+        for item in review_items[:5]:
+            exercise = self.exercise_generator.generate_exercise(
+                verb=item['verb'],
+                tense=item['tense'],
+                person=item['person']
+            )
+            exercises.append(exercise)
+        
+        self.exercises = exercises
+        self.total_exercises = len(exercises)
+        self.current_exercise = 0
+        self.progress_bar.setMaximum(self.total_exercises)
+        self.updateExercise()
+        self.updateStatus("Review mode: Practicing your weak areas")
+    
+    def showStatistics(self) -> None:
+        """Show learning statistics dialog."""
+        stats = self.progress_tracker.get_statistics()
+        weak_areas = self.progress_tracker.get_weak_areas(5)
+        
+        message = f"📊 Your Progress Statistics\n\n"
+        message += f"Total Attempts: {stats['total_attempts']}\n"
+        message += f"Correct: {stats['correct_attempts']}\n"
+        message += f"Accuracy: {stats['accuracy']:.1f}%\n"
+        message += f"Unique Verbs Practiced: {stats['unique_verbs']}\n\n"
+        
+        if weak_areas:
+            message += "Areas to Focus On:\n"
+            for area in weak_areas[:3]:
+                accuracy = (area['correct_count'] / (area['correct_count'] + area['incorrect_count'])) * 100
+                message += f"• {area['verb']} ({area['tense']}): {accuracy:.0f}% accuracy\n"
+        
+        QMessageBox.information(self, "Learning Statistics", message)
+    
     def toggleTranslation(self) -> None:
         """
         Toggle the visibility of the English translation label.
@@ -822,11 +898,34 @@ class SpanishConjugationGUI(QMainWindow):
 
         # Record attempt in stats
         self.stats.record_attempt(exercise, user_answer, is_correct)
+        
+        # Record in progress tracker if we have verb info
+        if 'verb' in exercise and 'tense' in exercise and 'person' in exercise:
+            # Map person label to index
+            person_index = 0
+            for i, label in enumerate(PERSON_LABELS):
+                if label == exercise.get('person', ''):
+                    person_index = i
+                    break
+            
+            self.progress_tracker.record_attempt(
+                exercise['verb'],
+                exercise['tense'],
+                person_index,
+                user_answer,
+                correct_answer,
+                is_correct
+            )
 
-        self.generateGPTExplanationAsync(
-            user_answer, correct_answer, is_correct,
-            exercise.get("sentence", ""), base_feedback
-        )
+        if self.offline_mode:
+            # Provide simple feedback in offline mode
+            self.feedback_text.setText(base_feedback)
+            self.updateStatus("Answer submitted.")
+        else:
+            self.generateGPTExplanationAsync(
+                user_answer, correct_answer, is_correct,
+                exercise.get("sentence", ""), base_feedback
+            )
 
     def generateGPTExplanationAsync(
         self,
@@ -958,16 +1057,61 @@ class SpanishConjugationGUI(QMainWindow):
 
     def generateNewExercise(self) -> None:
         """
-        Request a new set of exercises from the GPT API based on user settings.
+        Generate new exercises either locally or from GPT API based on mode.
         """
         selected_tenses = self.getSelectedTenses()
         selected_persons = self.getSelectedPersons()
-        difficulty = self.difficulty_combo.currentText()
+        difficulty = self.difficulty_combo.currentText().lower()
         count = self.exercise_count_spin.value()
-
+        specific_verbs = self.specific_verbs_input.text().strip()
+        
+        if self.offline_mode:
+            # Generate exercises locally
+            self.updateStatus("Generating exercises locally...")
+            
+            # Map GUI tense names to internal tense names
+            tense_map = {
+                'Present': 'present',
+                'Preterite': 'preterite',
+                'Imperfect': 'imperfect',
+                'Future': 'future',
+                'Conditional': 'conditional',
+                'Subjunctive': 'present_subjunctive'
+            }
+            
+            # Map person labels to indices
+            person_map = {
+                '1st person singular': 0,
+                '2nd person singular': 1,
+                '3rd person singular': 2,
+                '1st person plural': 3,
+                '2nd person plural': 4,
+                '3rd person plural': 5
+            }
+            
+            tenses = [tense_map[t] for t in selected_tenses if t in tense_map] or None
+            persons = [person_map[p] for p in selected_persons if p in person_map] or None
+            verbs = [v.strip() for v in specific_verbs.split(',')] if specific_verbs else None
+            
+            exercises = self.exercise_generator.generate_batch(
+                count=count,
+                verbs=verbs,
+                tenses=tenses,
+                persons=persons,
+                difficulty=difficulty
+            )
+            
+            self.exercises = exercises
+            self.total_exercises = len(exercises)
+            self.progress_bar.setMaximum(self.total_exercises)
+            self.current_exercise = 0
+            self.updateExercise()
+            self.updateStatus(f"Generated {len(exercises)} exercises locally!")
+            return
+        
+        # Online mode - use GPT
         tense_text = ", ".join(selected_tenses) if selected_tenses else "any common tense"
         person_text = ", ".join(selected_persons) if selected_persons else "any form"
-        specific_verbs = self.specific_verbs_input.text().strip()
         theme_context = self.theme_input.text().strip()
 
         prompt = (
@@ -1089,6 +1233,17 @@ class SpanishConjugationGUI(QMainWindow):
         # Wait for all threads to complete (with a timeout).
         if not self.threadpool.waitForDone(3000):
             logging.warning("Some background threads did not complete in time.")
+        
+        # Update session in database
+        if hasattr(self, 'progress_tracker'):
+            verbs_practiced = list(set([ex.get('verb', '') for ex in self.exercises if 'verb' in ex]))
+            self.progress_tracker.update_session(
+                self.session_id,
+                self.stats.total_attempted,
+                self.stats.total_correct,
+                verbs_practiced
+            )
+            self.progress_tracker.close()
 
         # Save session log
         try:

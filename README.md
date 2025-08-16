@@ -1,20 +1,36 @@
 # Spanish Conjugation Practice GUI
 
-A desktop application for practicing Spanish verb conjugations with AI-powered feedback using GPT-4o.
+A desktop application for practicing Spanish verb conjugations with both offline and AI-powered modes.
 
 ## Features
 
-- **Interactive Practice**: Fill-in-the-blank exercises with real-world Spanish contexts
+### Core Learning Features
+- **Dual Mode Operation**: 
+  - **Offline Mode**: Local conjugation engine with 100+ verbs (no internet required)
+  - **Online Mode**: GPT-4o powered for contextual exercises and explanations
+- **Smart Progress Tracking**: SQLite database tracks all attempts with spaced repetition
+- **Adaptive Review**: Automatically identifies and practices weak areas
+- **Verb Classification**: Handles regular, irregular, and stem-changing verbs
+
+### Practice Options
+- **Interactive Exercises**: Fill-in-the-blank with real Spanish contexts
 - **Multiple Modes**: Free response or multiple choice
-- **AI-Powered**: GPT-4o generates exercises and provides detailed explanations
 - **Customizable Practice**:
-  - Select specific verb tenses (Present, Preterite, Imperfect, Future, Conditional, Subjunctive)
-  - Choose grammatical persons (1st, 2nd, 3rd person singular/plural)
+  - All major tenses (Present, Preterite, Imperfect, Future, Conditional, Subjunctive)
+  - All grammatical persons (yo, tú, él/ella, nosotros, vosotros, ellos)
   - Specify verbs or themes
-  - Adjust difficulty levels
-- **Progress Tracking**: Track correct answers and review session summaries
+  - Three difficulty levels (Beginner, Intermediate, Advanced)
+
+### Learning Tools
+- **Spaced Repetition**: Optimized review scheduling based on performance
+- **Mistake Review**: Dedicated mode for practicing problematic verbs
+- **Progress Statistics**: Track accuracy, learning curves, and weak areas
+- **Session Summaries**: Review performance after each session
+
+### UI Features
 - **Dark/Light Theme**: Toggle between visual themes
 - **English Translations**: Optional translation display
+- **Progress Bar**: Visual feedback on exercise completion
 
 ## Installation
 
