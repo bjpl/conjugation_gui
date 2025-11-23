@@ -1,0 +1,80 @@
+{
+  "app": {
+    "name": "SpanishConjugation",
+    "display_name": "Spanish Conjugation Practice",
+    "version": "2.0.0",
+    "description": "Spanish Conjugation Practice with AI-powered feedback",
+    "author": "Spanish Learning Tools",
+    "copyright": "Copyright 2024",
+    "license": "MIT",
+    "homepage": "https://github.com/yourusername/conjugation_gui"
+  },
+  "build": {
+    "one_file": true,
+    "console": false,
+    "debug": false,
+    "upx": true,
+    "optimize": 2,
+    "clean": true,
+    "strip_binaries": false
+  },
+  "resources": {
+    "icon": "assets/icon.ico",
+    "data_files": [
+      {
+        "source": "app_config.json",
+        "destination": "."
+      },
+      {
+        "source": ".env.example",
+        "destination": "."
+      },
+      {
+        "source": "assets/",
+        "destination": "assets",
+        "recursive": true
+      }
+    ],
+    "exclude_modules": [
+      "tkinter",
+      "matplotlib",
+      "numpy",
+      "scipy",
+      "pandas",
+      "IPython",
+      "jupyter",
+      "notebook",
+      "tornado",
+      "zmq",
+      "win32com",
+      "pythoncom",
+      "pywintypes",
+      "test",
+      "unittest",
+      "doctest",
+      "pdb",
+      "pydoc"
+    ]
+  },
+  "distribution": {
+    "create_installer": true,
+    "installer_type": "nsis",
+    "include_vcredist": true,
+    "create_portable": true,
+    "sign_executable": false
+  },
+  "platforms": {
+    "windows": {
+      "target_arch": "x64",
+      "min_version": "10.0",
+      "include_msvcrt": true
+    }
+  },
+  "dependencies": {
+    "pyqt5": "5.15.7",
+    "openai": ">=1.0.0",
+    "python_dotenv": ">=1.0.0",
+    "requests": ">=2.32.0",
+    "pillow": "10.0.0"
+  }
+}

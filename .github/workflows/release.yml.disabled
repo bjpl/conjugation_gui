@@ -1,0 +1,187 @@
+name: Build and Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+jobs:
+  build-windows:
+    runs-on: windows-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        pip install pyinstaller
+    
+    - name: Build executable
+      run: |
+        pyinstaller --onefile --windowed --name SpanishConjugation --icon=icon.ico main.py
+    
+    - name: Create distribution package
+      run: |
+        mkdir SpanishConjugation-Windows
+        copy dist\SpanishConjugation.exe SpanishConjugation-Windows\
+        copy README.md SpanishConjugation-Windows\README.txt
+        copy .env.example SpanishConjugation-Windows\
+        copy LICENSE SpanishConjugation-Windows\LICENSE.txt
+        
+        echo @echo off > SpanishConjugation-Windows\Run.bat
+        echo echo Starting Spanish Conjugation Practice... >> SpanishConjugation-Windows\Run.bat
+        echo start SpanishConjugation.exe >> SpanishConjugation-Windows\Run.bat
+    
+    - name: Create ZIP archive
+      run: |
+        Compress-Archive -Path SpanishConjugation-Windows\* -DestinationPath SpanishConjugation-Windows.zip
+    
+    - name: Upload Windows artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: SpanishConjugation-Windows
+        path: SpanishConjugation-Windows.zip
+
+  build-macos:
+    runs-on: macos-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        pip install pyinstaller
+    
+    - name: Build executable
+      run: |
+        pyinstaller --onefile --windowed --name SpanishConjugation main.py
+    
+    - name: Create distribution package
+      run: |
+        mkdir SpanishConjugation-macOS
+        cp -r dist/SpanishConjugation.app SpanishConjugation-macOS/
+        cp README.md SpanishConjugation-macOS/README.txt
+        cp .env.example SpanishConjugation-macOS/
+        cp LICENSE SpanishConjugation-macOS/LICENSE.txt
+    
+    - name: Create ZIP archive
+      run: |
+        zip -r SpanishConjugation-macOS.zip SpanishConjugation-macOS
+    
+    - name: Upload macOS artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: SpanishConjugation-macOS
+        path: SpanishConjugation-macOS.zip
+
+  build-linux:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        pip install pyinstaller
+    
+    - name: Build executable
+      run: |
+        pyinstaller --onefile --name SpanishConjugation main.py
+    
+    - name: Create distribution package
+      run: |
+        mkdir SpanishConjugation-Linux
+        cp dist/SpanishConjugation SpanishConjugation-Linux/
+        cp README.md SpanishConjugation-Linux/README.txt
+        cp .env.example SpanishConjugation-Linux/
+        cp LICENSE SpanishConjugation-Linux/LICENSE.txt
+        
+        echo '#!/bin/bash' > SpanishConjugation-Linux/run.sh
+        echo 'echo "Starting Spanish Conjugation Practice..."' >> SpanishConjugation-Linux/run.sh
+        echo './SpanishConjugation' >> SpanishConjugation-Linux/run.sh
+        chmod +x SpanishConjugation-Linux/run.sh
+        chmod +x SpanishConjugation-Linux/SpanishConjugation
+    
+    - name: Create TAR archive
+      run: |
+        tar -czf SpanishConjugation-Linux.tar.gz SpanishConjugation-Linux
+    
+    - name: Upload Linux artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: SpanishConjugation-Linux
+        path: SpanishConjugation-Linux.tar.gz
+
+  create-release:
+    needs: [build-windows, build-macos, build-linux]
+    runs-on: ubuntu-latest
+    if: startsWith(github.ref, 'refs/tags/')
+    
+    steps:
+    - name: Download all artifacts
+      uses: actions/download-artifact@v3
+    
+    - name: Create Release
+      uses: softprops/action-gh-release@v1
+      with:
+        files: |
+          SpanishConjugation-Windows/SpanishConjugation-Windows.zip
+          SpanishConjugation-macOS/SpanishConjugation-macOS.zip
+          SpanishConjugation-Linux/SpanishConjugation-Linux.tar.gz
+        body: |
+          # Spanish Conjugation Practice App
+          
+          ## Installation
+          
+          ### Windows
+          1. Download `SpanishConjugation-Windows.zip`
+          2. Extract the ZIP file
+          3. Run `SpanishConjugation.exe` or `Run.bat`
+          
+          ### macOS
+          1. Download `SpanishConjugation-macOS.zip`
+          2. Extract the ZIP file
+          3. Run `SpanishConjugation.app`
+          4. If blocked, go to System Preferences > Security & Privacy to allow
+          
+          ### Linux
+          1. Download `SpanishConjugation-Linux.tar.gz`
+          2. Extract: `tar -xzf SpanishConjugation-Linux.tar.gz`
+          3. Run: `./SpanishConjugation-Linux/run.sh`
+          
+          ## Features
+          - Works offline without API key
+          - Optional GPT-4o integration for enhanced learning
+          - Progress tracking with spaced repetition
+          - Multiple practice modes
+          
+          ## Setup
+          1. Copy `.env.example` to `.env`
+          2. Add your OpenAI API key (optional)
+          3. Launch the application
+        draft: false
+        prerelease: false
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

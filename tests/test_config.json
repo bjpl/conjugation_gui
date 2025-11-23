@@ -1,0 +1,96 @@
+{
+  "test_timeout": 300,
+  "parallel_workers": 4,
+  "coverage_threshold": 80,
+  "slow_test_threshold": 5.0,
+  "test_categories": {
+    "unit": {
+      "enabled": true,
+      "pattern": "tests/unit/test_*.py",
+      "timeout": 60,
+      "description": "Unit tests for individual components"
+    },
+    "integration": {
+      "enabled": true,
+      "pattern": "tests/integration/test_*.py",
+      "timeout": 180,
+      "description": "Integration tests for component interactions"
+    },
+    "e2e": {
+      "enabled": true,
+      "pattern": "tests/e2e/test_*.py",
+      "timeout": 300,
+      "description": "End-to-end tests for complete workflows"
+    },
+    "performance": {
+      "enabled": true,
+      "pattern": "tests/unit/test_performance_security.py::TestPerformanceBenchmarks",
+      "timeout": 120,
+      "description": "Performance benchmarks and optimization tests"
+    },
+    "security": {
+      "enabled": true,
+      "pattern": "tests/unit/test_performance_security.py::TestSecurityValidation",
+      "timeout": 90,
+      "description": "Security validation and vulnerability tests"
+    },
+    "api_key": {
+      "enabled": true,
+      "pattern": "tests/unit/test_api_key_management.py",
+      "timeout": 30,
+      "description": "API key management and security tests"
+    },
+    "configuration": {
+      "enabled": true,
+      "pattern": "tests/unit/test_configuration.py",
+      "timeout": 30,
+      "description": "Configuration loading and validation tests"
+    },
+    "deployment": {
+      "enabled": true,
+      "pattern": "tests/integration/test_deployment.py",
+      "timeout": 240,
+      "description": "Deployment and system compatibility tests"
+    },
+    "user_workflow": {
+      "enabled": true,
+      "pattern": "tests/integration/test_user_workflow.py",
+      "timeout": 180,
+      "description": "User workflow and experience tests"
+    },
+    "distribution": {
+      "enabled": true,
+      "pattern": "tests/e2e/test_distribution_package.py",
+      "timeout": 300,
+      "description": "Complete distribution package tests"
+    }
+  },
+  "environment": {
+    "test_db_path": ":memory:",
+    "mock_api_calls": true,
+    "temp_dir_cleanup": true,
+    "log_level": "INFO",
+    "mock_openai_responses": true,
+    "disable_network_calls": true
+  },
+  "reporting": {
+    "html_report": true,
+    "junit_xml": true,
+    "coverage_report": true,
+    "performance_metrics": true,
+    "security_report": true,
+    "report_directory": "test_reports"
+  },
+  "thresholds": {
+    "memory_usage_mb": 200,
+    "startup_time_seconds": 5.0,
+    "api_response_time_seconds": 2.0,
+    "database_query_time_seconds": 1.0
+  },
+  "mock_data": {
+    "use_realistic_exercises": true,
+    "exercise_variety": true,
+    "progress_simulation": true,
+    "error_simulation": true
+  }
+}

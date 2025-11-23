@@ -1,0 +1,462 @@
+name: Build Windows Executable
+
+on:
+  push:
+    branches: [ main, develop ]
+    tags: [ 'v*' ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+    inputs:
+      create_release:
+        description: 'Create GitHub release'
+        required: false
+        default: false
+        type: boolean
+      build_installer:
+        description: 'Build NSIS installer'
+        required: false
+        default: true
+        type: boolean
+
+env:
+  PYTHON_VERSION: '3.11'
+  APP_NAME: 'SpanishConjugation'
+
+jobs:
+  compatibility-check:
+    runs-on: windows-latest
+    outputs:
+      compatible: ${{ steps.check.outputs.compatible }}
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ env.PYTHON_VERSION }}
+    
+    - name: Install base dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install requests certifi
+    
+    - name: Run compatibility check
+      id: check
+      run: |
+        python compatibility_check.py
+        echo "compatible=true" >> $env:GITHUB_OUTPUT
+      continue-on-error: true
+    
+    - name: Upload compatibility report
+      uses: actions/upload-artifact@v3
+      if: always()
+      with:
+        name: compatibility-report
+        path: compatibility_report.txt
+
+  build-executable:
+    needs: compatibility-check
+    runs-on: windows-latest
+    if: needs.compatibility-check.outputs.compatible == 'true'
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ env.PYTHON_VERSION }}
+        cache: 'pip'
+    
+    - name: Install system dependencies
+      run: |
+        # Install Visual C++ Redistributable if needed
+        curl -L -o vc_redist.x64.exe https://aka.ms/vs/17/release/vc_redist.x64.exe
+        Start-Process -FilePath "vc_redist.x64.exe" -ArgumentList "/quiet" -Wait
+    
+    - name: Install Python dependencies
+      run: |
+        python -m pip install --upgrade pip setuptools wheel
+        pip install pyinstaller
+        
+        # Install application dependencies
+        if (Test-Path "requirements.txt") {
+          pip install -r requirements.txt
+        } else {
+          pip install PyQt5==5.15.7 PyQtWebEngine==5.15.7 python-dotenv>=1.0.0 openai>=1.0.0 requests>=2.32.0 pillow==10.0.0
+        }
+    
+    - name: Verify dependencies
+      run: |
+        python -c "import PyQt5; print('PyQt5 version:', PyQt5.QtCore.QT_VERSION_STR)"
+        python -c "import openai; print('OpenAI version:', openai.__version__)"
+        python -c "import requests; print('Requests version:', requests.__version__)"
+        python -c "import dotenv; print('python-dotenv imported successfully')"
+    
+    - name: Create version info
+      run: |
+        $version = if ($env:GITHUB_REF -like "refs/tags/*") { 
+          $env:GITHUB_REF.Replace("refs/tags/v", "")
+        } else { 
+          "0.0.0-dev.$($env:GITHUB_RUN_NUMBER)"
+        }
+        echo "APP_VERSION=$version" >> $env:GITHUB_ENV
+        
+        # Update build config with version
+        $config = Get-Content build_config.json | ConvertFrom-Json
+        $config.app.version = $version
+        $config | ConvertTo-Json -Depth 10 | Set-Content build_config.json
+    
+    - name: Build executable (simple)
+      run: |
+        python build_exe.py
+      continue-on-error: true
+    
+    - name: Build executable (advanced)
+      if: failure()
+      run: |
+        python build_advanced.py
+    
+    - name: Verify executable
+      run: |
+        if (Test-Path "dist\${{ env.APP_NAME }}.exe") {
+          $size = (Get-Item "dist\${{ env.APP_NAME }}.exe").Length / 1MB
+          Write-Output "Executable size: $([math]::Round($size, 2)) MB"
+          
+          # Basic executable test (check it loads)
+          $proc = Start-Process -FilePath "dist\${{ env.APP_NAME }}.exe" -ArgumentList "--version" -PassThru -Wait -NoNewWindow
+          if ($proc.ExitCode -ne 0) {
+            Write-Warning "Executable test returned non-zero exit code: $($proc.ExitCode)"
+          }
+        } else {
+          Write-Error "Executable not found!"
+          exit 1
+        }
+    
+    - name: Create distribution package
+      run: |
+        $version = $env:APP_VERSION
+        $distName = "${{ env.APP_NAME }}_v${version}_Windows"
+        
+        # Create distribution directory
+        New-Item -ItemType Directory -Path $distName -Force
+        
+        # Copy executable
+        Copy-Item "dist\${{ env.APP_NAME }}.exe" $distName\
+        
+        # Copy support files
+        if (Test-Path ".env.example") { Copy-Item ".env.example" $distName\ }
+        if (Test-Path "README.md") { Copy-Item "README.md" $distName\ }
+        if (Test-Path "LICENSE") { Copy-Item "LICENSE" $distName\ }
+        
+        # Create launch script
+        @"
+        @echo off
+        title Spanish Conjugation Practice
+        echo Starting Spanish Conjugation Practice...
+        echo.
+        
+        if not exist .env (
+            echo Please create a .env file with your OpenAI API key.
+            echo See .env.example for the format.
+            echo.
+            pause
+            exit
+        )
+        
+        ${{ env.APP_NAME }}.exe
+        
+        if %errorlevel% neq 0 (
+            echo.
+            echo Application exited with error code: %errorlevel%
+            pause
+        )
+        "@ | Out-File -FilePath "$distName\Launch.bat" -Encoding ascii
+        
+        # Create ZIP archive
+        Compress-Archive -Path $distName -DestinationPath "${distName}.zip" -Force
+        
+        echo "DIST_NAME=$distName" >> $env:GITHUB_ENV
+        echo "DIST_ZIP=${distName}.zip" >> $env:GITHUB_ENV
+    
+    - name: Upload executable artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: windows-executable
+        path: |
+          dist/${{ env.APP_NAME }}.exe
+          ${{ env.DIST_ZIP }}
+        retention-days: 30
+    
+    - name: Upload distribution package
+      uses: actions/upload-artifact@v3
+      with:
+        name: windows-distribution
+        path: ${{ env.DIST_NAME }}
+        retention-days: 30
+
+  build-installer:
+    needs: build-executable
+    runs-on: windows-latest
+    if: github.event.inputs.build_installer == 'true' || contains(github.ref, 'refs/tags/')
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Download executable
+      uses: actions/download-artifact@v3
+      with:
+        name: windows-executable
+        path: dist/
+    
+    - name: Install NSIS
+      run: |
+        # Install NSIS using chocolatey
+        Set-ExecutionPolicy Bypass -Scope Process -Force
+        [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072
+        iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+        choco install nsis -y
+        
+        # Add NSIS to PATH
+        $env:PATH += ";C:\Program Files (x86)\NSIS"
+        echo "C:\Program Files (x86)\NSIS" >> $env:GITHUB_PATH
+    
+    - name: Set up Python for installer build
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ env.PYTHON_VERSION }}
+    
+    - name: Install PIL for asset creation
+      run: |
+        pip install pillow
+    
+    - name: Build installer
+      run: |
+        python build_installer.py
+    
+    - name: Verify installer
+      run: |
+        $installerFiles = Get-ChildItem -Path . -Filter "SpanishConjugationSetup_*.exe"
+        if ($installerFiles.Count -gt 0) {
+          $installer = $installerFiles[0]
+          $size = $installer.Length / 1MB
+          Write-Output "Installer: $($installer.Name)"
+          Write-Output "Size: $([math]::Round($size, 2)) MB"
+          
+          echo "INSTALLER_NAME=$($installer.Name)" >> $env:GITHUB_ENV
+        } else {
+          Write-Error "Installer not found!"
+          exit 1
+        }
+    
+    - name: Upload installer
+      uses: actions/upload-artifact@v3
+      with:
+        name: windows-installer
+        path: ${{ env.INSTALLER_NAME }}
+        retention-days: 30
+
+  security-scan:
+    needs: build-executable
+    runs-on: windows-latest
+    continue-on-error: true
+    
+    steps:
+    - name: Download executable
+      uses: actions/download-artifact@v3
+      with:
+        name: windows-executable
+        path: .
+    
+    - name: Run Windows Defender scan
+      run: |
+        # Quick scan of the executable
+        $exePath = Get-ChildItem -Filter "${{ env.APP_NAME }}.exe" | Select-Object -First 1
+        if ($exePath) {
+          Write-Output "Scanning $($exePath.Name) with Windows Defender..."
+          
+          # Run defender scan
+          $scanResult = Start-Process -FilePath "C:\Program Files\Windows Defender\MpCmdRun.exe" -ArgumentList "-Scan", "-ScanType", "3", "-File", $exePath.FullName -Wait -PassThru -NoNewWindow
+          
+          if ($scanResult.ExitCode -eq 0) {
+            Write-Output "✅ No threats detected"
+          } else {
+            Write-Warning "⚠️ Defender scan returned exit code: $($scanResult.ExitCode)"
+          }
+        }
+    
+    - name: Check file signatures
+      run: |
+        $exePath = Get-ChildItem -Filter "${{ env.APP_NAME }}.exe" | Select-Object -First 1
+        if ($exePath) {
+          $signature = Get-AuthenticodeSignature $exePath.FullName
+          Write-Output "Signature status: $($signature.Status)"
+          if ($signature.Status -eq "NotSigned") {
+            Write-Output "⚠️ Executable is not code signed"
+          }
+        }
+
+  create-release:
+    needs: [build-executable, build-installer]
+    runs-on: windows-latest
+    if: |
+      (contains(github.ref, 'refs/tags/') && github.event_name == 'push') ||
+      (github.event.inputs.create_release == 'true')
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Download all artifacts
+      uses: actions/download-artifact@v3
+    
+    - name: Prepare release files
+      run: |
+        # Create release directory
+        New-Item -ItemType Directory -Path "release" -Force
+        
+        # Copy files
+        if (Test-Path "windows-executable") {
+          Copy-Item "windows-executable\*" "release\" -Recurse
+        }
+        
+        if (Test-Path "windows-installer") {
+          Copy-Item "windows-installer\*" "release\" -Recurse
+        }
+        
+        # List release files
+        Get-ChildItem "release" | ForEach-Object {
+          $size = if ($_.PSIsContainer) { "Directory" } else { "$([math]::Round($_.Length / 1MB, 2)) MB" }
+          Write-Output "$($_.Name) - $size"
+        }
+    
+    - name: Extract version
+      id: version
+      run: |
+        $version = if ($env:GITHUB_REF -like "refs/tags/*") {
+          $env:GITHUB_REF.Replace("refs/tags/v", "")
+        } else {
+          "v0.0.0-dev.$($env:GITHUB_RUN_NUMBER)"
+        }
+        echo "version=$version" >> $env:GITHUB_OUTPUT
+        echo "VERSION=$version" >> $env:GITHUB_ENV
+    
+    - name: Create Release
+      id: create_release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: v${{ steps.version.outputs.version }}
+        release_name: Spanish Conjugation Practice v${{ steps.version.outputs.version }}
+        body: |
+          ## Spanish Conjugation Practice v${{ steps.version.outputs.version }}
+          
+          ### 🎯 Features
+          - Interactive Spanish conjugation practice
+          - AI-powered feedback with OpenAI GPT-4
+          - Multiple practice modes (grammar, tasks, speed)
+          - Progress tracking and statistics
+          - Offline mode support
+          
+          ### 📦 Downloads
+          - **Installer**: `SpanishConjugationSetup_v${{ steps.version.outputs.version }}.exe` - Recommended for most users
+          - **Portable**: `SpanishConjugation_v${{ steps.version.outputs.version }}_Windows.zip` - No installation required
+          
+          ### 🔧 System Requirements
+          - Windows 10 or later (64-bit)
+          - 2GB RAM minimum (4GB recommended)
+          - 500MB free disk space
+          - Internet connection for AI features
+          - OpenAI API key (required)
+          
+          ### 🚀 Quick Start
+          1. Download and run the installer
+          2. Get an OpenAI API key from https://platform.openai.com/api-keys
+          3. Enter your API key during installation
+          4. Launch the application and start practicing!
+          
+          ### 🛠️ Build Information
+          - Built on: ${{ github.ref }}
+          - Commit: ${{ github.sha }}
+          - Python: ${{ env.PYTHON_VERSION }}
+          - Runner: windows-latest
+        draft: false
+        prerelease: ${{ !contains(github.ref, 'refs/tags/') }}
+    
+    - name: Upload executable to release
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ./release/${{ env.APP_NAME }}.exe
+        asset_name: ${{ env.APP_NAME }}_v${{ steps.version.outputs.version }}.exe
+        asset_content_type: application/octet-stream
+    
+    - name: Upload distribution zip to release
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ./release/${{ env.APP_NAME }}_v${{ env.VERSION }}_Windows.zip
+        asset_name: ${{ env.APP_NAME }}_v${{ steps.version.outputs.version }}_Windows_Portable.zip
+        asset_content_type: application/zip
+      continue-on-error: true
+    
+    - name: Upload installer to release
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ./release/SpanishConjugationSetup_v${{ env.VERSION }}.exe
+        asset_name: SpanishConjugationSetup_v${{ steps.version.outputs.version }}.exe
+        asset_content_type: application/octet-stream
+      continue-on-error: true
+
+  notification:
+    needs: [build-executable, build-installer, create-release]
+    runs-on: windows-latest
+    if: always()
+    
+    steps:
+    - name: Build Status Summary
+      run: |
+        Write-Output "🔨 Build Summary for ${{ github.ref }}"
+        Write-Output "=================================="
+        
+        $buildStatus = "${{ needs.build-executable.result }}"
+        $installerStatus = "${{ needs.build-installer.result }}"
+        $releaseStatus = "${{ needs.create-release.result }}"
+        
+        Write-Output "Executable Build: $buildStatus"
+        Write-Output "Installer Build: $installerStatus"  
+        Write-Output "Release Creation: $releaseStatus"
+        
+        if ($buildStatus -eq "success") {
+          Write-Output "✅ Windows executable built successfully"
+        } else {
+          Write-Output "❌ Windows executable build failed"
+        }
+        
+        if ($installerStatus -eq "success") {
+          Write-Output "✅ NSIS installer created successfully"
+        } elseif ($installerStatus -eq "skipped") {
+          Write-Output "⏭️ Installer build skipped"
+        } else {
+          Write-Output "❌ Installer build failed"
+        }
+        
+        if ($releaseStatus -eq "success") {
+          Write-Output "🚀 GitHub release created successfully"
+        } elseif ($releaseStatus -eq "skipped") {
+          Write-Output "⏭️ Release creation skipped"
+        } else {
+          Write-Output "❌ Release creation failed"
+        }
