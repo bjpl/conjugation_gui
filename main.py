@@ -45,20 +45,6 @@ from task_scenarios import TaskScenario
 from speed_practice import SpeedPractice
 from learning_path import LearningPath
 
-# Security modules
-try:
-    from src.security import (
-        APIConfig, CredentialsManager, SetupWizard, 
-        run_setup_wizard, check_first_run
-    )
-    SECURITY_AVAILABLE = True
-except ImportError as e:
-    # Fallback for backward compatibility
-    print(f"Warning: Security modules not available: {e}")
-    SECURITY_AVAILABLE = False
-    APIConfig = None
-    CredentialsManager = None
-
 # PyQt5 imports
 from PyQt5.QtCore import (
     Qt, QRunnable, QObject, pyqtSignal, QThreadPool
@@ -203,12 +189,7 @@ class AppConfig:
 
 
 # Global config instance (could also be passed around if needed)
-if SECURITY_AVAILABLE and api_config:
-    # Use secure configuration
-    app_config = api_config
-else:
-    # Fallback to legacy configuration
-    app_config = AppConfig()
+app_config = AppConfig()
 
 
 # -------------------------------------------------------
@@ -246,38 +227,16 @@ class ProgressStats:
         return (self.total_correct / self.total_attempted) * 100.0
 
 
-# Initialize secure API configuration
-api_config = None
-credentials_manager = None
-api_key = ""
-client = None
+# Simple API key retrieval from environment
+api_key = os.getenv("OPENAI_API_KEY", "")
+if not api_key:
+    logging.error("OPENAI_API_KEY not found in environment variables. Please create a .env file.")
 
-if SECURITY_AVAILABLE:
-    # Use secure API configuration
-    try:
-        api_config = APIConfig()
-        credentials_manager = api_config.credentials_manager
-        api_key = api_config.get_api_key()
-        
-        if api_key:
-            openai.api_key = api_key
-            client = OpenAI(api_key=api_key)
-            logging.info("API configuration loaded successfully")
-        else:
-            logging.warning("No API key found. Application will run in offline mode.")
-    except Exception as e:
-        logging.error(f"Failed to initialize secure API configuration: {e}")
-        SECURITY_AVAILABLE = False
+# Set your OpenAI API key
+openai.api_key = api_key
 
-# Fallback to simple environment variable method
-if not SECURITY_AVAILABLE or not api_key:
-    api_key = os.getenv("OPENAI_API_KEY", "")
-    if api_key:
-        openai.api_key = api_key
-        client = OpenAI(api_key=api_key)
-        logging.info("Using API key from environment variables")
-    else:
-        logging.warning("OPENAI_API_KEY not found. Application will run in offline mode.")
+# Create the OpenAI client
+client = OpenAI(api_key=api_key)
 
 
 # -------------------------------------------------------
@@ -469,22 +428,8 @@ class SpanishConjugationGUI(QMainWindow):
         super().__init__()
         self.setWindowTitle("Spanish Conjugation Practice")
 
-        # Check for first run and show setup wizard if needed
-        if SECURITY_AVAILABLE and check_first_run():
-            self.show_setup_wizard()
-
         # Retrieve some settings from AppConfig
-        if hasattr(app_config, 'get'):
-            geometry = app_config.get("window_geometry", {
-                "x": WINDOW_POS_X, "y": WINDOW_POS_Y,
-                "width": WINDOW_WIDTH, "height": WINDOW_HEIGHT
-            })
-        else:
-            geometry = {
-                "x": WINDOW_POS_X, "y": WINDOW_POS_Y,
-                "width": WINDOW_WIDTH, "height": WINDOW_HEIGHT
-            }
-        
+        geometry = app_config.get("window_geometry")
         self.setGeometry(
             geometry["x"], geometry["y"],
             geometry["width"], geometry["height"]
@@ -509,17 +454,11 @@ class SpanishConjugationGUI(QMainWindow):
         self.start_time = None  # For timing responses
 
         # Load initial states from config
-        if hasattr(app_config, 'get'):
-            self.dark_mode: bool = app_config.get("dark_mode", False)
-            self.show_translation: bool = app_config.get("show_translation", False)
-            self.max_stored_responses: int = app_config.get("max_stored_responses", 100)
-        else:
-            self.dark_mode: bool = False
-            self.show_translation: bool = False
-            self.max_stored_responses: int = 100
+        self.dark_mode: bool = app_config.get("dark_mode", False)
+        self.show_translation: bool = app_config.get("show_translation", False)
 
-        # Initialize API client if available
-        self.api_client = client
+        # Additional placeholders
+        self.max_stored_responses: int = app_config.get("max_stored_responses", 100)
 
         self.initUI()
 
@@ -623,10 +562,7 @@ class SpanishConjugationGUI(QMainWindow):
         count_layout = QHBoxLayout(count_box)
         self.exercise_count_spin = QSpinBox()
         self.exercise_count_spin.setRange(1, 50)  # More flexibility
-        default_count = 5
-        if hasattr(app_config, 'get'):
-            default_count = app_config.get("exercise_count", 5)
-        self.exercise_count_spin.setValue(default_count)
+        self.exercise_count_spin.setValue(app_config.get("exercise_count", 5))
         count_layout.addWidget(self.exercise_count_spin)
         po_layout.addWidget(count_box)
         
@@ -697,10 +633,7 @@ class SpanishConjugationGUI(QMainWindow):
 
         splitter.addWidget(right_widget)
         # Set splitter sizes
-        default_sizes = SPLITTER_SIZES
-        if hasattr(app_config, 'get'):
-            default_sizes = app_config.get("splitter_sizes", SPLITTER_SIZES)
-        splitter.setSizes(default_sizes)
+        splitter.setSizes(app_config.get("splitter_sizes", SPLITTER_SIZES))
 
         # Connect buttons
         self.submit_button.clicked.connect(self.submitAnswer)
@@ -1617,21 +1550,11 @@ class SpanishConjugationGUI(QMainWindow):
             "of objects with no extra formatting."
         )
 
-        # Get model settings
-        model = "gpt-4o"
-        max_tokens = 600
-        temperature = 0.5
-        
-        if hasattr(app_config, 'get'):
-            model = app_config.get("api_model", "gpt-4o")
-            max_tokens = app_config.get("max_tokens", 600)
-            temperature = app_config.get("temperature", 0.5)
-        
         worker = GPTWorkerRunnable(
             prompt,
-            model=model,
-            max_tokens=max_tokens,
-            temperature=temperature
+            model=app_config.get("api_model", "gpt-4o"),
+            max_tokens=app_config.get("max_tokens", 600),
+            temperature=app_config.get("temperature", 0.5)
         )
         worker.signals.result.connect(self.handleNewExerciseResult)
         self.threadpool.start(worker)
@@ -1755,304 +1678,6 @@ class SpanishConjugationGUI(QMainWindow):
             logging.error("Error writing session log file: %s", e)
 
         event.accept()
-
-    def show_setup_wizard(self) -> None:
-        """
-        Show the first-run setup wizard.
-        """
-        if SECURITY_AVAILABLE:
-            try:
-                success = run_setup_wizard(self)
-                if success:
-                    # Reinitialize API configuration
-                    global api_config, api_key, client
-                    api_config = APIConfig()
-                    api_key = api_config.get_api_key()
-                    
-                    if api_key:
-                        openai.api_key = api_key
-                        client = OpenAI(api_key=api_key)
-                        self.api_client = client
-                        self.updateStatus("Setup completed! API key configured successfully.")
-                    else:
-                        self.updateStatus("Setup completed in offline mode.")
-                else:
-                    self.updateStatus("Setup cancelled. Running in offline mode.")
-            except Exception as e:
-                logging.error(f"Setup wizard error: {e}")
-                QMessageBox.warning(self, "Setup Error", 
-                                   f"Setup wizard encountered an error: {str(e)}")
-    
-    def show_security_settings(self) -> None:
-        """
-        Show security settings dialog.
-        """
-        if not SECURITY_AVAILABLE:
-            QMessageBox.information(self, "Security Settings", 
-                                   "Security modules are not available.")
-            return
-        
-        try:
-            from PyQt5.QtWidgets import QDialog, QVBoxLayout, QTabWidget
-            
-            dialog = QDialog(self)
-            dialog.setWindowTitle("Security Settings")
-            dialog.setGeometry(200, 200, 600, 400)
-            
-            layout = QVBoxLayout()
-            tabs = QTabWidget()
-            
-            # API Keys tab
-            api_tab = self._create_api_keys_tab()
-            tabs.addTab(api_tab, "API Keys")
-            
-            # Security tab
-            security_tab = self._create_security_tab()
-            tabs.addTab(security_tab, "Security")
-            
-            # Backup tab
-            backup_tab = self._create_backup_tab()
-            tabs.addTab(backup_tab, "Backup")
-            
-            layout.addWidget(tabs)
-            dialog.setLayout(layout)
-            dialog.exec_()
-            
-        except Exception as e:
-            logging.error(f"Security settings error: {e}")
-            QMessageBox.warning(self, "Error", f"Failed to open security settings: {str(e)}")
-    
-    def _create_api_keys_tab(self) -> QWidget:
-        """
-        Create API keys management tab.
-        """
-        from PyQt5.QtWidgets import QWidget, QVBoxLayout, QGroupBox, QFormLayout, QPushButton, QTextEdit
-        
-        widget = QWidget()
-        layout = QVBoxLayout()
-        
-        # Current API key info
-        info_group = QGroupBox("Current API Configuration")
-        info_layout = QFormLayout()
-        
-        current_key = api_config.get_api_key() if api_config else "Not configured"
-        if current_key and len(current_key) > 10:
-            display_key = current_key[:6] + "*" * (len(current_key) - 10) + current_key[-4:]
-        else:
-            display_key = current_key or "None"
-        
-        info_layout.addRow("API Key:", QLabel(display_key))
-        info_layout.addRow("Provider:", QLabel(api_config.get('api.provider', 'openai') if api_config else 'N/A'))
-        info_layout.addRow("Model:", QLabel(api_config.get('api.model', 'gpt-4o') if api_config else 'N/A'))
-        
-        info_group.setLayout(info_layout)
-        layout.addWidget(info_group)
-        
-        # Actions
-        actions_group = QGroupBox("Actions")
-        actions_layout = QVBoxLayout()
-        
-        test_button = QPushButton("Test API Key")
-        test_button.clicked.connect(self._test_api_key)
-        actions_layout.addWidget(test_button)
-        
-        change_button = QPushButton("Change API Key")
-        change_button.clicked.connect(self._change_api_key)
-        actions_layout.addWidget(change_button)
-        
-        remove_button = QPushButton("Remove API Key")
-        remove_button.clicked.connect(self._remove_api_key)
-        actions_layout.addWidget(remove_button)
-        
-        actions_group.setLayout(actions_layout)
-        layout.addWidget(actions_group)
-        
-        # Status display
-        self.api_status_text = QTextEdit()
-        self.api_status_text.setMaximumHeight(100)
-        self.api_status_text.setReadOnly(True)
-        layout.addWidget(QLabel("Status:"))
-        layout.addWidget(self.api_status_text)
-        
-        layout.addStretch()
-        widget.setLayout(layout)
-        return widget
-    
-    def _create_security_tab(self) -> QWidget:
-        """
-        Create security settings tab.
-        """
-        from PyQt5.QtWidgets import QWidget, QVBoxLayout, QCheckBox, QComboBox, QFormLayout
-        
-        widget = QWidget()
-        layout = QVBoxLayout()
-        
-        # Storage settings
-        storage_group = QGroupBox("Credential Storage")
-        storage_layout = QFormLayout()
-        
-        storage_combo = QComboBox()
-        if credentials_manager:
-            storage_info = credentials_manager.get_storage_info()
-            methods = storage_info.get('supported_methods', [])
-            storage_combo.addItems(methods)
-            current_method = api_config.get('security.storage_preference', 'auto') if api_config else 'auto'
-            if current_method in methods:
-                storage_combo.setCurrentText(current_method)
-        
-        storage_layout.addRow("Storage Method:", storage_combo)
-        storage_group.setLayout(storage_layout)
-        layout.addWidget(storage_group)
-        
-        # Security options
-        options_group = QGroupBox("Security Options")
-        options_layout = QVBoxLayout()
-        
-        validate_checkbox = QCheckBox("Validate API keys before storing")
-        validate_checkbox.setChecked(api_config.get('security.validate_api_keys', True) if api_config else True)
-        options_layout.addWidget(validate_checkbox)
-        
-        audit_checkbox = QCheckBox("Enable security audit logging")
-        audit_checkbox.setChecked(api_config.get('security.audit_logging', True) if api_config else True)
-        options_layout.addWidget(audit_checkbox)
-        
-        backup_checkbox = QCheckBox("Create automatic backups")
-        backup_checkbox.setChecked(api_config.get('security.backup_enabled', True) if api_config else True)
-        options_layout.addWidget(backup_checkbox)
-        
-        options_group.setLayout(options_layout)
-        layout.addWidget(options_group)
-        
-        layout.addStretch()
-        widget.setLayout(layout)
-        return widget
-    
-    def _create_backup_tab(self) -> QWidget:
-        """
-        Create backup management tab.
-        """
-        from PyQt5.QtWidgets import QWidget, QVBoxLayout, QListWidget, QPushButton, QHBoxLayout
-        
-        widget = QWidget()
-        layout = QVBoxLayout()
-        
-        # Backup list
-        layout.addWidget(QLabel("Available Backups:"))
-        backup_list = QListWidget()
-        layout.addWidget(backup_list)
-        
-        # Backup actions
-        actions_layout = QHBoxLayout()
-        
-        create_backup_button = QPushButton("Create Backup")
-        create_backup_button.clicked.connect(self._create_backup)
-        actions_layout.addWidget(create_backup_button)
-        
-        restore_button = QPushButton("Restore Backup")
-        restore_button.clicked.connect(self._restore_backup)
-        actions_layout.addWidget(restore_button)
-        
-        delete_backup_button = QPushButton("Delete Backup")
-        delete_backup_button.clicked.connect(self._delete_backup)
-        actions_layout.addWidget(delete_backup_button)
-        
-        layout.addLayout(actions_layout)
-        
-        widget.setLayout(layout)
-        return widget
-    
-    def _test_api_key(self) -> None:
-        """
-        Test the current API key.
-        """
-        if not api_config:
-            self.api_status_text.setText("API configuration not available.")
-            return
-        
-        self.api_status_text.setText("Testing API key...")
-        QApplication.processEvents()
-        
-        try:
-            test_result = api_config.test_api_key()
-            if test_result.get('success'):
-                self.api_status_text.setText(f"✅ API key test successful!\nModel: {test_result.get('info', {}).get('model_used', 'Unknown')}")
-            else:
-                error = test_result.get('error', 'Unknown error')
-                self.api_status_text.setText(f"❌ API key test failed:\n{error}")
-        except Exception as e:
-            self.api_status_text.setText(f"❌ Test error: {str(e)}")
-    
-    def _change_api_key(self) -> None:
-        """
-        Change the API key.
-        """
-        from PyQt5.QtWidgets import QInputDialog
-        
-        text, ok = QInputDialog.getText(self, 'Change API Key', 'Enter new API key:', QLineEdit.Password)
-        
-        if ok and text:
-            try:
-                success = api_config.set_api_key(text)
-                if success:
-                    # Update global client
-                    global api_key, client
-                    api_key = text
-                    openai.api_key = text
-                    client = OpenAI(api_key=text)
-                    self.api_client = client
-                    
-                    self.api_status_text.setText("✅ API key updated successfully!")
-                    self.updateStatus("API key updated")
-                else:
-                    self.api_status_text.setText("❌ Failed to update API key")
-            except Exception as e:
-                self.api_status_text.setText(f"❌ Error updating API key: {str(e)}")
-    
-    def _remove_api_key(self) -> None:
-        """
-        Remove the current API key.
-        """
-        reply = QMessageBox.question(self, 'Remove API Key', 
-                                   'Are you sure you want to remove the API key?\nThe application will run in offline mode.',
-                                   QMessageBox.Yes | QMessageBox.No)
-        
-        if reply == QMessageBox.Yes:
-            try:
-                if credentials_manager:
-                    success = credentials_manager.delete_credential('openai_api_key')
-                    if success:
-                        # Update global state
-                        global api_key, client
-                        api_key = ""
-                        client = None
-                        self.api_client = None
-                        
-                        self.api_status_text.setText("✅ API key removed. Running in offline mode.")
-                        self.updateStatus("Switched to offline mode")
-                    else:
-                        self.api_status_text.setText("❌ Failed to remove API key")
-                else:
-                    self.api_status_text.setText("❌ Credentials manager not available")
-            except Exception as e:
-                self.api_status_text.setText(f"❌ Error removing API key: {str(e)}")
-    
-    def _create_backup(self) -> None:
-        """
-        Create a backup.
-        """
-        QMessageBox.information(self, "Backup", "Backup functionality will be implemented.")
-    
-    def _restore_backup(self) -> None:
-        """
-        Restore from backup.
-        """
-        QMessageBox.information(self, "Restore", "Restore functionality will be implemented.")
-    
-    def _delete_backup(self) -> None:
-        """
-        Delete a backup.
-        """
-        QMessageBox.information(self, "Delete", "Delete backup functionality will be implemented.")
 
 
 # -------------------------------------------------------

@@ -1,0 +1,1279 @@
+2025-02-20 16:04:50,203 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-20 16:04:50,208 - INFO - GPT response received.
+2025-02-20 16:04:50,208 - INFO - Raw GPT response for new exercise:
+[
+    {
+        "context": "Estás en un parque en la Ciudad de México, observando aves con un grupo de amigos. De repente, uno de tus amigos señala un colibrí que acaba de posarse en una flor cercana.",
+        "sentence": "Cuando el colibrí ______ en la flor, todos nos quedamos en silencio para no asustarlo.",
+        "answer": "se posó",
+        "choices": ["se posó", "posaba", "posará", "posó"],
+        "translation": "When the hummingbird ______ on the flower, we all fell silent so as not to scare it."
+    },
+    {
+        "context": "Estás en un tour guiado por la selva amazónica. El guía te está contando sobre los hábitos nocturnos de los búhos.",
+        "sentence": "El guía nos explicó que los búhos ______ por la noche en busca de alimento.",
+        "answer": "cazaban",
+        "choices": ["cazaban", "cazaron", "cazan", "cazarán"],
+        "translation": "The guide explained to us that the owls ______ at night in search of food."
+    },
+    {
+        "context": "Durante un viaje a los Andes, ves un majestuoso cóndor volando sobre las montañas. Tu compañero de viaje te cuenta sobre su primer avistamiento.",
+        "sentence": "Mi amigo me dijo que la primera vez que ______ un cóndor, fue una experiencia inolvidable.",
+        "answer": "vio",
+        "choices": ["veía", "vio", "verá", "ve"],
+        "translation": "My friend told me that the first time he ______ a condor, it was an unforgettable experience."
+    },
+    {
+        "context": "Estás visitando una reserva natural en Argentina, conocida por sus flamencos. Un guardaparques te está contando sobre la migración de estas aves.",
+        "sentence": "El guardaparques mencionó que los flamencos ______ hacia el norte en ciertas épocas del año.",
+        "answer": "migraban",
+        "choices": ["migraban", "migraron", "migran", "migrarán"],
+        "translation": "The park ranger mentioned that the flamingos ______ north at certain times of the year."
+    },
+    {
+        "context": "En un paseo en bote por el río Amazonas, observas un martín pescador que se lanza al agua. El guía te explica su técnica de pesca.",
+        "sentence": "El guía nos contó que el martín pescador ______ al agua con una precisión increíble para atrapar peces.",
+        "answer": "se lanzaba",
+        "choices": ["se lanzaba", "se lanzó", "se lanza", "se lanzará"],
+        "translation": "The guide told us
+2025-02-20 16:04:50,209 - ERROR - Error parsing new exercise: Unterminated string starting at: line 35 column 24 (char 2369)
+2025-02-20 16:04:59,810 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-20 16:04:59,811 - INFO - GPT response received.
+2025-02-20 16:04:59,812 - INFO - Raw GPT response for new exercise:
+[
+    {
+        "context": "Estás en un parque natural en Costa Rica y observas aves exóticas en su hábitat natural.",
+        "sentence": "Ayer, mientras _______ el tucán en el árbol, noté que su pico era más colorido de lo que pensaba.",
+        "answer": "observaba",
+        "choices": ["observo", "observé", "observaba", "observaremos"],
+        "translation": "Yesterday, while _______ the toucan in the tree, I noticed its beak was more colorful than I thought."
+    },
+    {
+        "context": "Durante un paseo en bote por los manglares de México, te encuentras con un grupo de flamencos.",
+        "sentence": "Cuando _______ los flamencos, me di cuenta de que su color rosa era aún más brillante en persona.",
+        "answer": "vi",
+        "choices": ["veo", "veía", "vi", "veré"],
+        "translation": "When I _______ the flamingos, I realized their pink color was even brighter in person."
+    },
+    {
+        "context": "En una caminata por la selva amazónica, tu guía te señala un guacamayo que está volando cerca.",
+        "sentence": "El guía nos _______ que el guacamayo azul y amarillo es una de las especies más llamativas del lugar.",
+        "answer": "dijo",
+        "choices": ["dice", "decía", "dijo", "dirá"],
+        "translation": "The guide _______ us that the blue and yellow macaw is one of the most striking species in the area."
+    },
+    {
+        "context": "Estás en un santuario de aves en Colombia, donde puedes ver águilas en su entorno natural.",
+        "sentence": "Antes de que _______ el águila, escuché el sonido de sus alas al volar.",
+        "answer": "viera",
+        "choices": ["veo", "veía", "vi", "viera"],
+        "translation": "Before I _______ the eagle, I heard the sound of its wings as it flew."
+    },
+    {
+        "context": "En una tarde tranquila en la plaza de un pueblo en Argentina, observas a las palomas.",
+        "sentence": "Siempre _______ a las palomas picoteando migas de pan en la plaza cuando era niño.",
+        "answer": "veía",
+        "choices": ["veo", "vi", "veré", "veía"],
+        "translation": "I always _______ the pigeons pecking at bread crumbs in the square when I was a child."
+    }
+]
+2025-02-20 16:04:59,817 - INFO - New exercises generated: Ayer, mientras _______ el tucán en el árbol, noté que su pico era más colorido de lo que pensaba., Cuando _______ los flamencos, me di cuenta de que su color rosa era aún más brillante en persona., El guía nos _______ que el guacamayo azul y amarillo es una de las especies más llamativas del lugar., Antes de que _______ el águila, escuché el sonido de sus alas al volar., Siempre _______ a las palomas picoteando migas de pan en la plaza cuando era niño.
+2025-02-20 16:06:05,597 - INFO - User answer: observaba, Correct: True
+2025-02-20 16:06:07,411 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-20 16:06:07,413 - INFO - GPT response received.
+2025-02-20 16:06:31,802 - INFO - User answer: vi, Correct: True
+2025-02-20 16:06:33,595 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-20 16:06:33,598 - INFO - GPT response received.
+2025-02-20 16:08:22,107 - INFO - User answer: dijo, Correct: True
+2025-02-20 16:08:23,785 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-20 16:08:23,787 - INFO - GPT response received.
+2025-02-20 16:11:23,760 - INFO - User answer: vi, Correct: False
+2025-02-20 16:11:26,300 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-20 16:11:26,310 - INFO - GPT response received.
+2025-02-20 16:12:27,548 - INFO - User answer: veía, Correct: True
+2025-02-20 16:12:29,652 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-20 16:12:29,661 - INFO - GPT response received.
+2025-02-20 16:19:02,657 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-20 16:19:02,662 - INFO - GPT response received.
+2025-02-20 16:19:02,662 - INFO - Raw GPT response for new exercise:
+[
+    {
+        "context": "Estás en un mercado de pescados en Lima, Perú, y quieres comprar un poco de salmón fresco para la cena.",
+        "sentence": "El vendedor me recomendó que _______ el salmón antes de comprarlo, para asegurarme de que está fresco.",
+        "answer": "huela",
+        "choices": ["huela", "huele", "huelo", "hueles"],
+        "translation": "The vendor recommended that I _______ the salmon before buying it, to make sure it's fresh."
+    },
+    {
+        "context": "Estás en un restaurante en Ciudad de México, y el mesero te ofrece una especialidad de la casa: tilapia al ajillo.",
+        "sentence": "Si yo _______ probar algo nuevo, definitivamente elegiría la tilapia al ajillo.",
+        "answer": "quisiera",
+        "choices": ["quisiera", "quiero", "querría", "querré"],
+        "translation": "If I _______ to try something new, I would definitely choose the garlic tilapia."
+    },
+    {
+        "context": "En una clase de cocina en Buenos Aires, el chef te enseña a preparar una merluza al horno.",
+        "sentence": "Es importante que _______ el pescado con limón antes de hornearlo para mejorar su sabor.",
+        "answer": "marines",
+        "choices": ["marines", "marine", "marino", "marinamos"],
+        "translation": "It's important that you _______ the fish with lemon before baking it to enhance its flavor."
+    },
+    {
+        "context": "En una conversación con un amigo en Santiago de Chile, discuten sobre cuál pescado es mejor para hacer ceviche.",
+        "sentence": "Mi amigo siempre dice que si _______ preparar ceviche, elija el pargo porque tiene mejor textura.",
+        "answer": "fuera",
+        "choices": ["fuera", "fueras", "fueran", "fuéramos"],
+        "translation": "My friend always says that if I _______ to make ceviche, I should choose snapper because it has a better texture."
+    },
+    {
+        "context": "Estás en una feria gastronómica en Bogotá, Colombia, y encuentras un puesto que vende dorado a la parrilla.",
+        "sentence": "El chef sugirió que _______ el dorado con una salsa de mango para darle un toque especial.",
+        "answer": "acompañáramos",
+        "choices": ["acompañáramos", "acompañáramos", "acompañemos", "acompañaré"],
+        "translation": "The chef suggested that we _______ the grilled dorado with a mango sauce to give it a special touch."
+    }
+]
+2025-02-20 16:19:02,673 - INFO - New exercises generated: El vendedor me recomendó que _______ el salmón antes de comprarlo, para asegurarme de que está fresco., Si yo _______ probar algo nuevo, definitivamente elegiría la tilapia al ajillo., Es importante que _______ el pescado con limón antes de hornearlo para mejorar su sabor., Mi amigo siempre dice que si _______ preparar ceviche, elija el pargo porque tiene mejor textura., El chef sugirió que _______ el dorado con una salsa de mango para darle un toque especial.
+2025-02-20 16:20:51,212 - INFO - User answer: huela, Correct: True
+2025-02-20 16:20:52,457 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-20 16:20:52,459 - INFO - GPT response received.
+2025-02-20 16:23:40,310 - INFO - User answer: querré, Correct: False
+2025-02-20 16:23:41,765 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-20 16:23:41,767 - INFO - GPT response received.
+2025-02-20 16:23:50,511 - INFO - User answer: quisiera, Correct: True
+2025-02-20 16:23:51,727 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-20 16:23:51,730 - INFO - GPT response received.
+2025-02-20 16:25:16,701 - INFO - User answer: marines, Correct: True
+2025-02-20 16:25:18,291 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-20 16:25:18,295 - INFO - GPT response received.
+2025-02-20 20:57:07,829 - INFO - User answer: fuera, Correct: True
+2025-02-20 20:57:09,876 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-20 20:57:09,880 - INFO - GPT response received.
+2025-02-20 20:57:27,682 - INFO - User answer: acompañemos, Correct: False
+2025-02-20 20:57:29,241 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-20 20:57:29,249 - INFO - GPT response received.
+2025-02-20 22:52:13,433 - INFO - Session log written successfully.
+2025-02-24 15:49:30,868 - INFO - Session log written successfully.
+2025-02-24 16:31:47,548 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-24 16:31:47,566 - INFO - GPT response received.
+2025-02-24 16:31:47,566 - INFO - Raw GPT response for new exercise:
+[
+    {
+        "context": "Estás en un parque observando a las aves en un lago. Notas cómo interactúan con el agua y entre ellas.",
+        "sentence": "El gorrión _____ en el agua mientras los otros pájaros lo miraban con curiosidad.",
+        "answer": "flotaba",
+        "choices": ["nadaba", "flotaba", "emergía", "buceaba"],
+        "translation": "The sparrow _____ on the water while the other birds watched it curiously."
+    },
+    {
+        "context": "Durante una caminata por el bosque, observas a un grupo de mirlos cerca de un río.",
+        "sentence": "Los mirlos _____ rápidamente para evitar el ataque de un halcón.",
+        "answer": "se zambulleron",
+        "choices": ["se zambulleron", "se sumergieron", "flotaron", "se deslizaron"],
+        "translation": "The blackbirds _____ quickly to avoid an attack from a hawk."
+    },
+    {
+        "context": "En una tarde soleada, estás en el jardín viendo cómo los jilgueros disfrutan del agua en una fuente.",
+        "sentence": "El jilguero _____ entre las rocas para descansar un momento.",
+        "answer": "se escondía",
+        "choices": ["se escondía", "nadaba", "flotaba", "buceaba"],
+        "translation": "The finch _____ among the rocks to rest for a moment."
+    },
+    {
+        "context": "En la playa, observas cómo las golondrinas vuelan cerca del agua, disfrutando del viento.",
+        "sentence": "La golondrina _____ sobre la superficie del agua, creando un espectáculo hermoso.",
+        "answer": "se deslizaba",
+        "choices": ["se deslizaba", "emergía", "se hundía", "se zambullía"],
+        "translation": "The swallow _____ over the surface of the water, creating a beautiful spectacle."
+    },
+    {
+        "context": "En un tranquilo estanque, ves a un ruiseñor disfrutando del agua al atardecer.",
+        "sentence": "El ruiseñor _____ con gracia antes de volver a la orilla.",
+        "answer": "nadó",
+        "choices": ["nadó", "flotó", "se zambulló", "se escondió"],
+        "translation": "The nightingale _____ gracefully before returning to the shore."
+    }
+]
+2025-02-24 16:31:47,580 - INFO - New exercises generated: El gorrión _____ en el agua mientras los otros pájaros lo miraban con curiosidad., Los mirlos _____ rápidamente para evitar el ataque de un halcón., El jilguero _____ entre las rocas para descansar un momento., La golondrina _____ sobre la superficie del agua, creando un espectáculo hermoso., El ruiseñor _____ con gracia antes de volver a la orilla.
+2025-02-24 16:31:58,743 - INFO - User answer: flotaba, Correct: True
+2025-02-24 16:32:00,193 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-24 16:32:00,205 - INFO - GPT response received.
+2025-02-24 16:32:43,406 - INFO - User answer: se zambulleron, Correct: True
+2025-02-24 16:32:45,241 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-24 16:32:45,242 - INFO - GPT response received.
+2025-02-24 16:33:31,685 - INFO - User answer: se escondía, Correct: True
+2025-02-24 16:33:33,243 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-24 16:33:33,249 - INFO - GPT response received.
+2025-02-24 16:33:57,081 - INFO - User answer: se deslizaba, Correct: True
+2025-02-24 16:33:58,518 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-24 16:33:58,522 - INFO - GPT response received.
+2025-02-24 16:34:40,169 - INFO - User answer: flotó, Correct: False
+2025-02-24 16:34:41,606 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-24 16:34:41,608 - INFO - GPT response received.
+2025-02-24 16:35:08,949 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-24 16:35:08,952 - INFO - GPT response received.
+2025-02-24 16:35:08,953 - INFO - Raw GPT response for new exercise:
+[
+    {
+        "context": "En un parque de la ciudad, un grupo de niños observa a las aves que vuelan alrededor. Uno de ellos señala emocionado al agua de la fuente.",
+        "sentence": "El gorrión _____ en el agua de la fuente y luego se sacude para quitarse el agua.",
+        "answer": "flotaría",
+        "choices": ["flotaría", "nadaría", "sumergiría", "escondería"],
+        "translation": "The sparrow _____ in the water of the fountain and then shakes itself to get rid of the water."
+    },
+    {
+        "context": "Durante una caminata por el bosque, los excursionistas escuchan el canto de un ruiseñor. Se detienen para observar cómo se comporta.",
+        "sentence": "El ruiseñor _____ entre las ramas para esconderse de los curiosos.",
+        "answer": "se escondería",
+        "choices": ["emergería", "se escondería", "agitaría las aletas", "flotaría"],
+        "translation": "The nightingale _____ among the branches to hide from the curious."
+    },
+    {
+        "context": "En la orilla de un lago, una familia disfruta de un día soleado mientras observan a las aves que se acercan al agua.",
+        "sentence": "Los jilgueros _____ sobre la superficie del agua antes de volar de nuevo al aire.",
+        "answer": "se deslizarían",
+        "choices": ["se zambullirían", "emergerían", "se deslizarían", "nadarían"],
+        "translation": "The finches _____ over the surface of the water before flying back into the air."
+    },
+    {
+        "context": "En una tarde tranquila, un grupo de amigos se sienta en el jardín escuchando el canto de los mirlos.",
+        "sentence": "El mirlo _____ su cola rítmicamente mientras canta desde el árbol más alto.",
+        "answer": "movería",
+        "choices": ["movería", "escondería", "agitaría", "sumergiría"],
+        "translation": "The blackbird _____ its tail rhythmically while singing from the tallest tree."
+    },
+    {
+        "context": "En la costa, los niños juegan en la arena mientras observan a las golondrinas volar cerca del agua.",
+        "sentence": "Las golondrinas _____ rápidamente para evitar a un depredador que se aproxima.",
+        "answer": "escaparían",
+        "choices": ["escaparían", "flotarían", "se zambullirían", "emergían"],
+        "translation": "The swallows _____ quickly to avoid an approaching predator."
+    }
+]
+2025-02-24 16:35:08,965 - INFO - New exercises generated: El gorrión _____ en el agua de la fuente y luego se sacude para quitarse el agua., El ruiseñor _____ entre las ramas para esconderse de los curiosos., Los jilgueros _____ sobre la superficie del agua antes de volar de nuevo al aire., El mirlo _____ su cola rítmicamente mientras canta desde el árbol más alto., Las golondrinas _____ rápidamente para evitar a un depredador que se aproxima.
+2025-02-24 16:36:18,540 - INFO - User answer: se escondería, Correct: True
+2025-02-24 16:36:19,870 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-24 16:36:19,871 - INFO - GPT response received.
+2025-02-24 16:36:41,191 - INFO - User answer: se deslizarían, Correct: True
+2025-02-24 16:36:42,554 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-24 16:36:42,560 - INFO - GPT response received.
+2025-02-24 16:37:10,868 - INFO - User answer: movería, Correct: True
+2025-02-24 16:37:12,479 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-24 16:37:12,486 - INFO - GPT response received.
+2025-02-24 16:37:36,879 - INFO - User answer: escaparían, Correct: True
+2025-02-24 16:37:38,437 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-24 16:37:38,441 - INFO - GPT response received.
+2025-02-24 16:42:02,680 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-24 16:42:02,682 - INFO - GPT response received.
+2025-02-24 16:42:02,682 - INFO - Raw GPT response for new exercise:
+[
+    {
+        "context": "Un grupo de pescadores está en el mar Caribe, observando cómo los peces nadan cerca de su bote. Uno de ellos señala un cardumen de caballas que parece estar en movimiento.",
+        "sentence": "El líder del grupo sugiere que las caballas ______ rápidamente para evitar a los depredadores en la zona.",
+        "answer": "escapen de un depredador",
+        "choices": [
+            "floten",
+            "emergan",
+            "escapen de un depredador",
+            "se hundan"
+        ],
+        "translation": "The group leader suggests that the mackerels ______ quickly to avoid predators in the area."
+    },
+    {
+        "context": "En una playa de México, una familia observa cómo los niños juegan en el agua mientras un pez lenguado se acerca a la orilla.",
+        "sentence": "Los padres esperan que el lenguado ______ antes de que los niños lo asusten.",
+        "answer": "se deslice",
+        "choices": [
+            "se deslice",
+            "se esconda entre las rocas",
+            "se hunda",
+            "agite las aletas"
+        ],
+        "translation": "The parents hope that the flounder ______ before the children scare it away."
+    },
+    {
+        "context": "Un buceador está explorando un arrecife en la costa de Chile, donde los bacalaos son comunes. Observa cómo uno de estos peces se mueve con tranquilidad.",
+        "sentence": "El buceador desea que el bacalao ______ entre las rocas para observarlo mejor.",
+        "answer": "se esconda entre las rocas",
+        "choices": [
+            "se zambulla",
+            "se esconda entre las rocas",
+            "agite las aletas",
+            "flote"
+        ],
+        "translation": "The diver wishes that the cod ______ among the rocks to observe it better."
+    },
+    {
+        "context": "En un mercado de pescadores en Perú, un vendedor está explicando a un cliente sobre las características del huachinango fresco.",
+        "sentence": "El vendedor asegura que los huachinangos siempre ______ con elegancia en el agua.",
+        "answer": "se deslicen",
+        "choices": [
+            "se hundan",
+            "se deslicen",
+            "emerjan",
+            "floten"
+        ],
+        "translation": "The seller assures that the snappers always ______ gracefully in the water."
+    },
+    {
+        "context": "Durante una excursión en bote en la costa de Colombia, los turistas observan cómo un halibut se mueve en las aguas profundas.",
+        "sentence": "El guía espera que el halibut ______ pronto para que todos lo puedan ver.",
+        "answer": "emerja",
+2025-02-24 16:42:02,682 - ERROR - Error parsing new exercise: Expecting property name enclosed in double quotes: line 53 column 28 (char 2590)
+2025-02-24 16:42:10,352 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-24 16:42:10,353 - INFO - GPT response received.
+2025-02-24 16:42:10,353 - INFO - Raw GPT response for new exercise:
+[
+    {
+        "context": "Un grupo de turistas está haciendo esnórquel en las aguas cristalinas de Cancún, observando la vida marina.",
+        "sentence": "Los peces de colores ______ rápidamente cuando los turistas se acercan demasiado.",
+        "answer": "escapen de un depredador",
+        "choices": ["naden", "se sumerjan", "escapen de un depredador", "floten"],
+        "translation": "The colorful fish ______ quickly when the tourists get too close."
+    },
+    {
+        "context": "En un mercado de mariscos en Lima, un vendedor está explicando cómo preparan el ceviche de lenguado.",
+        "sentence": "El lenguado, antes de ser cortado en trozos pequeños, siempre ______ en agua salada durante unos minutos.",
+        "answer": "se sumerja",
+        "choices": ["se deslice", "se sumerja", "flote", "se esconda entre las rocas"],
+        "translation": "The flounder, before being cut into small pieces, always ______ in saltwater for a few minutes."
+    },
+    {
+        "context": "Durante una excursión de buceo en Cozumel, los buceadores observan un bacalao escondido.",
+        "sentence": "El bacalao ______ entre las rocas para evitar ser visto por los buceadores.",
+        "answer": "se esconda entre las rocas",
+        "choices": ["nada", "se esconda entre las rocas", "emerja", "mueva la cola"],
+        "translation": "The cod ______ among the rocks to avoid being seen by the divers."
+    },
+    {
+        "context": "En un documental sobre la vida marina, se muestra cómo los peces halibut sobreviven en el océano.",
+        "sentence": "Es importante que el halibut ______ bien en el agua para mantenerse a salvo de los depredadores.",
+        "answer": "flote",
+        "choices": ["flote", "se hunda", "se zambulla", "agite las aletas"],
+        "translation": "It is important that the halibut ______ well in the water to stay safe from predators."
+    },
+    {
+        "context": "Un pescador en el Golfo de México cuenta cómo los huachinangos se comportan en su hábitat natural.",
+        "sentence": "Los huachinangos suelen ______ con rapidez cuando sienten la presencia de un barco.",
+        "answer": "zambullirse",
+        "choices": ["zambullirse", "nadar", "emerger", "agitar las aletas"],
+        "translation": "The snappers usually ______ quickly when they sense the presence of a boat."
+    }
+]
+2025-02-24 16:42:10,363 - INFO - New exercises generated: Los peces de colores ______ rápidamente cuando los turistas se acercan demasiado., El lenguado, antes de ser cortado en trozos pequeños, siempre ______ en agua salada durante unos minutos., El bacalao ______ entre las rocas para evitar ser visto por los buceadores., Es importante que el halibut ______ bien en el agua para mantenerse a salvo de los depredadores., Los huachinangos suelen ______ con rapidez cuando sienten la presencia de un barco.
+2025-02-24 16:42:33,022 - INFO - User answer: escapen de un depredador, Correct: True
+2025-02-24 16:42:34,506 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-24 16:42:34,507 - INFO - GPT response received.
+2025-02-24 16:43:15,772 - INFO - User answer: se sumerja, Correct: True
+2025-02-24 16:43:17,384 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-24 16:43:17,386 - INFO - GPT response received.
+2025-02-24 16:44:15,579 - INFO - User answer: se zambulla, Correct: False
+2025-02-24 16:44:17,184 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-24 16:44:17,185 - INFO - GPT response received.
+2025-02-24 16:44:27,152 - INFO - User answer: flote, Correct: True
+2025-02-24 16:44:28,510 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-24 16:44:28,518 - INFO - GPT response received.
+2025-02-24 16:44:37,246 - INFO - User answer: nadar, Correct: False
+2025-02-24 16:44:38,926 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-24 16:44:38,932 - INFO - GPT response received.
+2025-02-24 16:50:27,620 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-24 16:50:27,621 - INFO - GPT response received.
+2025-02-24 16:50:27,622 - INFO - Raw GPT response for new exercise:
+[
+    {
+        "context": "En un parque natural, un grupo de turistas observa diferentes especies de aves mientras el guía les explica sobre sus comportamientos.",
+        "sentence": "El guía señala un búho en un árbol y comenta que por las noches suele _______ de manera misteriosa.",
+        "answer": "ulular",
+        "choices": ["ulular", "cantar", "trinar", "graznar"],
+        "translation": "The guide points out an owl in a tree and mentions that at night it usually _______ in a mysterious way."
+    },
+    {
+        "context": "En la granja de Don Pedro, los niños de la escuela visitan para aprender sobre las aves de corral.",
+        "sentence": "Mientras los niños observan, las gallinas _______ como si estuvieran charlando entre ellas.",
+        "answer": "cacarean",
+        "choices": ["cantan", "silban", "cacarean", "ululan"],
+        "translation": "While the children watch, the hens _______ as if they were chatting among themselves."
+    },
+    {
+        "context": "Durante una caminata al amanecer, un grupo de amigos disfruta del canto de los pájaros en la selva.",
+        "sentence": "Uno de los amigos señala que los pájaros _______ con una melodía que parece un concierto natural.",
+        "answer": "trinan",
+        "choices": ["trinan", "graznan", "ululan", "silban"],
+        "translation": "One of the friends points out that the birds _______ with a melody that sounds like a natural concert."
+    },
+    {
+        "context": "En una reserva natural, los visitantes son guiados por un experto que les habla sobre las aves locales.",
+        "sentence": "El experto explica que cuando los loros están nerviosos, a menudo _______ ruidosamente.",
+        "answer": "graznan",
+        "choices": ["graznan", "cantan", "trinan", "ululan"],
+        "translation": "The expert explains that when parrots are nervous, they often _______ loudly."
+    },
+    {
+        "context": "En el mercado local, una vendedora de jaulas para aves intenta atraer a los clientes con sus productos.",
+        "sentence": "La vendedora comenta que si uno tiene un canario, seguramente _______ alegremente todas las mañanas.",
+        "answer": "canta",
+        "choices": ["canta", "silba", "grazna", "cacarea"],
+        "translation": "The vendor mentions that if you have a canary, it will surely _______ happily every morning."
+    }
+]
+2025-02-24 16:50:27,632 - INFO - New exercises generated: El guía señala un búho en un árbol y comenta que por las noches suele _______ de manera misteriosa., Mientras los niños observan, las gallinas _______ como si estuvieran charlando entre ellas., Uno de los amigos señala que los pájaros _______ con una melodía que parece un concierto natural., El experto explica que cuando los loros están nerviosos, a menudo _______ ruidosamente., La vendedora comenta que si uno tiene un canario, seguramente _______ alegremente todas las mañanas.
+2025-02-24 16:50:28,350 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-24 16:50:28,353 - INFO - GPT response received.
+2025-02-24 16:50:28,353 - INFO - Raw GPT response for new exercise:
+[
+  {
+    "context": "En la reserva natural de Costa Rica, los guías turísticos explican a los visitantes sobre la variedad de aves que se pueden observar.",
+    "sentence": "Mira, ese tucán siempre _______ al amanecer desde la copa de los árboles.",
+    "answer": "canta",
+    "choices": ["canta", "silba", "grazna", "trinan"],
+    "translation": "Look, that toucan always _______ at dawn from the treetops."
+  },
+  {
+    "context": "En una granja en Argentina, los niños están aprendiendo sobre los animales y sus sonidos.",
+    "sentence": "Cada mañana, las gallinas _______ cuando sale el sol.",
+    "answer": "cacarean",
+    "choices": ["cacarean", "ululan", "graznan", "silban"],
+    "translation": "Every morning, the hens _______ when the sun rises."
+  },
+  {
+    "context": "Durante una caminata nocturna en el bosque de México, los excursionistas escuchan atentamente los sonidos de la noche.",
+    "sentence": "¿Escuchas eso? El búho _______ cerca del río.",
+    "answer": "ulula",
+    "choices": ["ulula", "trinan", "grazna", "canta"],
+    "translation": "Do you hear that? The owl _______ near the river."
+  },
+  {
+    "context": "En un parque de Bogotá, un grupo de amigos disfruta de un picnic mientras observan a los pájaros.",
+    "sentence": "Los canarios en ese árbol _______ melodiosamente toda la tarde.",
+    "answer": "trinan",
+    "choices": ["trinan", "cantan", "graznan", "silban"],
+    "translation": "The canaries in that tree _______ melodiously all afternoon."
+  },
+  {
+    "context": "En una plaza de Santiago, un vendedor ambulante entretiene a los transeúntes con su habilidad para imitar sonidos de aves.",
+    "sentence": "Él dice que los loros a menudo _______ cuando están emocionados.",
+    "answer": "graznan",
+    "choices": ["graznan", "ululan", "silban", "cacarean"],
+    "translation": "He says that parrots often _______ when they are excited."
+  }
+]
+2025-02-24 16:50:28,362 - INFO - New exercises generated: Mira, ese tucán siempre _______ al amanecer desde la copa de los árboles., Cada mañana, las gallinas _______ cuando sale el sol., ¿Escuchas eso? El búho _______ cerca del río., Los canarios en ese árbol _______ melodiosamente toda la tarde., Él dice que los loros a menudo _______ cuando están emocionados.
+2025-02-24 16:51:11,290 - INFO - User answer: canta, Correct: True
+2025-02-24 16:51:12,717 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-24 16:51:12,718 - INFO - GPT response received.
+2025-02-24 16:51:23,876 - INFO - User answer: cacarean, Correct: True
+2025-02-24 16:51:25,154 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-24 16:51:25,163 - INFO - GPT response received.
+2025-02-24 16:51:33,483 - INFO - User answer: ulula, Correct: True
+2025-02-24 16:51:35,230 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-24 16:51:35,232 - INFO - GPT response received.
+2025-02-24 16:53:47,204 - INFO - Session log written successfully.
+2025-02-24 16:54:34,465 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-24 16:54:34,468 - INFO - GPT response received.
+2025-02-24 16:54:34,469 - INFO - Raw GPT response for new exercise:
+[
+    {
+        "context": "En el parque, los niños observan con curiosidad a un grupo de loros que han llegado a los árboles cercanos.",
+        "sentence": "Los loros siempre _______ con entusiasmo cuando están en grupo.",
+        "answer": "trinan",
+        "choices": ["cantan", "silban", "trinan", "ululan"],
+        "translation": "The parrots always _______ enthusiastically when they are in a group."
+    },
+    {
+        "context": "Durante la noche, los sonidos del bosque se intensifican, especialmente cerca del río.",
+        "sentence": "Es común que los búhos _______ cuando la luna está llena.",
+        "answer": "ululen",
+        "choices": ["graznen", "ululen", "cacareen", "silben"],
+        "translation": "It's common for the owls to _______ when the moon is full."
+    },
+    {
+        "context": "En la granja, las gallinas se pasean por el corral buscando alimento.",
+        "sentence": "Cada mañana, la gallina _______ después de poner un huevo.",
+        "answer": "cacarea",
+        "choices": ["cacarea", "trina", "ulula", "silba"],
+        "translation": "Every morning, the hen _______ after laying an egg."
+    },
+    {
+        "context": "En la plaza del pueblo, un hombre mayor toca su flauta mientras los pájaros se acercan.",
+        "sentence": "Cuando el hombre _______ su melodía, los gorriones se reúnen a su alrededor.",
+        "answer": "silba",
+        "choices": ["canta", "silba", "ulula", "trinan"],
+        "translation": "When the man _______ his tune, the sparrows gather around him."
+    },
+    {
+        "context": "En la selva tropical, el sonido de las aves es un concierto natural que nunca cesa.",
+        "sentence": "Es importante que el tucán _______ para marcar su territorio.",
+        "answer": "cante",
+        "choices": ["cante", "grazne", "ulule", "trine"],
+        "translation": "It's important for the toucan to _______ to mark its territory."
+    }
+]
+2025-02-24 16:54:34,482 - INFO - New exercises generated: Los loros siempre _______ con entusiasmo cuando están en grupo., Es común que los búhos _______ cuando la luna está llena., Cada mañana, la gallina _______ después de poner un huevo., Cuando el hombre _______ su melodía, los gorriones se reúnen a su alrededor., Es importante que el tucán _______ para marcar su territorio.
+2025-02-24 16:54:49,732 - INFO - User answer: cantan, Correct: False
+2025-02-24 16:54:55,932 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-24 16:54:55,940 - INFO - GPT response received.
+2025-02-24 16:55:10,904 - INFO - User answer: ululen, Correct: True
+2025-02-24 16:55:12,263 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-24 16:55:12,265 - INFO - GPT response received.
+2025-02-24 16:55:20,376 - INFO - User answer: cacarea, Correct: True
+2025-02-24 16:55:21,595 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-24 16:55:21,613 - INFO - GPT response received.
+2025-02-24 16:55:33,630 - INFO - User answer: silba, Correct: True
+2025-02-24 16:55:34,870 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-24 16:55:34,871 - INFO - GPT response received.
+2025-02-24 16:55:51,593 - INFO - User answer: trine, Correct: False
+2025-02-24 16:55:53,667 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-24 16:55:53,668 - INFO - GPT response received.
+2025-02-24 16:55:53,856 - INFO - User answer: cante, Correct: True
+2025-02-24 16:55:55,017 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-24 16:55:55,019 - INFO - GPT response received.
+2025-02-24 16:56:05,206 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-24 16:56:05,208 - INFO - GPT response received.
+2025-02-24 16:56:05,209 - INFO - Raw GPT response for new exercise:
+[
+    {
+        "context": "Estás en un parque natural en Costa Rica, observando la variedad de aves exóticas que habitan allí. Un guía turístico te explica sobre las diferentes especies que puedes ver.",
+        "sentence": "El guía señala un tucán y comenta que a menudo _____ por las mañanas, especialmente durante la temporada de apareamiento.",
+        "answer": "canta",
+        "choices": ["canta", "silba", "grazna", "trinan"],
+        "translation": "The guide points to a toucan and comments that it often _____ in the mornings, especially during mating season."
+    },
+    {
+        "context": "En una visita a una granja en Argentina, te encuentras con varias gallinas correteando por el corral. El granjero te habla sobre su comportamiento diario.",
+        "sentence": "El granjero menciona que las gallinas _____ cuando están poniendo huevos o cuando se sienten amenazadas.",
+        "answer": "cacarean",
+        "choices": ["cantan", "silban", "cacarean", "ululan"],
+        "translation": "The farmer mentions that the hens _____ when they are laying eggs or when they feel threatened."
+    },
+    {
+        "context": "Durante un paseo nocturno en un bosque de México, escuchas una serie de sonidos misteriosos que provienen de los árboles.",
+        "sentence": "Tu amigo te dice que esos sonidos probablemente _____ de las lechuzas, que son muy activas durante la noche.",
+        "answer": "ululan",
+        "choices": ["cantan", "silban", "ululan", "trinan"],
+        "translation": "Your friend tells you that those sounds probably _____ from the owls, which are very active at night."
+    },
+    {
+        "context": "Estás visitando una reserva natural en Colombia, donde hay una gran diversidad de aves canoras.",
+        "sentence": "El guía te muestra un grupo de canarios que _____ alegremente al amanecer, creando un ambiente mágico.",
+        "answer": "trinan",
+        "choices": ["cantan", "silban", "graznan", "trinan"],
+        "translation": "The guide shows you a group of canaries that _____ happily at dawn, creating a magical atmosphere."
+    },
+    {
+        "context": "En un mercado al aire libre en Perú, observas a un vendedor que tiene una jaula con loros coloridos.",
+        "sentence": "El vendedor comenta que los loros _____ imitando el sonido de la gente que pasa.",
+        "answer": "silban",
+        "choices": ["cantan", "silban", "graznan", "ululan"],
+        "translation": "The vendor comments that the parrots _____ imitating the sound of the people passing by."
+    }
+]
+2025-02-24 16:56:05,220 - INFO - New exercises generated: El guía señala un tucán y comenta que a menudo _____ por las mañanas, especialmente durante la temporada de apareamiento., El granjero menciona que las gallinas _____ cuando están poniendo huevos o cuando se sienten amenazadas., Tu amigo te dice que esos sonidos probablemente _____ de las lechuzas, que son muy activas durante la noche., El guía te muestra un grupo de canarios que _____ alegremente al amanecer, creando un ambiente mágico., El vendedor comenta que los loros _____ imitando el sonido de la gente que pasa.
+2025-02-24 16:56:15,998 - INFO - User answer: silba, Correct: False
+2025-02-24 16:56:17,360 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-24 16:56:17,361 - INFO - GPT response received.
+2025-02-24 16:56:18,787 - INFO - User answer: canta, Correct: True
+2025-02-24 16:56:20,033 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-24 16:56:20,035 - INFO - GPT response received.
+2025-02-24 16:56:25,754 - INFO - User answer: cacarean, Correct: True
+2025-02-24 16:56:27,098 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-24 16:56:27,100 - INFO - GPT response received.
+2025-02-24 16:56:54,834 - INFO - User answer: trinan, Correct: False
+2025-02-24 16:56:56,725 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-24 16:56:56,735 - INFO - GPT response received.
+2025-02-24 16:57:02,145 - INFO - User answer: ululan, Correct: True
+2025-02-24 16:57:03,300 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-24 16:57:03,300 - INFO - GPT response received.
+2025-02-24 16:57:12,549 - INFO - User answer: cantan, Correct: False
+2025-02-24 16:57:14,005 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-24 16:57:14,008 - INFO - GPT response received.
+2025-02-24 16:57:26,850 - INFO - User answer: silban, Correct: True
+2025-02-24 16:57:28,135 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-24 16:57:28,137 - INFO - GPT response received.
+2025-02-24 16:59:05,434 - INFO - Session log written successfully.
+2025-02-24 16:59:13,393 - INFO - Session log written successfully.
+2025-02-24 16:59:43,949 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-24 16:59:43,952 - INFO - GPT response received.
+2025-02-24 16:59:43,953 - INFO - Raw GPT response for new exercise:
+[
+    {
+        "context": "Estás en el campo observando aves con un amigo. De repente, escuchas un sonido peculiar entre los árboles.",
+        "sentence": "Creo que ese búho está a punto de _______. ¿Lo escuchas?",
+        "answer": "ulular",
+        "choices": ["cantar", "silbar", "ulular", "graznar"],
+        "translation": "I think that owl is about to _______. Do you hear it?"
+    },
+    {
+        "context": "Mientras paseas por la granja, notas que las gallinas están muy activas hoy.",
+        "sentence": "Cada mañana, cuando paso por aquí, las gallinas empiezan a _______ muy fuerte.",
+        "answer": "cacarear",
+        "choices": ["trinar", "cacarear", "ulular", "silbar"],
+        "translation": "Every morning, when I walk by here, the hens start to _______ very loudly."
+    },
+    {
+        "context": "Estás en un parque lleno de árboles y aves tropicales. Tu amigo te comenta sobre el sonido que hacen los pájaros.",
+        "sentence": "Siempre me ha encantado cómo los pájaros _______ al amanecer.",
+        "answer": "trinan",
+        "choices": ["graznan", "silban", "trinan", "cacarean"],
+        "translation": "I have always loved how the birds _______ at dawn."
+    },
+    {
+        "context": "En un día soleado, decides ir a un lugar donde se reúnen muchas aves marinas.",
+        "sentence": "Es fascinante ver cómo las gaviotas _______ mientras vuelan sobre el mar.",
+        "answer": "graznan",
+        "choices": ["cantan", "graznan", "ululan", "silban"],
+        "translation": "It's fascinating to see how the seagulls _______ while they fly over the sea."
+    },
+    {
+        "context": "Durante una caminata por el bosque, te detienes a escuchar el sonido del viento y los pájaros.",
+        "sentence": "Me relaja mucho _______ una melodía mientras camino entre los árboles.",
+        "answer": "silbar",
+        "choices": ["cantar", "silbar", "graznar", "trinar"],
+        "translation": "It relaxes me a lot to _______ a tune while I walk among the trees."
+    }
+]
+2025-02-24 16:59:43,967 - INFO - New exercises generated: Creo que ese búho está a punto de _______. ¿Lo escuchas?, Cada mañana, cuando paso por aquí, las gallinas empiezan a _______ muy fuerte., Siempre me ha encantado cómo los pájaros _______ al amanecer., Es fascinante ver cómo las gaviotas _______ mientras vuelan sobre el mar., Me relaja mucho _______ una melodía mientras camino entre los árboles.
+2025-02-24 16:59:50,263 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-24 16:59:50,265 - INFO - GPT response received.
+2025-02-24 16:59:50,265 - INFO - Raw GPT response for new exercise:
+[
+  {
+    "context": "Estás en un parque en la Ciudad de México, observando una variedad de aves en los árboles.",
+    "sentence": "Mira, ese cenzontle _______ todos los días al amanecer, es un sonido hermoso.",
+    "answer": "canta",
+    "choices": ["canta", "silba", "grazna", "ulula"],
+    "translation": "Look, that mockingbird _______ every day at dawn, it’s a beautiful sound."
+  },
+  {
+    "context": "Mientras caminas por un sendero en la selva amazónica, escuchas a los tucanes entre los árboles.",
+    "sentence": "Es increíble cómo los tucanes _______ de manera tan única, ¿verdad?",
+    "answer": "trinan",
+    "choices": ["trinan", "cantan", "silban", "graznan"],
+    "translation": "It's amazing how the toucans _______ in such a unique way, right?"
+  },
+  {
+    "context": "En una granja en Argentina, estás ayudando a alimentar a las gallinas.",
+    "sentence": "Cada mañana, las gallinas _______ cuando les traen el maíz.",
+    "answer": "cacarean",
+    "choices": ["cacarean", "cantan", "silban", "ululan"],
+    "translation": "Every morning, the hens _______ when they are brought corn."
+  },
+  {
+    "context": "Durante una noche de campamento en la Patagonia, escuchas a los búhos en la distancia.",
+    "sentence": "Siempre me ha parecido misterioso cómo el búho _______ en la noche.",
+    "answer": "ulula",
+    "choices": ["ulula", "canta", "trinan", "grazna"],
+    "translation": "I've always found it mysterious how the owl _______ at night."
+  },
+  {
+    "context": "En una plaza de un pueblo en Colombia, observas a un grupo de niños jugando con un loro.",
+    "sentence": "El loro es muy divertido, a veces _______ como si fuera un niño más.",
+    "answer": "grazna",
+    "choices": ["grazna", "canta", "silba", "ulula"],
+    "translation": "The parrot is very funny, sometimes it _______ as if it were another child."
+  }
+]
+2025-02-24 16:59:50,272 - INFO - New exercises generated: Mira, ese cenzontle _______ todos los días al amanecer, es un sonido hermoso., Es increíble cómo los tucanes _______ de manera tan única, ¿verdad?, Cada mañana, las gallinas _______ cuando les traen el maíz., Siempre me ha parecido misterioso cómo el búho _______ en la noche., El loro es muy divertido, a veces _______ como si fuera un niño más.
+2025-02-24 16:59:52,842 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-24 16:59:52,843 - INFO - GPT response received.
+2025-02-24 16:59:52,844 - INFO - Raw GPT response for new exercise:
+[
+    {
+        "context": "En un parque de la ciudad, un grupo de amigos observa a las aves que se posan en los árboles. Están fascinados por los diferentes sonidos que hacen.",
+        "sentence": "Mira, ese pájaro en la rama _______ muy bonito. Parece una canción.",
+        "answer": "canta",
+        "choices": ["canta", "silba", "grazna", "cacarea"],
+        "translation": "Look, that bird on the branch _______ very beautifully. It sounds like a song."
+    },
+    {
+        "context": "Durante la caminata matutina, los excursionistas escuchan diferentes sonidos provenientes del bosque. Uno de ellos suena muy peculiar.",
+        "sentence": "Creo que esos búhos _______ cada noche cerca de nuestra cabaña.",
+        "answer": "ululan",
+        "choices": ["cantan", "ululan", "trinan", "silban"],
+        "translation": "I think those owls _______ every night near our cabin."
+    },
+    {
+        "context": "En la granja, los niños están emocionados por ver a las gallinas y escuchar los sonidos que hacen. Es una experiencia nueva para ellos.",
+        "sentence": "Cada mañana, la gallina _______ muy fuerte cuando pone un huevo.",
+        "answer": "cacarea",
+        "choices": ["canta", "silba", "cacarea", "trina"],
+        "translation": "Every morning, the hen _______ very loudly when it lays an egg."
+    },
+    {
+        "context": "En el zoológico, los visitantes observan a los loros en su hábitat. Se sorprenden por la variedad de sonidos que pueden hacer.",
+        "sentence": "Esos loros siempre _______ cuando ven a mucha gente cerca.",
+        "answer": "trinan",
+        "choices": ["graznan", "trinan", "ululan", "cacarean"],
+        "translation": "Those parrots always _______ when they see a lot of people nearby."
+    },
+    {
+        "context": "En el campo, al atardecer, es común escuchar a las aves que regresan a sus nidos. Sus sonidos llenan el aire de vida.",
+        "sentence": "Al anochecer, los patos del lago _______ mientras vuelan hacia sus nidos.",
+        "answer": "graznan",
+        "choices": ["cantan", "silban", "graznan", "ululan"],
+        "translation": "At dusk, the ducks from the lake _______ as they fly to their nests."
+    }
+]
+2025-02-24 16:59:52,852 - INFO - New exercises generated: Mira, ese pájaro en la rama _______ muy bonito. Parece una canción., Creo que esos búhos _______ cada noche cerca de nuestra cabaña., Cada mañana, la gallina _______ muy fuerte cuando pone un huevo., Esos loros siempre _______ cuando ven a mucha gente cerca., Al anochecer, los patos del lago _______ mientras vuelan hacia sus nidos.
+2025-02-24 17:00:04,534 - INFO - User answer: canta, Correct: True
+2025-02-24 17:00:06,014 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-24 17:00:06,016 - INFO - GPT response received.
+2025-02-24 17:00:11,673 - INFO - User answer: ululan, Correct: True
+2025-02-24 17:00:13,227 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-24 17:00:13,228 - INFO - GPT response received.
+2025-02-24 17:00:16,840 - INFO - User answer: cacarea, Correct: True
+2025-02-24 17:00:17,929 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-24 17:00:17,938 - INFO - GPT response received.
+2025-02-24 17:00:35,041 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-24 17:00:35,046 - INFO - GPT response received.
+2025-02-24 17:00:35,047 - INFO - Raw GPT response for new exercise:
+[
+    {
+        "context": "Estás en un parque natural en México, observando aves con un guía local. El guía te está explicando sobre los diferentes sonidos que hacen las aves en su hábitat natural.",
+        "sentence": "El guía menciona que es importante que el búho _______ por la noche para comunicarse con otros búhos.",
+        "answer": "ulule",
+        "choices": ["cante", "ulule", "silbe", "grazne"],
+        "translation": "The guide mentions that it is important for the owl to _______ at night to communicate with other owls."
+    },
+    {
+        "context": "En una reserva natural en Costa Rica, un grupo de turistas está aprendiendo sobre el comportamiento de las aves locales.",
+        "sentence": "El guía recomienda que los tucanes _______ al amanecer para marcar su territorio.",
+        "answer": "trinen",
+        "choices": ["cacareen", "trinen", "ululen", "graznen"],
+        "translation": "The guide recommends that the toucans _______ at dawn to mark their territory."
+    },
+    {
+        "context": "En una granja en Argentina, los visitantes están observando cómo las gallinas interactúan en el corral.",
+        "sentence": "El granjero sugiere que las gallinas _______ cuando sienten que alguien se acerca.",
+        "answer": "cacareen",
+        "choices": ["ululen", "silben", "cacareen", "trinen"],
+        "translation": "The farmer suggests that the hens _______ when they feel someone is approaching."
+    },
+    {
+        "context": "Durante un paseo por el bosque en Colombia, un grupo de amigos escucha diferentes sonidos de aves.",
+        "sentence": "Uno de los amigos espera que los loros _______ para poder grabar sus sonidos únicos.",
+        "answer": "graznen",
+        "choices": ["graznen", "ululen", "canten", "trinen"],
+        "translation": "One of the friends hopes that the parrots _______ so he can record their unique sounds."
+    },
+    {
+        "context": "En una excursión en la selva amazónica, el guía está enseñando a los turistas a identificar aves por sus cantos.",
+        "sentence": "El guía insiste en que los canarios _______ en la mañana para alegrar el ambiente.",
+        "answer": "canten",
+        "choices": ["silben", "canten", "ululen", "cacareen"],
+        "translation": "The guide insists that the canaries _______ in the morning to brighten the atmosphere."
+    }
+]
+2025-02-24 17:00:35,058 - INFO - New exercises generated: El guía menciona que es importante que el búho _______ por la noche para comunicarse con otros búhos., El guía recomienda que los tucanes _______ al amanecer para marcar su territorio., El granjero sugiere que las gallinas _______ cuando sienten que alguien se acerca., Uno de los amigos espera que los loros _______ para poder grabar sus sonidos únicos., El guía insiste en que los canarios _______ en la mañana para alegrar el ambiente.
+2025-02-24 17:08:46,416 - INFO - Session log written successfully.
+2025-02-25 14:08:09,370 - WARNING - Keyring package not available. API key will be stored in environment variable only.
+2025-02-25 14:08:50,349 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-25 14:08:50,355 - INFO - GPT response received.
+2025-02-25 14:08:50,355 - INFO - Raw GPT response for new exercise:
+[
+    {
+        "context": "María siempre espera que su hermano llegue temprano a casa para cenar juntos.",
+        "sentence": "Es importante que él __________ a tiempo para la reunión.",
+        "answer": "llegue",
+        "choices": ["llegue", "llega", "llegará", "llegaría"],
+        "translation": "It's important that he __________ on time for the meeting."
+    },
+    {
+        "context": "En la fiesta, todos quieren que la música sea de su agrado.",
+        "sentence": "Espero que el DJ __________ buena música esta noche.",
+        "answer": "ponga",
+        "choices": ["ponga", "pone", "pondrá", "ponía"],
+        "translation": "I hope that the DJ __________ good music tonight."
+    },
+    {
+        "context": "La abuela de Juan siempre le dice que es importante que estudie.",
+        "sentence": "Ella insiste en que él __________ todos los días.",
+        "answer": "estudie",
+        "choices": ["estudie", "estudia", "estudiará", "estudiaba"],
+        "translation": "She insists that he __________ every day."
+    },
+    {
+        "context": "Durante la reunión de vecinos, todos prefieren que el parque esté limpio.",
+        "sentence": "Es necesario que el encargado __________ el parque regularmente.",
+        "answer": "limpie",
+        "choices": ["limpie", "limpia", "limpiará", "limpiaba"],
+        "translation": "It's necessary that the person in charge __________ the park regularly."
+    },
+    {
+        "context": "Los padres de Ana siempre quieren que ella coma bien.",
+        "sentence": "Es bueno que ella __________ frutas y verduras todos los días.",
+        "answer": "coma",
+        "choices": ["coma", "come", "comerá", "comía"],
+        "translation": "It's good that she __________ fruits and vegetables every day."
+    }
+]
+2025-02-25 14:08:50,369 - INFO - New exercises generated: Es importante que él __________ a tiempo para la reunión., Espero que el DJ __________ buena música esta noche., Ella insiste en que él __________ todos los días., Es necesario que el encargado __________ el parque regularmente., Es bueno que ella __________ frutas y verduras todos los días.
+2025-02-25 14:08:57,669 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-25 14:08:57,670 - INFO - GPT response received.
+2025-02-25 14:09:17,848 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-25 14:09:17,854 - INFO - GPT response received.
+2025-02-25 14:09:17,855 - INFO - Raw GPT response for new exercise:
+```json
+[
+    {
+        "context": "En una reunión de trabajo en Ciudad de México, los empleados discuten sobre un proyecto importante. El jefe quiere asegurarse de que todos entienden la urgencia.",
+        "sentence": "Es crucial que el equipo ______ el informe antes del viernes.",
+        "answer": "entregue",
+        "choices": ["entregue", "entregó", "entregará", "entrega"],
+        "translation": "It's crucial that the team ______ the report before Friday."
+    },
+    {
+        "context": "En Buenos Aires, una amiga le cuenta a otra sobre su deseo de que su pareja aprenda a bailar tango.",
+        "sentence": "Espero que él ______ clases de tango este año.",
+        "answer": "tome",
+        "choices": ["tome", "tomó", "tomará", "toma"],
+        "translation": "I hope that he ______ tango lessons this year."
+    },
+    {
+        "context": "En un mercado de Quito, un vendedor le explica a un cliente que las frutas deben estar frescas para venderse bien.",
+        "sentence": "Es importante que la fruta ______ en buen estado.",
+        "answer": "esté",
+        "choices": ["esté", "estuvo", "estará", "está"],
+        "translation": "It's important that the fruit ______ in good condition."
+    },
+    {
+        "context": "En una fiesta de cumpleaños en Lima, los invitados charlan sobre la música que debería tocar el DJ.",
+        "sentence": "Queremos que el DJ ______ música variada para todos.",
+        "answer": "ponga",
+        "choices": ["ponga", "puso", "pondrá", "pone"],
+        "translation": "We want the DJ to ______ a variety of music for everyone."
+    },
+    {
+        "context": "En una conversación telefónica desde Bogotá, una madre le dice a su hijo que es necesario que él se cuide bien mientras está de viaje.",
+        "sentence": "Es necesario que él ______ todas las precauciones posibles.",
+        "answer": "tome",
+        "choices": ["tome", "tomó", "tomará", "toma"],
+        "translation": "It's necessary that he ______ all possible precautions."
+    }
+]
+```
+2025-02-25 14:09:17,867 - INFO - New exercises generated: Es crucial que el equipo ______ el informe antes del viernes., Espero que él ______ clases de tango este año., Es importante que la fruta ______ en buen estado., Queremos que el DJ ______ música variada para todos., Es necesario que él ______ todas las precauciones posibles.
+2025-02-25 14:09:48,425 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-25 14:09:48,438 - INFO - GPT response received.
+2025-02-25 14:10:17,937 - INFO - Session log written successfully.
+2025-02-25 14:11:57,834 - WARNING - Keyring package not available. API key will be stored in environment variable only.
+2025-02-25 14:13:05,360 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-25 14:13:05,367 - INFO - GPT response received.
+2025-02-25 14:13:05,368 - INFO - Raw GPT response for new exercise:
+```json
+[
+    {
+        "context": "En la reserva natural de Costa Rica, los guacamayos rojos son una atracción principal. Los turistas siempre están fascinados por sus colores vibrantes.",
+        "sentence": "Es increíble ver cómo los guacamayos __________ sobre la selva con tanta gracia.",
+        "answer": "vuelan",
+        "choices": ["vuelan", "volaban", "vuelen", "volaran"],
+        "translation": "It's amazing to see how the macaws __________ over the jungle with such grace."
+    },
+    {
+        "context": "En el documental sobre las aves de la Patagonia, se mostró cómo los cóndores andinos sobrevuelan los Andes. Es un espectáculo impresionante.",
+        "sentence": "El narrador explicó que los cóndores __________ durante horas sin mover las alas.",
+        "answer": "vuelan",
+        "choices": ["vuelan", "volaran", "volaban", "vuelen"],
+        "translation": "The narrator explained that the condors __________ for hours without flapping their wings."
+    },
+    {
+        "context": "Durante la primavera, en el sur de Chile, las golondrinas regresan para anidar. La gente del pueblo las espera con ansias.",
+        "sentence": "Es importante que las golondrinas __________ a sus nidos antes de que llegue el invierno.",
+        "answer": "vuelen",
+        "choices": ["vuelen", "vuelan", "volaban", "volaran"],
+        "translation": "It's important that the swallows __________ to their nests before winter arrives."
+    },
+    {
+        "context": "En el mercado de artesanías de Oaxaca, se venden figuras de barro que representan a los quetzales. Son muy populares entre los turistas.",
+        "sentence": "El artesano deseaba que los quetzales __________ libres en su hábitat natural.",
+        "answer": "volaran",
+        "choices": ["volaran", "vuelan", "volaban", "vuelen"],
+        "translation": "The artisan wished that the quetzals __________ freely in their natural habitat."
+    },
+    {
+        "context": "En el parque nacional de Iguazú, los tucanes son parte del paisaje. Su vuelo es un símbolo de la biodiversidad de la región.",
+        "sentence": "Los guías turísticos comentaban que los tucanes __________ en parejas casi siempre.",
+        "answer": "volaban",
+        "choices": ["volaban", "vuelan", "volaran", "vuelen"],
+        "translation": "The tour guides mentioned that the toucans __________ in pairs almost always."
+    },
+    {
+        "context": "En la región amazónica, las aves rapaces son fundamentales para el equilibrio del ecosistema. Su presencia indica un ambiente saludable.",
+        "sentence
+2025-02-25 14:13:05,368 - ERROR - JSON parse error: Expecting value: line 1 column 1 (char 0)
+2025-02-25 14:13:05,369 - ERROR - JSON recovery failed: Expecting ',' delimiter: line 34 column 62 (char 2267)
+2025-02-25 14:13:05,369 - ERROR - Empty or invalid exercise data.
+2025-02-25 14:13:06,200 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-25 14:13:06,201 - INFO - GPT response received.
+2025-02-25 14:13:06,201 - INFO - Raw GPT response for new exercise:
+```json
+[
+    {
+        "context": "En el parque natural, los guías siempre cuentan historias fascinantes sobre las aves que habitan allí. Una de las historias más populares es sobre un colibrí que...",
+        "sentence": "Dicen que el colibrí ______ tan rápido que parecía desaparecer en el aire.",
+        "answer": "volaba",
+        "choices": ["volaba", "vuele", "volaran", "volase"],
+        "translation": "They say that the hummingbird ______ so fast that it seemed to disappear in the air."
+    },
+    {
+        "context": "Los turistas observaban maravillados cómo las águilas se lanzaban en picada desde lo alto de las montañas. Una vez, un turista comentó que...",
+        "sentence": "Le parecía increíble que las águilas ______ con tanta precisión.",
+        "answer": "volaran",
+        "choices": ["volaran", "volaba", "vuelen", "volase"],
+        "translation": "He found it incredible that the eagles ______ with such precision."
+    },
+    {
+        "context": "En las leyendas de la selva, se dice que hay un ave mágica que solo aparece al amanecer. Los ancianos del pueblo siempre mencionan que...",
+        "sentence": "Es un espectáculo ver cómo esa ave ______ sobre las copas de los árboles al amanecer.",
+        "answer": "volaba",
+        "choices": ["volaba", "vuele", "volaran", "volase"],
+        "translation": "It's a spectacle to see how that bird ______ over the treetops at dawn."
+    },
+    {
+        "context": "Durante la temporada de migración, los cielos se llenan de bandadas de aves. Un observador de aves comentó que...",
+        "sentence": "Era sorprendente que las aves ______ en formación tan perfecta.",
+        "answer": "volaran",
+        "choices": ["volaran", "volaba", "vuele", "volase"],
+        "translation": "It was surprising that the birds ______ in such perfect formation."
+    },
+    {
+        "context": "En la reserva ecológica, hay un área dedicada a la conservación de aves en peligro de extinción. Los biólogos explican que...",
+        "sentence": "Es crucial que estas especies ______ libremente para su recuperación.",
+        "answer": "vuelen",
+        "choices": ["vuelen", "volaban", "volaran", "volase"],
+        "translation": "It's crucial that these species ______ freely for their recovery."
+    },
+    {
+        "context": "En el documental sobre la vida silvestre, se mostró cómo los halcones cazan en el desierto. El narrador mencionó que...",
+        "sentence": "Era impresionante ver cómo los halcones ______ a gran velocidad.",
+        "answer": "
+2025-02-25 14:13:06,201 - ERROR - JSON parse error: Expecting value: line 1 column 1 (char 0)
+2025-02-25 14:13:06,202 - ERROR - JSON recovery failed: Expecting ',' delimiter: line 34 column 62 (char 2169)
+2025-02-25 14:13:06,202 - ERROR - Empty or invalid exercise data.
+2025-02-25 14:13:18,953 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-25 14:13:18,954 - INFO - GPT response received.
+2025-02-25 14:13:18,954 - INFO - Raw GPT response for new exercise:
+```json
+[
+    {
+        "context": "En el parque nacional, los turistas observaban a los guacamayos. Era un espectáculo ver cómo se desplazaban por el cielo.",
+        "sentence": "Los guacamayos _______ alto y con gracia, creando un arcoíris en el aire.",
+        "answer": "volaban",
+        "choices": ["volaban", "volará", "volaron", "volaría"],
+        "translation": "The macaws _______ high and gracefully, creating a rainbow in the air."
+    },
+    {
+        "context": "Durante la temporada de migración, es común ver bandadas de aves cruzando los cielos de Argentina. Es un evento que muchos esperan con ansias.",
+        "sentence": "Las aves _______ hacia el norte en busca de climas más cálidos.",
+        "answer": "volaban",
+        "choices": ["volaban", "volará", "volaron", "volaría"],
+        "translation": "The birds _______ north in search of warmer climates."
+    },
+    {
+        "context": "En el documental sobre la selva amazónica, el narrador explicaba el ciclo de vida de varias especies. Las aves tienen un papel crucial en el ecosistema.",
+        "sentence": "Es importante que el narrador _______ sobre el comportamiento de las aves para educar al público.",
+        "answer": "hable",
+        "choices": ["hable", "hablará", "hablaba", "habló"],
+        "translation": "It's important that the narrator _______ about the behavior of birds to educate the public."
+    },
+    {
+        "context": "En la reserva natural, los guías siempre están atentos a los cambios en el comportamiento de las aves. Esto ayuda a mantener un registro preciso.",
+        "sentence": "Los guías desean que las aves _______ en su hábitat natural sin interrupciones.",
+        "answer": "vuelen",
+        "choices": ["vuelen", "volarán", "volaban", "volaron"],
+        "translation": "The guides wish that the birds _______ in their natural habitat without interruptions."
+    },
+    {
+        "context": "En el pueblo costero, los pescadores conocen bien a las aves que sobrevuelan el océano. Son parte de su vida diaria.",
+        "sentence": "Los pescadores siempre esperan que las aves _______ cerca de ellos durante la pesca.",
+        "answer": "vuelen",
+        "choices": ["vuelen", "volarán", "volaban", "volaron"],
+        "translation": "The fishermen always hope that the birds _______ near them during fishing."
+    },
+    {
+        "context": "Durante el festival de aves, los niños aprenden sobre la importancia de las aves en el medio ambiente. Es una experiencia educativa y divertida.",
+        "sentence": "Los organizadores
+2025-02-25 14:13:18,955 - ERROR - JSON parse error: Expecting value: line 1 column 1 (char 0)
+2025-02-25 14:13:18,955 - ERROR - JSON recovery failed: Expecting ',' delimiter: line 34 column 63 (char 2227)
+2025-02-25 14:13:18,955 - ERROR - Empty or invalid exercise data.
+2025-02-25 14:13:21,876 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-25 14:13:21,877 - INFO - GPT response received.
+2025-02-25 14:13:21,877 - INFO - Raw GPT response for new exercise:
+```json
+[
+    {
+        "context": "En el parque de la ciudad, los niños siempre se maravillaban al ver las aves. Era un espectáculo que capturaba la atención de todos.",
+        "sentence": "Las aves ______ sobre los árboles con una gracia impresionante.",
+        "answer": "volaban",
+        "choices": ["volaban", "vuelen", "volaron", "volarán"],
+        "translation": "The birds ______ over the trees with impressive grace."
+    },
+    {
+        "context": "Durante la visita a la reserva natural, el guía explicó que el comportamiento de las aves cambia con las estaciones.",
+        "sentence": "Es posible que las aves ______ a diferentes lugares buscando alimento.",
+        "answer": "vuelen",
+        "choices": ["vuelen", "volaban", "volaron", "volarán"],
+        "translation": "It's possible that the birds ______ to different places looking for food."
+    },
+    {
+        "context": "En el documental sobre la selva amazónica, se mostraban escenas de aves exóticas.",
+        "sentence": "Las aves ______ por el cielo en grandes bandadas.",
+        "answer": "volaban",
+        "choices": ["volaban", "vuelen", "volaron", "volarán"],
+        "translation": "The birds ______ through the sky in large flocks."
+    },
+    {
+        "context": "En la charla sobre conservación, se discutió cómo el cambio climático afecta a las aves migratorias.",
+        "sentence": "Es importante que las aves ______ sin obstáculos para mantener el equilibrio del ecosistema.",
+        "answer": "vuelen",
+        "choices": ["vuelen", "volaban", "volaron", "volarán"],
+        "translation": "It's important that the birds ______ without obstacles to maintain the ecosystem balance."
+    },
+    {
+        "context": "En el pueblo, la gente solía contar historias sobre las aves que llegaban cada primavera.",
+        "sentence": "Las aves ______ en círculos antes de posarse en los árboles.",
+        "answer": "volaban",
+        "choices": ["volaban", "vuelen", "volaron", "volarán"],
+        "translation": "The birds ______ in circles before landing on the trees."
+    },
+    {
+        "context": "En la clase de biología, se hablaba sobre la migración de las aves y sus rutas.",
+        "sentence": "Es fascinante que las aves ______ miles de kilómetros cada año.",
+        "answer": "vuelen",
+        "choices": ["vuelen", "volaban", "volaron", "volarán"],
+        "translation": "It's fascinating that the birds ______ thousands of kilometers each year."
+    }
+]
+```
+2025-02-25 14:13:21,891 - INFO - New exercises generated: Las aves ______ sobre los árboles con una gracia impresionante., Es posible que las aves ______ a diferentes lugares buscando alimento., Las aves ______ por el cielo en grandes bandadas., Es importante que las aves ______ sin obstáculos para mantener el equilibrio del ecosistema., Las aves ______ en círculos antes de posarse en los árboles., Es fascinante que las aves ______ miles de kilómetros cada año.
+2025-02-25 14:13:33,690 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-25 14:13:33,695 - INFO - GPT response received.
+2025-02-25 14:13:33,696 - INFO - Raw GPT response for new exercise:
+```json
+[
+    {
+        "context": "En la selva amazónica, los guacamayos son un espectáculo increíble. Siempre están en movimiento, y su vuelo es una maravilla.",
+        "sentence": "Los guacamayos ______ sobre el río con una gracia impresionante.",
+        "answer": "volaban",
+        "choices": ["volaban", "volaran", "volasen", "volaron"],
+        "translation": "The macaws ______ over the river with impressive grace."
+    },
+    {
+        "context": "En la costa del Pacífico, las fragatas son conocidas por su habilidad para planear durante horas. Es impresionante verlas en acción.",
+        "sentence": "Las fragatas ______ alto en el cielo, aprovechando las corrientes de aire.",
+        "answer": "volaban",
+        "choices": ["volaban", "volaran", "volasen", "volaron"],
+        "translation": "The frigatebirds ______ high in the sky, taking advantage of the air currents."
+    },
+    {
+        "context": "En los Andes, los cóndores son un símbolo de libertad. Su vuelo es un espectáculo que atrae a muchos turistas.",
+        "sentence": "Es raro que un cóndor ______ tan bajo, pero a veces ocurre.",
+        "answer": "vuele",
+        "choices": ["volara", "vuele", "volara", "volase"],
+        "translation": "It's rare for a condor to ______ so low, but it sometimes happens."
+    },
+    {
+        "context": "En la región del Pantanal, los tucanes son famosos por sus colores vibrantes y su peculiar vuelo.",
+        "sentence": "Los turistas esperaban que los tucanes ______ sobre sus cabezas.",
+        "answer": "volaran",
+        "choices": ["volaran", "volasen", "volaban", "volaran"],
+        "translation": "The tourists hoped that the toucans would ______ over their heads."
+    },
+    {
+        "context": "En la Patagonia, las bandadas de flamencos pintan el cielo con su vuelo elegante. Es una vista que no se olvida.",
+        "sentence": "Los flamencos ______ en formación perfecta, creando un espectáculo visual.",
+        "answer": "volaban",
+        "choices": ["volaban", "volaran", "volasen", "volaron"],
+        "translation": "The flamingos ______ in perfect formation, creating a visual spectacle."
+    },
+    {
+        "context": "En los bosques de Yucatán, las aves de colores brillantes son un deleite para los observadores.",
+        "sentence": "Era necesario que las aves ______ para que todos pudieran admirarlas.",
+        "answer": "volaran",
+        "choices": ["volaran", "volasen", "volaban", "volaron"],
+        "translation":
+2025-02-25 14:13:33,696 - ERROR - JSON parse error: Expecting value: line 1 column 1 (char 0)
+2025-02-25 14:13:33,696 - ERROR - JSON recovery failed: Expecting ',' delimiter: line 41 column 64 (char 2451)
+2025-02-25 14:13:33,696 - ERROR - Empty or invalid exercise data.
+2025-02-25 14:13:38,775 - WARNING - Some background threads did not complete in time.
+2025-02-25 14:13:38,775 - INFO - Session log written successfully.
+2025-02-25 14:13:49,701 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-25 14:13:49,711 - INFO - GPT response received.
+2025-02-25 14:20:21,742 - WARNING - Keyring package not available. API key will be stored in environment variable only.
+2025-02-25 14:21:04,136 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-25 14:21:04,201 - INFO - GPT response received.
+2025-02-25 14:21:04,202 - INFO - Raw GPT response for new exercise:
+```json
+[
+    {
+        "context": "En la plaza principal de la ciudad, siempre hay una bandada de palomas que revolotean entre los turistas. La gente suele alimentarlas con migajas de pan.",
+        "sentence": "Es importante que el guía turístico _________ a los visitantes sobre no alimentar a las palomas para evitar que se vuelvan dependientes.",
+        "answer": "aconseje",
+        "choices": ["aconseje", "aconsejaba", "aconsejó", "aconsejara"],
+        "translation": "It is important that the tour guide _________ the visitors about not feeding the pigeons to prevent them from becoming dependent."
+    },
+    {
+        "context": "En el parque natural, se pueden observar muchas especies de aves. Los guacamayos, en particular, son un espectáculo con sus colores vibrantes.",
+        "sentence": "Era fascinante que los guacamayos _________ en grandes grupos, llenando el aire de color y sonido.",
+        "answer": "volaran",
+        "choices": ["volaban", "volaran", "volarán", "volaron"],
+        "translation": "It was fascinating that the macaws _________ in large groups, filling the air with color and sound."
+    },
+    {
+        "context": "Durante la temporada de migración, los cielos se llenan de diversas aves que viajan hacia el sur. Es un fenómeno natural que atrae a muchos observadores.",
+        "sentence": "Los expertos esperaban que las aves migratorias _________ su ruta habitual sin contratiempos.",
+        "answer": "siguieran",
+        "choices": ["seguían", "siguieran", "seguirán", "siguieron"],
+        "translation": "The experts hoped that the migratory birds _________ their usual route without any issues."
+    }
+]
+```
+2025-02-25 14:21:04,213 - INFO - New exercises generated: Es importante que el guía turístico _________ a los visitantes sobre no alimentar a las palomas para evitar que se vuelvan dependientes., Era fascinante que los guacamayos _________ en grandes grupos, llenando el aire de color y sonido., Los expertos esperaban que las aves migratorias _________ su ruta habitual sin contratiempos.
+2025-02-25 14:21:52,448 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-25 14:21:52,450 - INFO - GPT response received.
+2025-02-25 14:21:52,450 - INFO - Raw GPT response for new exercise:
+```json
+[
+    {
+        "context": "En el parque, un grupo de niños observa a los pájaros que vuelan alrededor. Uno de ellos señala un tucán que se posó en una rama alta.",
+        "sentence": "El tucán ______ en la rama mientras los niños lo miraban con asombro.",
+        "answer": "se posó",
+        "choices": ["se posó", "se posará", "se posa", "se posaba"],
+        "translation": "The toucan ______ on the branch while the children watched it in awe."
+    },
+    {
+        "context": "En la reserva natural, los guías explican que las guacamayas son aves muy inteligentes. Los turistas escuchan atentos.",
+        "sentence": "Es importante que la guacamaya ______ en un ambiente seguro para sobrevivir.",
+        "answer": "viva",
+        "choices": ["viva", "viviría", "vivió", "vivirá"],
+        "translation": "It is important that the macaw ______ in a safe environment to survive."
+    },
+    {
+        "context": "Durante la caminata por el bosque, los excursionistas comentan sobre el canto de los pájaros. Uno de ellos menciona que el sonido es muy relajante.",
+        "sentence": "Los pájaros ______ con tanta armonía que parecía un concierto natural.",
+        "answer": "cantaron",
+        "choices": ["cantan", "cantarán", "cantaron", "cantarían"],
+        "translation": "The birds ______ with such harmony that it seemed like a natural concert."
+    }
+]
+```
+2025-02-25 14:21:52,461 - INFO - New exercises generated: El tucán ______ en la rama mientras los niños lo miraban con asombro., Es importante que la guacamaya ______ en un ambiente seguro para sobrevivir., Los pájaros ______ con tanta armonía que parecía un concierto natural.
+2025-02-25 14:22:12,716 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-25 14:22:12,717 - INFO - GPT response received.
+2025-02-25 14:22:23,585 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-25 14:22:23,596 - INFO - GPT response received.
+2025-02-25 14:22:30,028 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-25 14:22:30,029 - INFO - GPT response received.
+2025-02-25 14:22:45,668 - INFO - Session log written successfully.
+2025-02-25 14:41:24,869 - WARNING - Keyring package not available. API key will be stored in environment variable only.
+2025-02-25 14:42:36,108 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-25 14:42:36,118 - INFO - GPT response received.
+2025-02-25 14:42:36,119 - INFO - Raw GPT response for new exercise:
+[
+    {
+        "context": "En una reunión del equipo de investigación, discutimos los avances del proyecto sobre energías renovables. Queremos proponer nuevas ideas para mejorar la eficiencia de los paneles solares.",
+        "sentence": "Es importante que nosotros __________ (considerar) todos los factores antes de presentar el informe final.",
+        "answer": "consideremos",
+        "choices": ["consideremos", "consideramos", "considerara", "consideraré"],
+        "translation": "It's important that we __________ all the factors before presenting the final report."
+    },
+    {
+        "context": "Estoy trabajando en un artículo sobre los efectos del cambio climático en la biodiversidad de la Amazonía. Mi objetivo es que más personas tomen conciencia sobre este problema.",
+        "sentence": "Espero que yo __________ (poder) terminar el artículo antes de la conferencia en Brasil.",
+        "answer": "pueda",
+        "choices": ["pueda", "puedo", "pudiera", "podré"],
+        "translation": "I hope that I __________ finish the article before the conference in Brazil."
+    },
+    {
+        "context": "Hemos estado colaborando con una universidad en México para desarrollar un nuevo sistema de reciclaje. La meta es que este sistema se implemente en varias ciudades de Latinoamérica.",
+        "sentence": "Es crucial que nosotros __________ (llegar) a un acuerdo sobre los términos del proyecto.",
+        "answer": "lleguemos",
+        "choices": ["lleguemos", "llegamos", "llegáramos", "llegaremos"],
+        "translation": "It's crucial that we __________ to an agreement on the terms of the project."
+    }
+]
+2025-02-25 14:42:36,132 - INFO - New exercises generated: Es importante que nosotros __________ (considerar) todos los factores antes de presentar el informe final., Espero que yo __________ (poder) terminar el artículo antes de la conferencia en Brasil., Es crucial que nosotros __________ (llegar) a un acuerdo sobre los términos del proyecto.
+2025-02-25 14:43:27,523 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-25 14:43:27,525 - INFO - GPT response received.
+2025-02-25 14:43:52,028 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-25 14:43:52,029 - INFO - GPT response received.
+2025-02-25 14:44:03,198 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-25 14:44:03,202 - INFO - GPT response received.
+2025-02-25 14:44:11,914 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-25 14:44:11,916 - INFO - GPT response received.
+2025-02-25 14:44:11,916 - INFO - Raw GPT response for new exercise:
+```json
+[
+    {
+        "context": "En el laboratorio, siempre discutimos las hipótesis antes de comenzar cualquier experimento. Es importante que todos estemos de acuerdo.",
+        "sentence": "Espero que nosotros __________ (llegar) a una conclusión clara después de analizar los resultados.",
+        "answer": "lleguemos",
+        "choices": ["lleguemos", "llegamos", "llegaremos", "llegara"],
+        "translation": "I hope that we __________ to a clear conclusion after analyzing the results."
+    },
+    {
+        "context": "En la conferencia sobre cambio climático, compartí mis hallazgos más recientes. Me sorprendió la cantidad de preguntas que recibí.",
+        "sentence": "Es crucial que yo __________ (compartir) esta información con colegas de otros países.",
+        "answer": "comparta",
+        "choices": ["comparta", "comparto", "compartiré", "compartiera"],
+        "translation": "It is crucial that I __________ this information with colleagues from other countries."
+    },
+    {
+        "context": "Durante la reunión del equipo de investigación, analizamos los datos recopilados durante el último mes. Todos estábamos muy emocionados por los resultados.",
+        "sentence": "Es necesario que nosotros __________ (considerar) todos los factores antes de publicar nuestras conclusiones.",
+        "answer": "consideremos",
+        "choices": ["consideremos", "consideramos", "consideraremos", "consideráramos"],
+        "translation": "It is necessary that we __________ all the factors before publishing our conclusions."
+    }
+]
+```
+2025-02-25 14:44:11,927 - INFO - New exercises generated: Espero que nosotros __________ (llegar) a una conclusión clara después de analizar los resultados., Es crucial que yo __________ (compartir) esta información con colegas de otros países., Es necesario que nosotros __________ (considerar) todos los factores antes de publicar nuestras conclusiones.
+2025-02-25 14:44:19,836 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-25 14:44:19,837 - INFO - GPT response received.
+2025-02-25 14:44:31,700 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-25 14:44:31,713 - INFO - GPT response received.
+2025-02-25 14:44:34,854 - INFO - Session log written successfully.
+2025-03-16 10:49:50,463 - WARNING - Keyring package not available. API key will be stored in environment variable only.
+2025-03-16 10:50:47,852 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-16 10:50:47,859 - INFO - GPT response received.
+2025-03-16 10:50:47,859 - INFO - Raw GPT response for new exercise:
+[
+    {
+        "context": "En la oficina, los empleados siempre están ocupados. A menudo necesitan revisar documentos importantes.",
+        "sentence": "Ellos _______ los documentos antes de la reunión.",
+        "answer": "ven",
+        "choices": ["ven", "vieron", "verán", "viendo"],
+        "translation": "They _______ the documents before the meeting."
+    },
+    {
+        "context": "Durante la conferencia, los asistentes prestaron mucha atención a las presentaciones.",
+        "sentence": "Ellos _______ todas las diapositivas con interés.",
+        "answer": "vieron",
+        "choices": ["ven", "vieron", "verán", "viendo"],
+        "translation": "They _______ all the slides with interest."
+    },
+    {
+        "context": "En la fábrica, los supervisores revisan el trabajo de los empleados cada día.",
+        "sentence": "Ellos _______ el progreso de cada proyecto diariamente.",
+        "answer": "ven",
+        "choices": ["ven", "vieron", "verán", "viendo"],
+        "translation": "They _______ the progress of each project daily."
+    },
+    {
+        "context": "Después de la entrega del proyecto, los clientes evaluaron el resultado final.",
+        "sentence": "Ellos _______ el producto terminado con satisfacción.",
+        "answer": "vieron",
+        "choices": ["ven", "vieron", "verán", "viendo"],
+        "translation": "They _______ the finished product with satisfaction."
+    },
+    {
+        "context": "En el call center, los agentes deben estar atentos a las pantallas para atender las llamadas.",
+        "sentence": "Ellos _______ los monitores constantemente.",
+        "answer": "ven",
+        "choices": ["ven", "vieron", "verán", "viendo"],
+        "translation": "They _______ the monitors constantly."
+    }
+]
+2025-03-16 10:50:47,876 - INFO - New exercises generated: Ellos _______ los documentos antes de la reunión., Ellos _______ todas las diapositivas con interés., Ellos _______ el progreso de cada proyecto diariamente., Ellos _______ el producto terminado con satisfacción., Ellos _______ los monitores constantemente.
+2025-03-16 10:51:17,686 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-16 10:51:17,687 - INFO - GPT response received.
+2025-03-16 10:52:05,009 - INFO - Session log written successfully.

@@ -6,11 +6,7 @@
       "Bash(git commit:*)",
       "Bash(dir:*)",
       "Bash(copy .env.example SpanishConjugation_Distribution)",
-      "Bash(cp:*)",
-      "Bash(touch:*)",
-      "Bash(mkdir:*)",
-      "Bash(mv:*)",
-      "Bash(claude mcp:*)"
+      "Bash(cp:*)"
     ],
     "deny": [],
     "ask": []
